@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Drag and Drop</title>
+		<script>
+			function drag(e){
+				e.dataTransfer.setData("abc",e.target.id);
+			}
+			function allowDrop(e){
+				e.preventDefault();
+			}
+			function drop(e){
+				e.preventDefault();
+				var data_id = e.dataTransfer.getData("abc");
+				e.target.appendChild(document.getElementById(data_id));
+			}
+		</script>
+	</head>
+	<body>
+	<button id="b1" onclick="but()">click me!</button>
+		<script>
+			var div_array = new Array();
+			for (var i=0;i<24;i++){
+				var a = document.createElement("div");
+				a.style.position = "absolute";
+				a.style.left = ((80*i).toString()) + "px";
+				a.style.border = "2px solid #654321";
+				a.innerHTML = "HELLO";
+				a.id = i.toString();
+				document.body.appendChild(a);
+				div_array[i] = a;
+			}
+			function but(){
+				div_array[10].innerHTML = "11111";
+			}
+		</script>
+		
+	</body>
+</html>
