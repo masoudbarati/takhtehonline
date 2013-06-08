@@ -1,0 +1,38 @@
+/*******************************************************************************************/
+/*
+/*	    TFJ HONUT FREE LITE VERSION Joomla! 2.5 Template - May 2013
+/*      Package tpl-tfj-honut-free-lite-j25.zip
+/*	    Version 1.0
+/*
+/*	    This template/design is released under the Creative Commons Attribution 3.0 license.
+/*
+/*      This means that it can be used for private and commercial purposes, edited freely 
+/*	    or redistributed as long as you keep the link back to template sponsors.
+/*
+/*      You CAN NOT remove (or unreadable) these links without our permission. 
+/*	    When you don't want to have link back on the template footer,
+/*	    you have to pay 9 euro via PayPal: contact@templatesforjoomla.eu 
+/*
+/*      BUY LICENSE PREMIUM VERSION!
+/*      Only in Premium Version Full Quickstart Instalation Package, multi level dropdown menu, footer link remove option and more...
+/*      What is quickstart package? - "Quickstart Package" is a TFJ HONUT PRO Template + Joomla 2.5 + all content, all modules, all components and settings used in demo site.
+/*
+/*      How to install Quickstart package?
+/*      Quickstart Package install exactly the same as a normal Joomla! installation package. (To get know more about technical requirements to run Joomla! please visit: Joomla technical requirements).
+/*
+/*      Quickstart Package Extra Extensions (Components, Modules, Plugin) Included:
+/*      Automatic Slideshow Module on frontpage. Nivo Slider is a lightweight Joomla jQuery slideshow module for creating good-looking image sliders. It simply converts an element that wraps images into a slider.
+/*      Gallery plugin & module - Sigplus Gallery (Sigplus Image Gallery Plus is a straightforward way to add image or photo galleries to a Joomla article with a simple syntax. It takes a matter of minutes to set up a gallery but those who are looking for a powerful gallery solution will not be disappointed either: sigplus is suitable for both beginner and advanced users.
+/*      Xmap - the best sitemap component.
+/*      JCE editor - the bes WYSiWYG editor.
+/*      Extra SEO SEF plugin automatically generates description meta tags by pulling text from the content to help with SEO. It also gives you the ability to set different title configurations.
+/*      Extra Cache plugin.
+/*      Multilevel drop-down menu.
+/*      Social Media Icons Module.
+/*      Footer links remove options.
+/*      Support.
+/*      And more...
+/*      
+/*      More information on http://templatesforjoomle.eu
+/*
+/*******************************************************************************************/

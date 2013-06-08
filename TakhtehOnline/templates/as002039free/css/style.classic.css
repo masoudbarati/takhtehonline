@@ -1,0 +1,713 @@
+/***************************************************************************************/
+/*
+/*		Designed by 'AS Designing'
+/*		Web: http://www.asdesigning.com
+/*		Web: http://www.astemplates.com
+/*		License: Creative Commons
+/*
+/**************************************************************************************/
+
+/**************************************************************************************/
+/**************************************************************************************/
+/*   Elements
+/**************************************************************************************/
+/**************************************************************************************/
+
+body
+{
+	background-color: #F3F3F3;
+	color: #666666;
+	background-image: url('../images/styles/classic/bg.general.png');
+}
+
+.wrapper
+{
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.article-info
+{
+	color: #FFFFFF;
+}
+
+a
+{
+	color: #121212;
+}
+
+a:hover
+{
+	color: #CC0000;
+}
+
+li
+{
+	background-image: url('../images/styles/classic/listimg.png');
+}
+
+li:hover
+{
+	background-image: url('../images/styles/classic/listimg.hover.png');
+}
+
+img.frame,
+.img-intro-left img,
+.img-fulltext-left img,
+.img-intro-none img,
+.img-fulltext-none img,
+.img-intro-right img,
+.img-fulltext-right img
+{
+	border: 3px solid #666666;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #FFFFFF;
+}
+
+select,
+input,
+textarea,
+.CodeMirror-wrapping
+{
+	background-color: #F6F6F6;
+	border: 1px solid #666666;
+	border-radius: 3px;
+	color: #FFFFFF;
+}
+
+
+.inputbox,
+#jform_name,
+#jform_username,
+#jform_password1,
+#jform_password2,
+#jform_email,
+#jform_email1,
+#jform_email2,
+#jform_title,
+#jform_url,
+#jform_catid,
+#jform_state,
+#jform_params_editor,
+#jform_params_timezone,
+#jform_params_language,
+#jform_params_admin_style,
+#jform_params_admin_language,
+#jform_params_helpsite,
+#username,
+#password
+{
+	border: 1px solid #666666;
+	border-radius: 3px;
+}
+
+/**************************************************************************************/
+/* Header
+/**************************************************************************************/
+/**************************************************************************************/
+
+#header 
+{
+    background-image: url("../images/styles/classic/bg.header.overlay.png");
+    background-position: left top;
+    background-repeat: repeat-x;
+}
+
+#header h1,
+#header h2,
+#header h3
+{
+	color: #000000;
+}
+
+#header a
+{
+	color: #666666;
+}
+
+#header a:hover
+{
+	color: #990000;
+}
+
+/**************************************************************************************/
+/* Header Row 0 																	  */
+
+#header .row0 .search input
+{
+	color: #121212;
+}
+
+/**************************************************************************************/
+/* Header Row 1 		                                                              */
+
+#header .row1
+{
+	color: #666666;
+}
+ 
+#header .row1 #companyname,
+#header .row1 #companyname a
+{
+	color: #000000;
+	text-shadow: 1px 1px #FFFFFF;
+}
+
+#header .row1 #companyname a:hover
+{
+	color: #333333;
+}
+
+#header .row1 .slogan
+{
+	color: #FFFFFF;
+	text-shadow: 1px 1px #FFFFFF;
+}
+
+.companycontacts
+{
+	color: #000000;
+	text-shadow: 1px 1px #f6f6f6;
+	font-weight: bold;
+}
+
+.companycontacts .callnow b
+{
+	color: #333333;
+}
+
+
+/**************************************************************************************/
+/* Header Row 2 - Top menu                                                            */
+
+
+#header .row2 #topmenu
+{
+	border: 1px solid #666666;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #FFFFFF;
+    background-image: url("../images/styles/classic/bg.topmenu.png");	
+}
+
+#header .row2 #topmenu ul.menu li a
+{
+	color: #FFFFFF;
+	text-shadow: 1px 1px #000000;
+}
+
+#header .row2 #topmenu ul.menu li
+{
+	border-right: 1px solid #ADADAD;
+}
+
+#header .row2 #topmenu ul.menu li.current a,
+#header .row2 #topmenu ul.menu li.active a,
+#header .row2 #topmenu ul.menu li a:hover
+{
+	color: #000000;
+	text-shadow: 1px 1px #DDDDDD;
+}
+
+#header .row2 #topmenu ul.menu ul
+{
+	color: #FFFFFF;
+	background-color: #717171;
+	border: 1px solid #ADADAD;
+}
+
+#header .row2 #topmenu ul.menu ul li a
+{
+	color: #FFFFFF;
+}
+
+#header .row2 #topmenu ul.menu ul li.current a:hover,
+#header .row2 #topmenu ul.menu ul li.active a:hover,
+#header .row2 #topmenu ul.menu ul li.actives a:hover,
+#header .row2 #topmenu ul.menu ul li.parent a:hover,
+#header .row2 #topmenu ul.menu li.deeper ul li a:hover,
+#header .row2 #topmenu ul.menu li.current ul li a:hover,
+#header .row2 #topmenu ul.menu li.active ul li a:hover,
+#header .row2 #topmenu ul.menu li.actives ul li a:hover,
+#header .row2 #topmenu ul.menu li.parent ul li a:hover,
+#header .row2 #topmenu ul.menu ul li a:hover,
+#header .row2 #topmenu ul.menu li a.hover
+{
+	color: #000000;
+	text-shadow: 1px 1px #DDDDDD;
+}
+
+#header .row2 #topmenu ul.menu li.current.active a.hover,
+#header .row2 #topmenu ul.menu li.current.actives a.hover,
+#header .row2 #topmenu ul.menu ul ul
+{
+	color: #FFFFFF;
+}
+
+
+/**************************************************************************************/
+/* Header Row 3 (Slider)                                                              */
+
+
+#header .row3col1
+{
+	border: 1px solid #666666;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #FFFFFF;
+}
+
+#header .row3 .toprow
+{
+	color: #FFFFFF;
+	background-color: #272727;
+	border: 1px solid #666666;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #FFFFFF;
+	background-image: url('../images/styles/classic/bg.content.png');
+}
+
+#header .row3 .toprow h1,
+#header .row3 .toprow h2,
+#header .row3 .toprow h3
+{
+	color: #FFFFFF;
+	text-shadow: 1px 1px #000000;	
+}
+
+#header .row3 .bottomrow h1,
+#header .row3 .bottomrow h2,
+#header .row3 .bottomrow h3
+{
+	color: #333333;
+	text-shadow: 1px 1px #FFFFFF;	
+}
+
+
+/**************************************************************************************/
+/* Breadcrums                                                                         */
+
+
+#breadcrumb
+{
+	color: #FFFFFF;
+	text-shadow: 1px 1px #333333;	
+	border: 1px solid #666666;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #FFFFFF;
+    background-image: url("../images/styles/classic/bg.breadcrumb.png");
+}
+
+#breadcrumb a
+{
+	color: #333333;
+	text-shadow: 1px 1px #DDDDDD;	
+}
+
+#breadcrumb a:hover
+{
+	color: #FFFFFF;
+}
+
+.breadrow #search input
+{
+	color: #FFFFFF;
+}
+
+
+/**************************************************************************************/
+/**************************************************************************************/
+/* Content
+/**************************************************************************************/
+/**************************************************************************************/
+
+/**************************************************************************************/
+/* Column Left
+/**************************************************************************************/
+/**************************************************************************************/
+
+#colleft ul li
+{
+	background-image: url('../images/styles/classic/listimg.png');	
+}
+
+#colleft ul li:hover
+{
+	background-image: url('../images/styles/classic/listimg.hover.png');	
+}
+
+#colleft a
+{
+	color: #666666;
+}
+
+#colleft a:hover
+{
+	color: #FFFFFF;
+}
+
+#colleft ul li a,
+#colleft ul li.active ul li a
+{
+	color: #666666;
+}
+
+#colleft ul li a:hover,
+#colleft ul ul li a:hover
+{
+	color: #FFFFFF;
+}
+
+#colleft .moduletable ul.menu li a,
+#colleft .moduletable_menu ul.menu li a,
+#colleft .moduletable #login-form ul li a
+{
+	color: #666666;
+}
+
+#colleft .moduletable ul.menu li a:hover,
+#colleft .moduletable_menu ul.menu li a:hover,
+#colleft .moduletable #login-form ul li a:hover
+{
+	color: #FFFFFF;
+}
+
+#colleft input
+{
+	color: #666666;
+}
+
+#colleft .more a
+{
+	color: #666666;
+}
+
+#colleft .more a:hover
+{
+	color: #FFFFFF;
+}
+
+/**************************************************************************************/
+/* Rows                                                                               */
+
+#colleft .row0,
+#colleft .row1,
+#colleft .row2,
+#colleft .row3
+{
+	color: #666666;
+}
+
+#colleft .row0 h1,
+#colleft .row0 h2,
+#colleft .row0 h3,
+#colleft .row1 h1,
+#colleft .row1 h2,
+#colleft .row1 h3,
+#colleft .row2 h1,
+#colleft .row2 h2,
+#colleft .row2 h3,
+#colleft .row3 h1,
+#colleft .row3 h2,
+#colleft .row3 h3
+{
+	color: #FFFFFF;
+	text-shadow: 1px 1px #000000;
+	background-image: url('../images/styles/classic/bg.content.png');
+	background-repeat: repeat;
+	border: 1px solid #666666;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #FFFFFF;
+}
+
+
+/**************************************************************************************/
+/* Column Main
+/**************************************************************************************/
+/**************************************************************************************/
+
+#colmain #component,
+#cmp_content
+{
+	color: #666666;
+}
+
+#colmain h1,
+#colmain h2,
+#colmain h3,
+#cmp_colmain h1,
+#cmp_colmain h2,
+#cmp_colmain h3
+{
+	color: #FFFFFF;
+	text-shadow: 1px 1px #000000;
+}
+
+#colmain h4,
+#colmain h5
+{
+	color: #333333;
+}
+
+#colmain h1 a,
+#colmain h2 a,
+#colmain h3 a
+{
+	color: #666666;
+}
+
+#colmain h1 a:hover,
+#colmain h2 a:hover,
+#colmain h3 a:hover
+{
+	color: #FFFFFF;
+}
+
+#colmain h4
+#colmain h5
+{
+	color: #FFFFFF;
+}
+
+#colmain #component h1,
+#colmain #component h2,
+#colmain #component h3,
+#colmain #adsense h1,
+#colmain #adsense h2,
+#colmain #adsense h3,
+#cmp_colmain h1,
+#cmp_colmain h2,
+#cmp_colmain h3
+{
+	background-image: url('../images/styles/classic/bg.content.png');
+	background-color: #272727;
+	border: 1px solid #666666;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #FFFFFF;
+}
+
+#colmain a
+{
+	color: #666666;
+}
+
+#colmain a:hover
+{
+	color: #FFFFFF;
+}
+
+#colmain input[type="checkbox"],
+#colmain input[type="radio"]
+{
+	background-color: transparent !important!
+}
+
+#colmain p
+{
+	color: #666666;
+}
+
+#colmain #component .article-info,
+#cmp_colmain .article-info
+{
+	background-color: #5C5C5C;
+	border: 1px solid #666666;
+	box-shadow: 1px 1px 1px #FFFFFF;
+	color: #FBC56A;
+}
+
+#colmain #component .blog p.readmore a span
+{
+	color: #333333;
+	text-shadow: 1px 1px #DDDDDD;
+}
+
+#colmain span.spacer > span.text label
+{
+	color: #666666;
+}
+
+#colmain #jform_spacer-lbl,
+#colmain label.invalid,
+#colmain .red,
+#colmain .star,
+#colmain .asterisk
+{
+	color: #FF0000;
+}
+
+.border_bottom
+{
+	border-bottom: 1px #E6E6E6 dotted;
+}
+
+.article-info
+{
+	color: #666666;
+	text-shadow: 1px 1px #000000;
+}
+
+
+/**************************************************************************************/
+
+
+#system-message dd.error ul,
+#system-message dd.warning ul,
+#system-message dd.notice ul
+{
+	border: 3px solid #FF0000;
+	border-radius: 3px;	
+}
+
+#system-message ul li
+{
+	color: #FF0000;
+}
+
+.invalid
+{
+	border-color: #FF0000;	
+}
+
+
+/**************************************************************************************/
+/* Footer
+/**************************************************************************************/
+/**************************************************************************************/
+
+/**************************************************************************************/
+/* Footer Row 3                                                                       */
+
+
+#footer .row3
+{
+	color: #666666;
+}
+
+#footer .row3 .content
+{
+	padding-top: 20px;
+	border-top: 1px solid #666666;
+}
+
+#footer .row3 a
+{
+	color: #666666;
+}
+
+#footer .row3 a:hover
+{
+	color: #FFFFFF;
+}
+
+
+/**************************************************************************************/
+/**************************************************************************************/
+/* General Element IDs and classes
+/**************************************************************************************/
+/**************************************************************************************/
+
+.toggle
+{
+	background-image: url('../images/styles/classic/bg.toggle.open.png');
+	color: #333333;	
+}
+
+.toggle:hover
+{
+	background-image: url('../images/styles/classic/bg.toggle.open.hover.png');
+	color: #FFFFFF;	
+}
+
+.toggle.opened
+{
+	background-image: url('../images/styles/classic/bg.toggle.close.png');
+}
+
+.toggle.opened:hover
+{
+	background-image: url('../images/styles/classic/bg.toggle.close.hover.png');
+	color: #FFFFFF;	
+}
+
+button,
+.button,
+.validate,
+.readmore,
+#component p.readmore
+{
+	background-color: #A0A0A0;
+	color: #FFFFFF !important;
+	border: 1px solid #666666;
+	border-radius: 3px;
+	box-shadow: 1px 1px 0px #FFFFFF;
+	background-image: url('../images/bg.btn.png');
+}
+
+.readmore a,
+#component p.readmore a
+{
+	color: #FFFFFF !important;
+}
+
+button:hover,
+.button:hover,
+.validate:hover,
+.readmore:hover,
+#component p.readmore:hover
+{
+	color: #FFFFFF !important;
+	background-color: #808080;
+}
+
+#component p.readmore a:hover
+{
+	color: #FFFFFF !important;
+}
+
+.moduletable_menu li a:hover
+{
+	color: #333333;
+}
+
+.googlemap
+{
+	background-image: url('../images/styles/classic/bg.content.png');
+	background-repeat: repeat;
+	background-color: transparent;
+	color: #FFFFFF;
+	border: 1px solid #666666;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #FFFFFF;
+}
+
+#as_accordionmenu 
+{
+	background-image: url('../images/styles/classic/bg.content.png');
+	border: 1px solid #666666;
+	box-shadow: 1px 1px 1px #FFFFFF !important;		
+}
+
+#as_accordionmenu a
+{
+	color: #FFFFFF;	
+}
+
+#as_accordionmenu a:hover
+{
+	color: #333333 !important;	
+}
+
+.slider
+{
+	background-image: url('../images/styles/classic/bg.content.png');
+	background-repeat: repeat;	
+	border-radius: 3px;
+}
+
+.as_slider-wrapper .nivoSlider
+{
+	border: 1px solid #FFFFFF;
+}
+

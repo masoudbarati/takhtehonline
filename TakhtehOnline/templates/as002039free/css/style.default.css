@@ -1,0 +1,625 @@
+/***************************************************************************************/
+/*
+/*		Designed by 'AS Designing'
+/*		Web: http://www.asdesigning.com
+/*		Web: http://www.astemplates.com
+/*		License: Creative Commons
+/*
+/**************************************************************************************/
+
+/**************************************************************************************/
+/**************************************************************************************/
+/*   Elements
+/**************************************************************************************/
+/**************************************************************************************/
+
+body
+{
+	background-color: #121212;
+	color: #BDBDBD;
+	background-image: url('../images/styles/default/bg.general.png');
+}
+
+.wrapper
+{
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.article-info
+{
+	color: #E6E6E6;
+}
+
+a
+{
+	color: #FF6600;
+}
+
+a:hover
+{
+	color: #BDBDBD;
+}
+
+img.frame,
+.img-intro-left img,
+.img-fulltext-left img,
+.img-intro-none img,
+.img-fulltext-none img,
+.img-intro-right img,
+.img-fulltext-right img
+{
+	border: 3px solid #333333;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #000000;
+}
+
+select,
+input,
+textarea,
+.CodeMirror-wrapping
+{
+	background-color: #272727;
+	border: 1px solid #333333;
+	border-radius: 3px;
+	color: #BDBDBD;
+}
+
+
+.inputbox,
+#jform_name,
+#jform_username,
+#jform_password1,
+#jform_password2,
+#jform_email,
+#jform_email1,
+#jform_email2,
+#jform_title,
+#jform_url,
+#jform_catid,
+#jform_state,
+#jform_params_editor,
+#jform_params_timezone,
+#jform_params_language,
+#jform_params_admin_style,
+#jform_params_admin_language,
+#jform_params_helpsite,
+#username,
+#password
+{
+	border: 1px solid #333333;
+	border-radius: 3px;
+}
+
+/**************************************************************************************/
+/* Header
+/**************************************************************************************/
+/**************************************************************************************/
+
+#header h1,
+#header h2,
+#header h3
+{
+	color: #E6E6E6;
+}
+
+#header a
+{
+	color: #BDBDBD;
+}
+
+#header a:hover
+{
+	color: #FF6600;
+}
+
+/**************************************************************************************/
+/* Header Row 0 																	  */
+
+#header .row0 .search input
+{
+	color: #BDBDBD;
+}
+
+/**************************************************************************************/
+/* Header Row 1 		                                                              */
+
+#header .row1
+{
+	color: #E8E8E8;
+}
+ 
+#header .row1 #companyname,
+#header .row1 #companyname a
+{
+	color: #E8E8E8;
+	text-shadow: 1px 1px #000000;
+}
+
+#header .row1 #companyname a:hover
+{
+	color: #E8E8E8;
+}
+
+#header .row1 .slogan
+{
+	color: #F36600;
+	text-shadow: 1px 1px #000000;
+}
+
+.companycontacts
+{
+	color: #F36600;
+	text-shadow: 1px 1px #000000;
+}
+
+.companycontacts .callnow b
+{
+	color: #E8E8E8;
+}
+
+/**************************************************************************************/
+/* Header Row 2 - Top menu                                                            */
+
+#header .row2 #topmenu
+{
+	border: 1px solid #333333;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #000000;
+}
+
+#header .row2 #topmenu ul.menu li a
+{
+	color: #E8E8E8;
+	text-shadow: 1px 1px #000000;
+}
+
+#header .row2 #topmenu ul.menu li
+{
+	border-right: 1px solid #000000;
+}
+
+#header .row2 #topmenu ul.menu li.current a,
+#header .row2 #topmenu ul.menu li.active a,
+#header .row2 #topmenu ul.menu li a:hover
+{
+	color: #F36600;
+	text-shadow: 1px 1px #000000;
+}
+
+#header .row2 #topmenu ul.menu ul
+{
+	color: #F6F6F6;
+	background-color: #1E1E1E;
+	border: 1px solid #000000;
+}
+
+#header .row2 #topmenu ul.menu ul li a
+{
+	color: #F6F6F6;
+}
+
+#header .row2 #topmenu ul.menu ul li.current a:hover,
+#header .row2 #topmenu ul.menu ul li.active a:hover,
+#header .row2 #topmenu ul.menu ul li.actives a:hover,
+#header .row2 #topmenu ul.menu ul li.parent a:hover,
+#header .row2 #topmenu ul.menu li.deeper ul li a:hover,
+#header .row2 #topmenu ul.menu li.current ul li a:hover,
+#header .row2 #topmenu ul.menu li.active ul li a:hover,
+#header .row2 #topmenu ul.menu li.actives ul li a:hover,
+#header .row2 #topmenu ul.menu li.parent ul li a:hover,
+#header .row2 #topmenu ul.menu ul li a:hover,
+#header .row2 #topmenu ul.menu li a.hover
+{
+	color: #F36600;
+}
+
+#header .row2 #topmenu ul.menu li.current.active a.hover,
+#header .row2 #topmenu ul.menu li.current.actives a.hover,
+#header .row2 #topmenu ul.menu ul ul
+{
+	color: #F6F6F6;
+}
+
+
+/**************************************************************************************/
+/* Header Row 3 (Slider)                                                              */
+
+
+#header .row3col1
+{
+	border: 1px solid #333333;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #000000;
+}
+
+#header .row3 .toprow
+{
+	background-color: #272727;
+	border: 1px solid #333333;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #000000;
+	background-image: url('../images/styles/default/bg.content.png');
+}
+
+
+/**************************************************************************************/
+/* Breadcrums                                                                         */
+
+
+#breadcrumb
+{
+	color: #BDBDBD;
+	border: 1px solid #333333;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #000000;
+}
+
+#breadcrumb a
+{
+	color: #F36600;
+}
+
+#breadcrumb a:hover
+{
+	color: #BDBDBD;
+}
+
+.breadrow #search input
+{
+	color: #BDBDBD;
+}
+
+
+/**************************************************************************************/
+/**************************************************************************************/
+/* Content
+/**************************************************************************************/
+/**************************************************************************************/
+
+/**************************************************************************************/
+/* Column Left
+/**************************************************************************************/
+/**************************************************************************************/
+
+#colleft a
+{
+	color: #BDBDBD;
+}
+
+#colleft a:hover
+{
+	color: #FFFFFF;
+}
+
+#colleft ul li a,
+#colleft ul li.active ul li a
+{
+	color: #BDBDBD;
+}
+
+#colleft ul li a:hover,
+#colleft ul ul li a:hover
+{
+	color: #FFFFFF;
+}
+
+#colleft .moduletable ul.menu li a,
+#colleft .moduletable_menu ul.menu li a,
+#colleft .moduletable #login-form ul li a
+{
+	color: #BDBDBD;
+}
+
+#colleft .moduletable ul.menu li a:hover,
+#colleft .moduletable_menu ul.menu li a:hover,
+#colleft .moduletable #login-form ul li a:hover
+{
+	color: #FFFFFF;
+}
+
+#colleft input
+{
+	color: #BDBDBD;
+}
+
+#colleft .more a
+{
+	color: #BDBDBD;
+}
+
+#colleft .more a:hover
+{
+	color: #FFFFFF;
+}
+
+/**************************************************************************************/
+/* Rows                                                                               */
+
+#colleft .row0,
+#colleft .row1,
+#colleft .row2,
+#colleft .row3
+{
+	color: #BDBDBD;
+}
+
+#colleft .row0 h1,
+#colleft .row0 h2,
+#colleft .row0 h3,
+#colleft .row1 h1,
+#colleft .row1 h2,
+#colleft .row1 h3,
+#colleft .row2 h1,
+#colleft .row2 h2,
+#colleft .row2 h3,
+#colleft .row3 h1,
+#colleft .row3 h2,
+#colleft .row3 h3
+{
+	color: #E6E6E6;
+	text-shadow: 1px 1px #000000;
+	background-image: url('../images/styles/default/bg.content.png');
+	background-repeat: repeat;
+	border: 1px solid #333333;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #000000;
+}
+
+/**************************************************************************************/
+/* Column Main
+/**************************************************************************************/
+/**************************************************************************************/
+
+#colmain #component,
+#cmp_content
+{
+	color: #BDBDBD;
+}
+
+#colmain h1,
+#colmain h2,
+#colmain h3,
+#cmp_colmain h1,
+#cmp_colmain h2,
+#cmp_colmain h3
+{
+	color: #E6E6E6;
+	text-shadow: 1px 1px #000000;
+}
+
+#colmain h4,
+#colmain h5
+{
+	color: #BDBDBD;
+}
+
+#colmain h1 a,
+#colmain h2 a,
+#colmain h3 a
+{
+	color: #E6E6E6;
+}
+
+#colmain h1 a:hover,
+#colmain h2 a:hover,
+#colmain h3 a:hover
+{
+	color: #FF6600;
+}
+
+#colmain h4
+#colmain h5
+{
+	color: #E6E6E6;
+}
+
+#colmain #component h1,
+#colmain #component h2,
+#colmain #component h3,
+#colmain #adsense h1,
+#colmain #adsense h2,
+#colmain #adsense h3,
+#cmp_colmain h1,
+#cmp_colmain h2,
+#cmp_colmain h3
+{
+	background-image: url('../images/styles/default/bg.content.png');
+	background-color: #272727;
+	border: 1px solid #333333;
+	box-shadow: 1px 1px 1px #000000;
+	border-radius: 3px 3px 3px 3px;	
+}
+
+#colmain a
+{
+	color: #BDBDBD;
+}
+
+#colmain a:hover
+{
+	color: #FF6600;
+}
+
+#colmain input[type="checkbox"],
+#colmain input[type="radio"]
+{
+	background-color: transparent !important!
+}
+
+#colmain p
+{
+	color: #BDBDBD;
+}
+
+#colmain #component .article-info,
+#cmp_colmain .article-info
+{
+	background-color: #272727;
+	border: 1px solid #333333;
+	box-shadow: 1px 1px 1px #000000;
+	color: #FF6600;
+}
+
+#colmain #component .blog p.readmore a span
+{
+	color: #FF6600;
+}
+
+#colmain span.spacer > span.text label
+{
+	color: #BDBDBD;
+}
+
+#colmain #jform_spacer-lbl,
+#colmain label.invalid,
+#colmain .red,
+#colmain .star,
+#colmain .asterisk
+{
+	color: #FF6600;
+}
+
+.border_bottom
+{
+	border-bottom: 1px #E6E6E6 dotted;
+}
+
+.article-info
+{
+	color: #E6E6E6;
+	text-shadow: 1px 1px #000000;
+}
+
+
+/**************************************************************************************/
+
+
+#system-message dd.error ul,
+#system-message dd.warning ul,
+#system-message dd.notice ul
+{
+	border: 3px solid #FF6600;
+	border-radius: 3px;	
+}
+
+#system-message ul li
+{
+	color: #FF6600;
+}
+
+.invalid
+{
+	border-color: #FF6600;	
+}
+
+
+/**************************************************************************************/
+/* Footer
+/**************************************************************************************/
+/**************************************************************************************/
+
+/**************************************************************************************/
+/* Footer Row 3                                                                       */
+
+
+#footer .row3
+{
+	color: #CFCFCF;
+}
+
+#footer .row3 .content
+{
+	padding-top: 20px;
+	border-top: 1px solid #333333;
+}
+
+#footer .row3 a
+{
+	color: #CFCFCF;
+}
+
+#footer .row3 a:hover
+{
+	color: #FF6600;
+}
+
+
+/**************************************************************************************/
+/**************************************************************************************/
+/* General Element IDs and classes
+/**************************************************************************************/
+/**************************************************************************************/
+
+button,
+.button,
+.validate,
+.readmore,
+#component p.readmore
+{
+	background-color: #2E2E2E;
+	color: #CFCFCF !important;
+	border: 1px solid #333333;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #000000;
+	background-image: url('../images/bg.btn.png');
+}
+
+.readmore a,
+#component p.readmore a
+{
+	color: #CFCFCF !important;
+}
+
+button:hover,
+.button:hover,
+.validate:hover,
+.readmore:hover,
+#component p.readmore:hover
+{
+	background-color: #404040;
+	color: #CFCFCF !important;
+}
+
+#component p.readmore a:hover
+{
+	color: #CFCFCF !important;
+}
+
+.moduletable_menu li a:hover
+{
+	color: #FF6600;
+}
+
+.googlemap
+{
+	background-image: url('../images/styles/default/bg.content.png');
+	background-repeat: repeat;
+	background-color: transparent;
+	color: #E6E6E6;
+	border: 1px solid #333333;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #000000;
+}
+
+#as_accordionmenu 
+{
+	background-image: url('../images/styles/default/bg.content.png');
+	border: 1px solid #333333;	
+}
+
+.slider
+{
+	background-image: url('../images/styles/default/bg.content.png');
+	background-repeat: repeat;	
+	border-radius: 3px;
+}
+
+.as_slider-wrapper .nivoSlider
+{
+	border: 1px solid #333333;	
+}
+

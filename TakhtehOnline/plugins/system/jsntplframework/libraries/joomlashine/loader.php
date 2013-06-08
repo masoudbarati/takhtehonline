@@ -1,0 +1,42 @@
+<?php
+/**
+ * @version     $Id$
+ * @package     JSNExtension
+ * @subpackage  TPLFramework
+ * @author      JoomlaShine Team <support@joomlashine.com>
+ * @copyright   Copyright (C) 2012 JoomlaShine.com. All Rights Reserved.
+ * @license     GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
+ * 
+ * Websites: http://www.joomlashine.com
+ * Technical Support:  Feedback - http://www.joomlashine.com/contact-us/get-support.html
+ */
+
+// No direct access to this file
+defined('_JEXEC') or die('Restricted access');
+
+/**
+ * Autoload class file of JSN Template Framework.
+ *
+ * @param   string  $className  Name of class needs to be loaded.
+ *
+ * @return  boolean
+ */
+function jsn_template_framework_class_loader ($className)
+{
+	if (strpos($className, 'JSNTpl') === 0)
+	{
+		$path  = strtolower(preg_replace('/([A-Z])/', '/\\1', substr($className, 6)));
+		$fullPath = JSN_PATH_TPLFRAMEWORK_LIBRARIES . '/' . $path . '.php';
+
+		if (is_file($fullPath))
+		{
+			include_once $fullPath;
+			return true;
+		}
+
+		return false;
+	}
+}
+
+// Register jsn_template_framework_class_loader for autoloading
+spl_autoload_register('jsn_template_framework_class_loader');

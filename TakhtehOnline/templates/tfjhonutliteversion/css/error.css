@@ -1,0 +1,178 @@
+/*******************************************************************************************/
+/*
+/*	    TFJ HONUT FREE LITE VERSION Joomla! 2.5 Template - May 2013
+/*      Package tpl-tfj-honut-free-lite-j25.zip
+/*	    Version 1.0
+/*
+/*	    This template/design is released under the Creative Commons Attribution 3.0 license.
+/*
+/*      This means that it can be used for private and commercial purposes, edited freely 
+/*	    or redistributed as long as you keep the link back to template sponsors.
+/*
+/*      You CAN NOT remove (or unreadable) these links without our permission. 
+/*	    When you don't want to have link back on the template footer,
+/*	    you have to pay 9 euro via PayPal: contact@templatesforjoomla.eu 
+/*
+/*      BUY LICENSE PREMIUM VERSION!
+/*      Only in Premium Version Full Quickstart Instalation Package and footer link remove option.
+/*      What is quickstart package? - "Quickstart Package" is a TFJ HONUT PRO Template + Joomla 2.5 + all content, all modules, all components and settings used in demo site.
+/*
+/*      How to install Quickstart package?
+/*      Quickstart Package install exactly the same as a normal Joomla! installation package. (To get know more about technical requirements to run Joomla! please visit: Joomla technical requirements).
+/*
+/*      Quickstart Package Extra Extensions (Components, Modules, Plugin) Included:
+/*      Automatic Slideshow Module on frontpage. Nivo Slider is a lightweight Joomla jQuery slideshow module for creating good-looking image sliders. It simply converts an element that wraps images into a slider.
+/*      Gallery plugin & module - Sigplus Gallery (Sigplus Image Gallery Plus is a straightforward way to add image or photo galleries to a Joomla article with a simple syntax. It takes a matter of minutes to set up a gallery but those who are looking for a powerful gallery solution will not be disappointed either: sigplus is suitable for both beginner and advanced users.
+/*      Xmap - the best sitemap component.
+/*      JCE editor - the bes WYSiWYG editor.
+/*      Extra SEO SEF plugin automatically generates description meta tags by pulling text from the content to help with SEO. It also gives you the ability to set different title configurations.
+/*      Extra Cache plugin.
+/*      Multilevel drop-down menu.
+/*      Social Media Icons Module.
+/*      Footer links remove options.
+/*      Support.
+/*      And more...
+/*      
+/*      More information on http://templatesforjoomle.eu
+/*
+/*******************************************************************************************/
+
+
+body {
+background-color:#fff;
+ padding: 0; margin: 0;
+ text-align: center;
+ font: 400 13px 'Exo', Arial, Helvetica, sans-serif;
+ font-size: 13px;
+ line-height: 1.7em;
+ color: #333;
+}
+
+#top_wrapper{
+	border-top: 8px solid #222;
+	border-bottom: 8px solid #eed219;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGElEQVQImWO4ffv2/6dPn6JgBnQBKggCAM8tW+HsLxqLAAAAAElFTkSuQmCC) repeat;
+	width: 100%;
+	height: auto;
+	-moz-box-shadow:    inset 0 0 120px #ccc,
+   -webkit-box-shadow: inset 0 0 120px #ccc,
+   box-shadow:         inset 0 0 120px #ccc,
+   margin-bottom: 50px;
+}
+
+#bottom_wrapper{
+	border-bottom: 8px solid #222;
+	border-top: 8px solid #eed219;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGElEQVQImWO4ffv2/6dPn6JgBnQBKggCAM8tW+HsLxqLAAAAAElFTkSuQmCC) repeat;
+	width: 100%;
+	height: auto;
+	-moz-box-shadow:    inset 0 0 120px #ccc,
+   -webkit-box-shadow: inset 0 0 120px #ccc,
+   box-shadow:         inset 0 0 120px #ccc,
+	padding: 0;
+	overflow: hidden;
+}
+
+#box {
+margin:1px auto;
+padding: 16px;
+width:600px;
+}
+
+#box2 {
+margin:1px auto;
+padding: 16px;
+width:600px;
+}
+
+#box>div>p br { 
+display: none; 
+}
+
+#error-box{
+padding: 0 20px 20px 20px;
+margin:10px 0 0 0;
+}
+
+.outline {
+padding-top: 10px;
+margin-top: 4px;
+}
+
+h1 {
+line-height:100px;
+font-size:90px;
+color:#eed219;
+margin: 10px auto 10px;
+text-align: center;
+font-family: 'Exo', sans-serif;
+}
+
+h2 {
+font-size: 40px;
+margin: 0 0 20px;
+line-height: 40px;
+color:#eed219;
+margin: 5px auto 10px;
+text-align: center;
+font-family: 'Exo', sans-serif;
+}
+
+p {
+border-bottom: 2px solid #D2D2D2;
+padding-bottom: 6px;
+margin: 24px 0 12px 0;
+}
+
+p.info {
+	font-size: 20px;
+	line-height: 140%;
+	margin: 0;
+	padding: 10px;
+	color: #333;
+   background-color: white;
+	border: 1px solid #D2D2D2;
+	text-align: center;
+	font-family: 'Exo', sans-serif;
+	 margin: 0 0 10px 0;
+}
+
+ul {
+list-style-type:square;
+padding:0 0 0 230px;
+text-align: left;
+}
+
+ol {
+padding: 0;
+list-style-position: inside;
+}
+
+ol li,
+ol li strong {
+font-size: 11px !important;
+font-weight: normal
+}
+
+#timing{
+text-align:center;
+color:#eed219;
+margin:0;
+padding:4px 0;
+font-weight:bold;
+font-size: 80px;
+line-height: 100px;
+text-transform: uppercase;
+text-align: center;
+font-family: 'Exo', sans-serif;
+}
+
+a, a:link{
+	color: #c0aa0e;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+a:hover{
+   color: #222;
+}

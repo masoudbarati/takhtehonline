@@ -1,0 +1,185 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2008 - 2011 JoomlaShine.com. All rights reserved.
+* @license   JoomlaShine.com Proprietary License
+*/
+/* ============================== DEFAULT HTML ============================== */
+a {
+	color: #ca0554;
+}
+/* ============================== LAYOUT ============================== */
+ul.menu-topmenu li a:hover {
+	background: #ca0554;
+}
+/* =============== LAYOUT - CONTENT AREA =============== */
+#jsn-gotoplink {
+	background-color: #ca0554;
+	color: #FDFDFD;
+}
+#jsn-gotoplink:hover {
+	background-color: #982323;	
+}
+#jsn-footer a:hover {
+	background-color: #ca0554;
+}
+/* ============================== TYPOGRAPHY ============================== */
+/* =============== TYPOGRAPHY - LINK STYLES =============== */
+/* ----- ACTION LINK ----- */
+.link-action:hover {
+	color:#3d3d3d;
+}
+/* =============== TYPOGRAPHY - TABLE STYLES =============== */
+/* ----- COLOR HEADER TABLE ----- */
+table.style-colorheader thead th,
+table.style-colorstripes tbody td,
+table.style-colorstripes tbody th {
+	border-right:1px solid #f4699d;
+}
+table.style-colorheader thead th.highlight {
+	background-color: #3d3d3d;
+	color:#FFF;
+	font-weight:bold;
+}
+table.style-colorheader thead {
+	background:#D22364;
+}
+table.table-style tbody th,
+table.table-style tbody td,
+ {
+	border-bottom:1px solid #f4699d;
+}
+table.table-style tfoot th,
+table.table-style tfoot td {
+	border-bottom:none
+}
+table.style-colorstripes thead th,
+table.style-colorstripes tbody tr,
+table.style-colorstripes tbody td {
+	border-right:1px solid #f4699d;
+	border-bottom:1px solid #f4699d;
+}
+
+table.style-colorstripes thead th {
+	background-color: #D22364;
+}
+table.style-colorstripes thead th.highlight {
+	background-color: #971645;
+}
+table.style-colorstripes tbody tr {
+	background-color: #BE1E58;
+}
+table.style-colorstripes tbody .highlight {
+	background-color: #bd1955;
+}
+table.style-colorstripes tbody tr.odd {
+	background-color: #DF427D;
+}
+table.style-colorstripes tbody tr.odd .highlight {
+	background-color: #b2164f;
+}
+table.style-colorstripes tbody tr:hover th,
+table.style-colorstripes tbody tr:hover td {
+	background-color: #DD2868;
+}
+table.style-colorstripes tbody tr:hover .highlight {
+	background-color: #FF007F;
+}
+table.style-colorstripes tbody td,
+table.style-colorstripes tbody th {
+	border-left: none;
+}
+table.style-colorstripes tfoot th,
+table.style-colorstripes tfoot td {
+	background-color: #971645;
+}
+.sectiontableheader {
+	background-color: #ca0554;
+}
+/* ----- GREY STRIPES TABLE ----- */
+table.style-greystripes thead th.highlight {
+	background-color: #CA0554;
+	color: #FFF;
+}
+/* ============================== MENU ============================== */
+/* =============== MENU - MAIN MENU =============== */
+/* ----- HOVER STATE ----- */
+div.jsn-modulecontainer ul.menu-mainmenu > li.parent.active > a,
+div.jsn-modulecontainer ul.menu-mainmenu > li.parent:hover > a {
+	background: url(../../images/colors/pink/icon-arrow-down.png) 92% 20px no-repeat
+}
+div.jsn-modulecontainer ul.menu-mainmenu li:hover > a {
+	color: #ca0554;
+}
+/* ----- ACTIVE STATE ----- */
+div.jsn-modulecontainer ul.menu-mainmenu li.active > a {
+	color: #ca0554;
+}
+/* =============== MENU - TREE MENU =============== */
+div.jsn-modulecontainer ul.menu-treemenu > li {
+	border-bottom:1px solid #ed548d;
+}
+/* ----- CURRENT / HOVER STATE ----- */
+div.richbox-1.jsn-modulecontainer ul.menu-treemenu li a:hover,
+div.richbox-1.jsn-modulecontainer ul.menu-treemenu li a.current,
+div.richbox-1.jsn-modulecontainer ul.menu-treemenu ul li a.current:hover,
+div.lightbox-2.jsn-modulecontainer ul.menu-treemenu li a:hover,
+div.lightbox-2.jsn-modulecontainer ul.menu-treemenu li a.current,
+div.lightbox-2.jsn-modulecontainer ul.menu-treemenu ul li a.current:hover {
+	color: #fff;
+	background-color: #BE1E58;
+}
+/* =============== MENU - SIDE MENU =============== */
+/* ---------- 1st LEVEL ---------- */
+div.lightbox-2.jsn-modulecontainer ul.menu-sidemenu > li,
+div.richbox-1.jsn-modulecontainer ul.menu-sidemenu > li {
+	border-bottom:1px solid #ED548D;
+}
+div.richbox-1.jsn-modulecontainer ul.menu-sidemenu > li:hover > a,
+div.richbox-1.jsn-modulecontainer ul.menu-sidemenu > li.active > a,
+div.richbox-1.jsn-modulecontainer ul.menu-sidemenu ul > li.active > a,
+div.lightbox-2.jsn-modulecontainer ul.menu-sidemenu > li:hover > a,
+div.lightbox-2.jsn-modulecontainer ul.menu-sidemenu > li.active > a,
+div.lightbox-2.jsn-modulecontainer ul.menu-sidemenu ul > li.active > a {
+	background-color: #be1e58;
+}
+/* ----- HOVER STATE IN SPECIFIC MODULE BOXES ----- */
+div.lightbox-2 ul.menu-sidemenu > li > a {
+	color: #fff;
+}
+/* ============================== TOOLBAR ============================== */
+#jsn-menu div.display-dropdown.jsn-modulecontainer .jsn-modulecontainer_inner:hover h3.jsn-moduletitle {
+	color: #ca0554;
+}
+/* ============================== MODULE STYLES ============================== */
+/* =============== MODULE STYLES - MODULE BOXES =============== */
+/* ----- RICHBOX-2 ----- */
+div.richbox-1 h3.jsn-moduletitle {
+	background: url(../../images/colors/pink/icon-arrow-up.png) 18% bottom no-repeat;
+}
+body.jsn-direction-rtl div.richbox-1 h3.jsn-moduletitle {
+	background: url(../../images/colors/pink/icon-arrow-up.png) 82% bottom no-repeat;
+}
+div.richbox-1 div.jsn-modulecontent {
+	background-color: #D22364;
+	border-bottom: 5px solid #971645;
+}
+/* ----- LIGHTBOX-2 ----- */
+div.lightbox-2 div.jsn-modulecontent {
+	background: #D22364;
+	color: #fff;
+	border: none;
+}
+/* ============================== JOOMLA! DEFAULT EXTENSIONS ============================== */
+/* =============== JOOMLA! EXTENSIONS - COM_CONTENT =============== */
+/* ----- SECTION / CATEGORY BLOG LAYOUT ----- */
+/* PAGE PAGINATION */
+ul.jsn-pagination li.navigation-page span {
+	background-color: #ca0554;
+	color:#FFF;
+	border-color:#ae0046;
+}
+/* =============== JOOMLA! EXTENSIONS - MOD_BREADCRUMB =============== */
+span.breadcrumbs span.current,
+.breadcrumb li span + span {
+	color: #CA0554;
+}

@@ -1,0 +1,499 @@
+/**************************************************************************************/
+/*
+/*		Designed by 'AS Designing'
+/*		Web: http://www.asdesigning.com
+/*		License: Creative Commons
+/*
+/**************************************************************************************/
+
+/**************************************************************************************/
+/*   Columns Left & Right
+/**************************************************************************************/
+/**************************************************************************************/
+
+#colleft
+{
+	float: left;
+}
+
+#colright
+{
+	float: left;
+}
+
+#colleft h1, 
+#colleft h2, 
+#colleft h3
+{
+	margin: 0px 0px 0px 0px;
+}
+
+#colleft h4
+{
+	padding: 0px 0px 0px 0px;
+	font-size: 13px;
+}
+
+#colleft h4.alignright
+{
+	text-align: right;
+}
+
+#colleft p
+{
+    padding: 25px 0px 10px 0px;
+	overflow: hidden;  
+}
+
+#colleft ul
+{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 10px;
+}
+
+#colleft ul li 
+{
+	margin: 0px 0px 0px 0px;
+	padding: 3px 0px 3px 25px;
+	list-style: outside none;
+	background-image: url('../images/listimg.png');
+	background-position: left top;		
+	background-repeat: no-repeat;
+}
+
+#colleft ul li li
+{
+	padding: 3px 0px 3px 25px;
+}
+
+#colleft ul li:hover,
+#colright ul li:hover
+{
+	background-image: url('../images/listimg.hover.png');
+	background-position: left top;		
+	background-repeat: no-repeat;
+}
+
+#colleft ul li a,
+#colright ul li a  
+{
+    margin: 0px 0px 0px 0px;
+	padding: 10px 0px 10px 0px;
+}
+
+#colleft ul li a:hover,
+#colleft ul li.active a  
+{
+
+}
+
+#colright ul li a:hover,
+#colright ul li.active a  
+{
+}
+
+#colleft ul ul,
+#colright ul ul
+{
+    margin: 0px 0px 0px 0px;
+    padding: 6px 0px 0px 0px;
+}
+
+#colleft ul li.active ul li a,
+#colleft ul ul li a,
+#colright ul ul li a
+{ 
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#colleft ul li.active ul li a:hover,
+#colleft ul ul li a:hover  
+{
+    margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+
+}
+
+#colleft a,
+#colright a
+{
+	outline-style: none;	
+}
+
+#colleft a:hover,
+#colright a:hover
+{
+}
+
+/**************************************************************************************/
+
+#colleft input,
+#colright input
+{
+	width: 214px;
+}
+
+/**************************************************************************************/
+
+#colleft input.button,
+#colright input.button
+{
+	width: 110px;
+	margin: 20px 3px 25px 0px;
+}
+
+#colleft input[type="checkbox"],
+#colleft input[type="radio"]
+{
+	float: left;
+	width: 15px;
+	height: 15px;
+	margin: 0px 5px 0px 0px;	
+	border: none;
+	background-color: transparent;
+}
+
+#colleft img
+{
+	float: left;
+	margin: 0px 18px 16px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#colleft img.left,
+#colright img.left
+{
+	float: left;
+	margin: 0px 15px 15px 0px;
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
+}
+
+#colleft img.right,
+#colright img.right
+{
+	float: right;
+	margin: 0px 0px 15px 15px;
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
+}
+
+#colleft .post img,
+#colright .post img
+{
+	float: left;
+	margin: 4px 15px 10px 0px;
+	padding: 0px;
+	border: none;
+}
+
+#colleft .post p,
+#colright .post p
+{
+	clear: both;
+}
+
+#colleft .testimonials,
+#colright .testimonials
+{
+	font-style: italic; 
+}
+
+#colleft .sign,
+#colright .sign
+{
+	font-size: 11px;
+	text-align: right;
+	font-style: normal;
+	margin: 8px 0px 0px 0px;	
+}
+
+#colleft .testimonials img,
+#colright .testimonials img
+{
+	float: left;
+	padding: 0px;
+	margin: 0px 17px 6px 0px;	
+	border: none;
+	background-color: transparent;	
+}
+
+#colleft .item-separator,
+#colright .item-separator
+{
+	height: 34px;	
+}
+
+#colleft #search,
+#colright #search
+{
+}
+
+#colleft #search input,
+#colright #search input
+{
+	width: 200px;
+	padding: 4px 3px 4px 30px;
+}
+
+#colleft .post,
+#colright .post
+{
+    padding: 0px 0px 25px 0px;
+	overflow: hidden; 
+}
+
+#colleft .posttitle,
+#colright .posttitle
+{
+	height: 18px;
+	float: left;
+    margin: 0px 0px 20px 0px;
+	padding: 3px 30px 0px 30px;
+	text-align: center;
+	font-size: 12px;
+}
+
+#colleft .more,
+#colright .more
+{
+	height: 15px;
+	float: right;
+}
+
+#colleft .news,
+#colright .news
+{
+	padding: 0px 0px 20px 0px;
+	margin: 0px 0px 22px 0px;
+	overflow: hidden;
+}
+
+#colleft .tips,
+#colright .tips,
+#colleft .why,
+#colright .why
+{
+	padding: 5px 0px 6px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+#colleft .tip_last,
+#colright .tip_last,
+#colleft .why_last,
+#colright .why_last
+{
+	padding: 5px 0px 0px 0px;
+	margin: 0px 0px 1px 0px;
+}
+
+#colleft .news h4,
+#colright .news h4
+{
+	padding: 0px 0px 10px 64px;
+	text-shadow: none;
+}
+
+#colright .news h4
+{
+	padding: 0px 0px 10px 0px;
+}
+
+/**************************************************************************************/
+
+#colleft .moduletable,
+#colleft .moduletable_text, 
+#colleft .moduletable_menu,
+#colleft .contentpaneopen
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
+}
+
+#colleft .moduletable #login-form ul,
+#colright .moduletable #login-form ul,
+{
+	margin: 0px 0px 0px 10px;
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
+}
+
+
+#colleft #whosonline .moduletable p,
+#colleft .moduletable .custom p,
+#colleft .moduletable_menu .menu
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
+}
+
+#colleft .moduletable #login-form,
+#colright .moduletable #login-form
+{
+	padding: 0px 0px 0px 0px;
+}
+
+#colleft .moduletable_menu ul.menu,
+#colleft .moduletable ul.menu
+{
+	margin: 0px 3px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
+}
+
+#colright .moduletable_menu ul.menu,
+#colright .moduletable ul.menu
+{
+	margin: 0px 0px 0px 10px;
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;	
+}
+
+/**************************************************************************************/
+
+#colleft ul.whosonline,
+#colright ul.whosonline
+{
+	margin: 20px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#colleft ul.whosonline li,
+#colright ul.whosonline li
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+	background-image: none;
+}
+
+#colleft .inputbox,
+#colright .inputbox
+{
+	font-size: 12px;
+}
+
+#colleft .banneritem_text,
+#colright .banneritem_text
+{
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#colleft .custom,
+#colright .custom
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#colleft #form-login-username
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+#colleft #form-login-password
+{
+	margin: 0px 0px 0px 0px;
+	padding: 10px 0px 0px 0px;
+}
+
+
+#colleft #form-login-remember
+{
+    margin: 0px 0px 5px 0px;
+	padding: 20px 0px 0px 0px;	
+	border: none;
+	overflow: hidden;
+}
+
+
+#colleft #form-login-remember label,
+#colright #form-login-remember label
+{
+	float: left;
+	margin-right: 10px;
+}
+
+#colleft #login-form fieldset
+{
+    margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+#colleft .logout-button
+{
+	min-height: 45px;	
+}
+
+#colleft .search,
+#colright .search
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+/**************************************************************************************/
+/*   Rows 			   																  */
+
+#colleft .row0,
+#colleft .row1,
+#colleft .row2,
+#colleft .row3
+{
+	clear: both;
+    margin: 0px 0px 25px 0px;	
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
+}
+
+#colleft .row0 h1,
+#colleft .row1 h1,
+#colleft .row2 h1,
+#colleft .row3 h1,
+#colleft .row0 h2,
+#colleft .row1 h2,
+#colleft .row2 h2,
+#colleft .row3 h2,
+#colleft .row0 h3,
+#colleft .row1 h3,
+#colleft .row2 h3,
+#colleft .row3 h3
+{
+    margin: 0px 3px 20px 0px;
+	padding: 8px 22px;
+}
+
+#colleft .row0 .moduletable form,
+#colleft .row0 .moduletable .menu,
+#colleft .row0 .moduletable .custom,
+#colleft .row1 .moduletable form,
+#colleft .row1 .moduletable .menu,
+#colleft .row1 .moduletable .custom,
+#colleft .row2 .moduletable form,
+#colleft .row2 .moduletable .menu,
+#colleft .row2 .moduletable .custom,
+#colleft .row3 .moduletable form,
+#colleft .row3 .moduletable .menu,
+#colleft .row3 .moduletable .custom,
+{
+	margin: 0px 3px 0px 0px;	
+}
+
+#colleft .row4 .moduletable,
+#colleft .row4 .moduletable_text, 
+#colleft .row4 .moduletable_menu,
+#colleft .row4 .contentpaneopen,
+#colleft .row5 .moduletable,
+#colleft .row5 .moduletable_text, 
+#colleft .row5 .moduletable_menu,
+#colleft .row5 .contentpaneopen
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
+}

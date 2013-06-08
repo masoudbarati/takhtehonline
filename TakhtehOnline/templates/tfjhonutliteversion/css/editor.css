@@ -1,0 +1,128 @@
+/*******************************************************************************************/
+/*
+/*	    TFJ HONUT FREE LITE VERSION Joomla! 2.5 Template - May 2013
+/*      Package tpl-tfj-honut-free-lite-j25.zip
+/*	    Version 1.0
+/*
+/*	    This template/design is released under the Creative Commons Attribution 3.0 license.
+/*
+/*      This means that it can be used for private and commercial purposes, edited freely 
+/*	    or redistributed as long as you keep the link back to template sponsors.
+/*
+/*      You CAN NOT remove (or unreadable) these links without our permission. 
+/*	    When you don't want to have link back on the template footer,
+/*	    you have to pay 9 euro via PayPal: contact@templatesforjoomla.eu 
+/*
+/*      BUY LICENSE PREMIUM VERSION!
+/*      Only in Premium Version Full Quickstart Instalation Package and footer link remove option.
+/*      What is quickstart package? - "Quickstart Package" is a TFJ HONUT PRO Template + Joomla 2.5 + all content, all modules, all components and settings used in demo site.
+/*
+/*      How to install Quickstart package?
+/*      Quickstart Package install exactly the same as a normal Joomla! installation package. (To get know more about technical requirements to run Joomla! please visit: Joomla technical requirements).
+/*
+/*      Quickstart Package Extra Extensions (Components, Modules, Plugin) Included:
+/*      Automatic Slideshow Module on frontpage. Nivo Slider is a lightweight Joomla jQuery slideshow module for creating good-looking image sliders. It simply converts an element that wraps images into a slider.
+/*      Gallery plugin & module - Sigplus Gallery (Sigplus Image Gallery Plus is a straightforward way to add image or photo galleries to a Joomla article with a simple syntax. It takes a matter of minutes to set up a gallery but those who are looking for a powerful gallery solution will not be disappointed either: sigplus is suitable for both beginner and advanced users.
+/*      Xmap - the best sitemap component.
+/*      JCE editor - the bes WYSiWYG editor.
+/*      Extra SEO SEF plugin automatically generates description meta tags by pulling text from the content to help with SEO. It also gives you the ability to set different title configurations.
+/*      Extra Cache plugin.
+/*      Multilevel drop-down menu.
+/*      Social Media Icons Module.
+/*      Footer links remove options.
+/*      Support.
+/*      And more...
+/*      
+/*      More information on http://templatesforjoomle.eu
+/*
+/*******************************************************************************************/
+
+body {
+background-color:#fff;
+ padding: 0; margin: 0;
+ text-align: left;
+ font: 400 13px 'Exo', Arial, Helvetica, sans-serif;
+ font-size: 13px;
+ line-height: 1.7em;
+ color: #333;
+}
+
+ p {	margin: 10px 0px 15px 0px; }
+
+a, a:link{
+	color: #eed219;
+	text-decoration: underline;
+}
+ 
+ul{
+ 	margin: 5px 0 15px 5px;
+	list-style: none;
+ }
+ 
+ol{
+ 	margin: 5px 0 15px 22px;
+ }
+ 
+ul li{
+	background: url(../images/arrowtrans.png) left 7px no-repeat;
+	padding: 0 0 0 15px;
+	text-decoration: none;
+ }
+ 
+
+h1, h2, h3, h4, h5, blockquote, blockquote p, .contentheading, .componentheading { font-family: 'Exo', sans-serif; font-weight: 700; }
+
+h1, .contentheading, .componentheading{
+	font-size: 24px;
+	color: #222;
+	margin: 0;
+	padding: 8px 0 8px 12px;
+}
+
+ h2{
+	font-size: 18px;
+	margin: 12px 0 5px 0;
+   color: #222;
+}
+
+h3{
+	font-size: 16px;
+	margin: 10px 0 4px 0;
+	color: #222;
+}
+
+h4{
+	font-size: 14px;
+	margin: 8px 0 3px 0;
+	color: #222;
+}
+
+h5{
+	font-size: 13px;
+	margin: 8px 0 3px 0;
+	color: #222;
+}
+
+thead tr td{
+	padding: 5px 15px;
+	border: 1px solid #222;
+	color: #333;
+}
+
+ th {
+	padding: 5px 5px 5px 15px;
+	border: 1px solid #222;
+	font-size: 16px;
+	color: #333;
+}
+
+ tr td {
+	padding: 5px 15px;
+	border: 1px dotted #222;
+}
+
+blockquote{margin:1em 0 1.5em 0;padding:.6em 1em .6em .6em;color:#222;  font-size: 20px; line-height: 150%;
+background-color: #eed219; padding: 5px;;
+}
+blockquote p{padding:8px;margin:2px;}
+blockquote blockquote{margin:1em 0 1em;}

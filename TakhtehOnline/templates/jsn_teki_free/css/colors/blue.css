@@ -1,0 +1,153 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2008 - 2011 JoomlaShine.com. All rights reserved.
+* @license   GNU/GPL v2 http://www.gnu.org/licenses/gpl-2.0.html
+*/
+/* ============================== DEFAULT HTML ============================== */
+a {
+	color: #009aca;
+}
+/* ============================== LAYOUT ============================== */
+/* =============== LAYOUT - OVERALL PAGE =============== */
+#jsn-master {
+	background-color: #E5E5E5;
+}
+/* =============== LAYOUT - HEADER AREA =============== */
+#jsn-header {
+	background: #374143 url(../../images/colors/blue/bg-header.png) left bottom repeat-x; 
+}
+/* =============== LAYOUT - CONTENT TOP AREA =============== */
+#jsn-content-top {
+	color: #D9F1FB;
+}
+#jsn-promo {
+	background-color: #23B0E5;
+}
+.jsn-haspromoleft #jsn-pos-promo,
+.jsn-haspromoright #jsn-pos-promo,
+#jsn-pos-promo-left,
+#jsn-pos-promo-right {
+	border-top: 5px solid #1898C9;
+}
+/* =============== LAYOUT - CONTENT AREA =============== */
+#jsn-pos-breadcrumbs {
+	background: url(../../images/colors/blue/bg-box-style-dark.png) left bottom no-repeat;
+}
+#jsn-pos-breadcrumbs_inner {
+	background: url(../../images/colors/blue/bg-box-style-dark.png) right bottom no-repeat;
+}
+/* ============================== TYPOGRAPHY ============================== */
+/* =============== TYPOGRAPHY - LINK STYLES =============== */
+/* ----- ACTION LINK ----- */
+.link-action {
+	border-bottom: 1px solid #009ACA;
+}
+.link-action:hover {
+	background-color: #009ACA;
+}
+#jsn-promo .link-action:hover,
+div[class*="richbox-"] .link-action:hover {
+	color: #009ACA;
+}
+/* =============== TYPOGRAPHY - TABLE STYLES =============== */
+.sectiontableheader {
+	background-color: #1898C9;
+}
+/* ============================== MENU ============================== */
+/* =============== MENU - MAIN MENU =============== */
+div.jsn-modulecontainer ul.menu-mainmenu > li > a {
+	background-color: #566769;
+}
+/* ----- 1st LEVEL ----- */
+div.jsn-modulecontainer ul.menu-mainmenu ul {
+	background-color: #23B0E5;
+}
+div.jsn-modulecontainer ul.menu-mainmenu ul li a {
+	border-bottom: 1px solid #68C5E8;
+	border-left: 1px solid #68C5E8;
+	border-right: 1px solid #68C5E8;
+}
+/* ----- HOVER STATE ----- */
+div.jsn-modulecontainer ul.menu-mainmenu li:hover > a {
+	background-color: #23AEE5;
+}
+div.jsn-modulecontainer ul.menu-mainmenu ul li:hover > a {
+	background-color: #158DBB;
+}
+/* ----- ACTIVE STATE ----- */
+div.jsn-modulecontainer ul.menu-mainmenu li.active > a {
+	background-color: #23AEE5;
+}
+div.jsn-modulecontainer ul.menu-mainmenu ul li.active > a {
+	background-color: #158DBB;
+}
+/* =============== MENU - TREE MENU =============== */
+/* ----- GENERAL ----- */
+div.richbox-1 ul.menu-treemenu li {
+	border-bottom-color: #8FD8F3;
+}
+div.richbox-2 ul.menu-treemenu li {
+	border-bottom-color: #72888B;
+}
+/* ----- CURRENT / HOVER STATE ----- */
+div.richbox-1 ul.menu-treemenu li a:hover,
+div.richbox-1 ul.menu-treemenu li a.current {
+	background-color: #189DCF;
+}
+div.richbox-2 ul.menu-treemenu li a:hover,
+div.richbox-2 ul.menu-treemenu li a.current {
+	background-color: #485759;
+}
+/* =============== MENU - TOP MENU =============== */
+ul.menu-topmenu li a {
+	color: #96A8A9;
+}
+/* ============================== MODULE STYLES ============================== */
+/* =============== MODULE STYLES - MODULE BOXES =============== */
+div.richbox-1 .jsn-moduletitle {
+	background: url(../../images/colors/blue/bg-box-style-light.png) left bottom no-repeat;
+}
+div.richbox-1 .jsn-moduletitle .jsn-moduletitle_inner1 {
+	background: url(../../images/colors/blue/bg-box-style-light.png) right bottom no-repeat;
+}
+div.richbox-2 .jsn-moduletitle {
+	background: url(../../images/colors/blue/bg-box-style-dark.png) left bottom no-repeat;
+}
+div.richbox-2 .jsn-moduletitle .jsn-moduletitle_inner1 {
+	background: url(../../images/colors/blue/bg-box-style-dark.png) right bottom no-repeat;
+}
+div.richbox-1 .jsn-moduletitle .jsn-moduletitle_inner2 {
+	background-color: #1898C9;
+}
+div.richbox-2 .jsn-moduletitle .jsn-moduletitle_inner2 {
+	background-color: #374143;
+}
+/* ----- RICHBOX ----- */
+div.richbox-1 .jsn-modulecontent {
+	border-top-color: #56C2EB;
+	background-color: #23B0E5;
+}
+div.richbox-2 .jsn-modulecontent {
+	border-top-color: #4A595B;
+	background-color: #57676A;
+}
+/* ----- CUSTOM BOX STYLE IN SPECIFIC POSITION ----- */
+#jsn-pos-innerleft div.richbox-1 .jsn-modulecontent,
+#jsn-pos-innerright div.richbox-1 .jsn-modulecontent {
+	border-top-color: #C4DDE3;
+}
+#jsn-pos-innerleft div.richbox-2 .jsn-modulecontent,
+#jsn-pos-innerright div.richbox-2 .jsn-modulecontent {
+	border-top-color: #D4D4D4;
+}
+/* ============================== JOOMLA! DEFAULT EXTENSIONS ============================== */
+/* =============== JOOMLA! EXTENSIONS - COM_CONTENT =============== */
+/* ----- SECTION / CATEGORY BLOG LAYOUT ----- */
+/* PAGE PAGINATION */
+ul.jsn-pagination li.navigation-page span {
+	background-color: #23B0E5;
+}
+/* =============== JOOMLA! EXTENSIONS - MOD_BREADCRUMB =============== */
+span.breadcrumbs {
+	background-color: #374143;
+}

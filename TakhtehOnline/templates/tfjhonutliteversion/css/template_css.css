@@ -1,0 +1,3906 @@
+/*******************************************************************************************/
+/*
+/*	    TFJ HONUT FREE LITE VERSION Joomla! 2.5 Template - May 2013
+/*      Package tpl-tfj-honut-free-lite-j25.zip
+/*	    Version 1.0
+/*
+/*	    This template/design is released under the Creative Commons Attribution 3.0 license.
+/*
+/*      This means that it can be used for private and commercial purposes, edited freely 
+/*	    or redistributed as long as you keep the link back to template sponsors.
+/*
+/*      You CAN NOT remove (or unreadable) these links without our permission. 
+/*	    When you don't want to have link back on the template footer,
+/*	    you have to pay 9 euro via PayPal: contact@templatesforjoomla.eu 
+/*
+/*      BUY LICENSE PREMIUM VERSION!
+/*      Only in Premium Version Full Quickstart Instalation Package and footer link remove option.
+/*      What is quickstart package? - "Quickstart Package" is a TFJ HONUT PRO Template + Joomla 2.5 + all content, all modules, all components and settings used in demo site.
+/*
+/*      How to install Quickstart package?
+/*      Quickstart Package install exactly the same as a normal Joomla! installation package. (To get know more about technical requirements to run Joomla! please visit: Joomla technical requirements).
+/*
+/*      Quickstart Package Extra Extensions (Components, Modules, Plugin) Included:
+/*      Automatic Slideshow Module on frontpage. Nivo Slider is a lightweight Joomla jQuery slideshow module for creating good-looking image sliders. It simply converts an element that wraps images into a slider.
+/*      Gallery plugin & module - Sigplus Gallery (Sigplus Image Gallery Plus is a straightforward way to add image or photo galleries to a Joomla article with a simple syntax. It takes a matter of minutes to set up a gallery but those who are looking for a powerful gallery solution will not be disappointed either: sigplus is suitable for both beginner and advanced users.
+/*      Xmap - the best sitemap component.
+/*      JCE editor - the bes WYSiWYG editor.
+/*      Extra SEO SEF plugin automatically generates description meta tags by pulling text from the content to help with SEO. It also gives you the ability to set different title configurations.
+/*      Extra Cache plugin.
+/*      Multilevel drop-down menu.
+/*      Social Media Icons Module.
+/*      Footer links remove options.
+/*      Support.
+/*      And more...
+/*      
+/*      More information on http://templatesforjoomle.eu
+/*
+/*******************************************************************************************/
+
+/* Global reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline}:focus{outline:0}body{line-height:1;color:#fff;background:#fff}table{border-collapse:separate;border-spacing:0}caption,th,td{text-align:left;font-weight:normal}blockquote:before,blockquote:after,q:before,q:after{content:""}blockquote,q{quotes:"" ""}
+input,button{overflow:visible}strong{font-weight:bold}em{font-style:normal}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+* {outline: 0px;}
+
+html, body { height: 100%; }
+
+body {
+background-color:#fff;
+ padding: 0; margin: 0;
+ text-align: center;
+ font: 400 13px 'Exo', Arial, Helvetica, sans-serif;
+ font-size: 13px;
+ line-height: 1.7em;
+ color: #333;
+}
+
+img {
+	border: none;
+	border: 0;
+}
+
+h1, h2, h3, h4, h5, span#sitedesc, blockquote, blockquote p, button, .button, button[type="submit"], .contentheading, .componentheading, #system-message, #searchForm legend,
+div.search ol li a, .sectionlist ul li a, .weblinks ul li a, .newsfeeds ul li a, #josForm legend, .tip-title,
+div.bannerheader, div.banneritem_text a, thead tr td, div.pagination, div.pagenavcounter, table.contenttoc th, div.pagenavbar, th, a.readon, p.readmore a, a.readmore, div.item a.readmore, .widget-wrap h2 a, .widget-wrap h2, span.item-title,
+div.news-feed ul li a, div.profile legend, div.profile-edit fieldset legend, div.search dl.search-results dt.result-title{ font-family: 'Exo', sans-serif; }
+
+div#footer ul li a, div#gotop { font: 700 16px 'Exo', sans-serif; text-transform: uppercase;}
+
+#main {
+   margin: 0 auto;
+	margin-bottom: 24px;
+   padding: 20px 10px 0 10px;
+   width: 990px;
+	height: auto;
+	overflow: hidden;
+	clear: both;
+}
+
+#top_wrapper{
+	border-top: 8px solid #222;
+	border-bottom: 8px solid #eed219;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGElEQVQImWO4ffv2/6dPn6JgBnQBKggCAM8tW+HsLxqLAAAAAElFTkSuQmCC) repeat;
+	width: 100%;
+	height: auto;
+	-moz-box-shadow:    inset 0 0 120px #ccc,
+   -webkit-box-shadow: inset 0 0 120px #ccc,
+   box-shadow:         inset 0 0 120px #ccc,
+}
+
+#topmenu_wrapper{
+	width: 100%;
+	height: 40px;
+	background-color: #eed219;
+}
+
+#topmenu{
+	width: 980px;
+	height: 44px;
+	margin: 0 auto;
+	padding: 10px 0;
+	background-color: #eed219;
+}
+
+
+
+/*Main Menu*/
+
+
+#topmenu .menu, #topmenu .menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+#topmenu .menu {
+	line-height:	1.0;
+}
+#topmenu .menu ul {
+	position:		absolute;
+	top:			-999em;
+	width:			200px;
+}
+#topmenu .menu ul li {
+	width:			100%;
+	text-align: left;
+}
+#topmenu .menu li:hover {
+	visibility:		inherit;
+}
+#topmenu .menu li {
+	float:			left;
+	position:		relative;
+	margin: 0 1px 0 0;
+}
+#topmenu .menu a {
+	display:		block;
+	position:		relative;
+}
+
+#topmenu .menu {
+	width: auto;
+	margin: 0 auto;
+	margin-left: 10px;
+}
+#topmenu .menu a {
+    font: 700 16px 'Exo', sans-serif;
+	padding: 12px 14px 12px 14px;
+	text-decoration:none;
+	line-height: normal;
+	text-transform: uppercase;
+    text-shadow: 0 1px #000;
+}
+#topmenu .menu a, #topmenu .menu a:visited  {
+	color:			#222;
+	-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;
+}
+
+#topmenu .menu li:hover, #topmenu .menu li.sfHover,
+#topmenu .menu a:focus, #topmenu .menu a:hover, #topmenu .menu a:active {
+	background-color: #222;
+	outline:		0;
+	color: #eed219;
+	
+}
+#topmenu .menu li.active a, #topmenu .menu li.sfHover a, #topmenu .menu li a:hover {
+	background-color:#222;
+	color: #eed219;
+}
+
+
+
+#topbottom{
+	width: 959px;
+	height: 31px;
+	padding: 7px 7px 7px 15px;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 2px;
+	text-align: left;
+	color: #333;
+	font-size: 11px;
+}
+
+#topbottom span{
+	margin: 1px 1px 0 0;
+	display: inline;
+	color: #222;
+	font-weight: bold;
+}
+
+#topbottom span.showHere{
+	font-weight: normal;
+	color: #333;
+}
+
+div.breadcrumbs{
+float: left;
+margin: 2px 0px 0px;
+white-space: nowrap;
+width: 950px;
+letter-spacing: 1px;
+}
+
+#topbottom a.pathway{
+	color: #333;
+	text-decoration: none;
+}
+
+#topbottom a.pathway:hover{
+   color: #d6be10;
+}
+
+#top{
+	width: 980px;
+	height: 210px;
+	padding: 0 0 10px 0;
+	text-align: center;
+	overflow: hidden;
+	clear: both;
+	margin: 0 auto;
+}
+
+img#logo{
+	margin: 37px 0 0 7px;
+	display: inline;
+}
+
+h1#logo{
+	font-size: 84px;
+	margin: 0 auto;
+	padding: 0;
+	color: #222;
+	display: block;
+	background: none;
+	text-shadow: 1px 1px 1px white;
+	line-height: 130px;
+	font-weight: 700;
+}
+
+h1#logo a{
+	color: #333;
+	text-decoration: none;
+}
+
+h1#logo a span{
+	color: #eed219;
+	text-decoration: none;
+}
+
+span#sitedesc{
+	color: #333;
+	font-size: 24px;
+	line-height: normal;
+	text-align: center;
+	font-weight: 300;
+	width: 100%;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+h1#logo a:hover{
+	color: black;
+	text-decoration: none;
+}
+
+#banner, .slide-padding{
+	background-color: #222;
+	border-bottom: 1px solid #4b4b4b;
+	border-left: 1px solid #4b4b4b;
+	border-right: 1px solid #4b4b4b;
+	text-align: left;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#banner{
+	width: 980px;
+	height: auto;
+}
+
+#bottom_wrapper{
+
+	border-top: 8px solid #eed219;
+	background: #222;
+	width: 100%;
+	height: auto;
+	-moz-box-shadow:    inset 0 0 120px #ccc,
+   -webkit-box-shadow: inset 0 0 120px #ccc,
+   box-shadow:         inset 0 0 120px #ccc,
+	padding: 0;
+	overflow: hidden;
+	font-size: 15px;
+}
+
+/*bottom modules*/
+
+#bottom_modules{
+	width: 980px;
+	height: auto;
+	margin: 0 auto;
+	text-align: left;
+   padding: 41px 0 0 0;
+	overflow: hidden;
+	clear: both;
+	color: #d8d8d8;
+	text-shadow: 1px 1px 1px #000;
+}
+
+#bottom_modules #user1-4, #bottom_modules #user2-4, #bottom_modules #user5-4, #bottom_modules #user6-4{
+   float: left;
+	display: inline;
+	width: 222px;
+}
+
+
+#bottom_modules #user1-3, #bottom_modules #user2-3, #bottom_modules #user5-3, #bottom_modules #user6-3{
+   float: left;
+	display: inline;
+	width: 306px;
+}
+
+#bottom_modules #user1-3, #bottom_modules #user2-3,
+#bottom_modules #user1-4, #bottom_modules #user2-4, #bottom_modules #user5-3, #bottom_modules #user5-4{
+	margin: 0 30px 0 0;
+	display: inline;
+}
+
+#bottom_modules #user1-2, #bottom_modules #user2-2, #bottom_modules #user5-2, #bottom_modules #user6-2{
+   float: left;
+	display: inline;
+	width: 475px;
+}
+
+#bottom_modules #user1-2{
+	margin: 0 30px 0 0;
+}
+
+#bottom_modules h3, #bottomgallery h3{
+	border-bottom: 3px solid #eed219;
+	color: #eed219;
+	background-color: transparent;
+	font-size: 20px;
+	padding: 0 15px 5px 15px;
+	margin: 0 0 10px 0;
+}
+
+#bottom_modules ul, #bottomgallery ul{
+	list-style: none;
+	margin: 0 0 15px 0;
+	padding: 0;
+}
+
+#bottom_modules ul li, #bottomgallery ul li{
+   margin: 0 0 3px 0;
+  background: url(../images/arrow.png) left 7px no-repeat;
+  padding: 0 0 0 12px;
+}
+
+#bottom_modules .moduletable ul li a, #bottom_modules a, #bottomgallery ul li a{
+	text-decoration: none;
+	color: #d8d8d8;
+	text-shadow: 1px 1px 1px #000;
+}
+
+#bottom_modules .moduletable ul li a:hover, #bottom_modules a:hover, #bottomgallery a:hover{
+	color: #eed219;
+}
+
+#bottom_modules a, #bottomgallery a{
+	color: #d8d8d8;
+	text-decoration: none;
+}
+
+#bottom_modules a:hover, #bottomgallery a:hover{
+   color: #eed219;
+}
+
+#bottom_modules  .module{
+	margin: 0 0 30px 0;
+	float: left;
+	width: 100%;
+	height: auto;
+} 
+
+#bottom_modules .modulecontent, #bottomgallery .modulecontent{
+	padding: 0 15px;
+}
+
+
+#bottom{
+	width: 980px;
+	height: auto;
+	text-align: center;
+	margin-top: 20px 0 12px 0;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+#bottomgallery_wrapper{
+	width: 100%;
+	height: auto;
+	background-color: #1c1c1c;
+	padding: 20px 0;
+}
+
+#bottomgallery{
+	width: 980px;
+	height: auto;
+	margin: 0 auto;
+	margin-bottom: 8px;
+	overflow: hidden;
+	clear: both;
+	text-align: left;
+}
+
+#banner p{
+   margin: 0;
+	padding: 0;
+}
+
+#sidebar-left{
+	width: 255px;
+	height: auto;
+	float: left;
+	text-align: left;
+	margin: 12px 0 0 0;
+}
+
+#sidebar-right{
+	width: 255px;
+	height: auto;
+	float: right;
+	text-align: left;
+	margin: 12px 0 0 0;
+}
+
+div#contentlr{
+	width: 450px;
+	height: auto;
+	float: left;
+	margin: 12px 0 0 10px;
+	text-align: left;
+}
+
+div#contentfull{
+	width: 980px;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 12px;
+	text-align: left;
+}
+
+div#contentl{
+	width: 715px;
+	height: auto;
+	float: right;
+	text-align: left;
+	margin: 12px 0 0 0;
+}
+
+div#contentr{
+	width: 715px;
+	height: auto;
+	float: left;
+	text-align: left;
+	margin: 12px 0 0 0;
+}
+
+a, a:link, a:visited, #sidebar-left a, #sidebar-right a{
+	color: #c8b10f;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #eed219;
+	text-decoration: underline;
+}
+
+#sidebar-left a:hover, #sidebar-right a:hover{
+	color: #eed219;
+	text-decoration: none;
+}
+
+#footer{
+   width: 950px;
+   height: 25px;
+	font-size: 15px;
+	overflow: hidden;
+	clear: both;
+	margin: 0 auto;
+	padding: 20px 15px 0 15px;
+	color: #b5b5b5;
+}
+
+#footer ul{
+	list-style: none;
+	margin: 0 auto;
+	color: #b5b5b5;
+}
+
+#footer ul li{
+display: inline;
+padding: 0 12px;
+}
+
+#footer ul li:first-child{
+display: inline;
+padding: 0 12px 0 0;
+}
+
+#footer ul li a {
+color: #eed219;
+text-decoration: none;
+}
+
+#footer ul li a:hover {
+color: #d8d8d8;
+}
+
+#copyright_wrap{
+	width: 100%;
+	height: auto;
+	min-height: 40px;
+	color: #d8d8d8;
+	padding: 0 0 15px 0;
+}
+
+#copyright{
+   width: 980px;
+	height: auto;
+	font-size: 12px;
+	color: #d8d8d8;
+	padding: 10px 6px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#copyright a, div#footbottom a{
+	color: #d8d8d8;
+	text-decoration: none;
+}
+
+#copyright a:hover, div#footbottom a:hover{
+	color: #eed219;
+}
+
+div#footbottom{
+	width: 950px;
+	height: auto;
+	overflow: hidden;
+	clear: both;
+	color: #d8d8d8;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 0 15px;
+}
+
+p#cop{
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin: 0;
+}
+
+p#author{
+	width: 100%;
+	float: right;
+	text-align: center;
+	margin: 0;
+}
+
+/*
+ * general
+ * used by Jommla core components
+ */
+ 
+ h1, h2, h3, h4, h5, h6 {
+	line-height: 100%;
+	line-height: normal;
+}
+
+ p {	margin: 10px 0px 15px 0px; }
+ 
+.blogintro  p {	margin: 10px 0px 0 0px; }
+ 
+
+.blog h1.pagetitle, .search h1.pagetitle, .sectionlist h1.pagetitle, .categorylist h1.pagetitle, .poll h1.pagetitle, #josForm legend, .weblinks h1.pagetitle, .newsfeeds h1.pagetitle,
+h2.pagetitle{
+	font-size: 32px;
+	color: #222;
+	margin: 0;
+	padding: 8px 0 8px 15px;
+}
+
+div#contentfull div.blog h2.title, .category-desc h2{
+	font-size: 28px;
+	color: #222;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+}
+
+h1.pagetitle-featured{
+	font-size: 32px;
+	color: #222;
+	margin: 0;
+	text-align: center;
+	padding: 20px 0 30px 0;
+	background: transparent;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+#josForm legend, .contentheading, .componentheading, body.contentpane .componentheading, .article h2.title, h2.componentheading, h1, .article h2.componentheading, #articlecontent h1, h2.category-list-title {
+	font-size: 28px;
+	color: #222;
+	margin: 0;
+	padding: 15px 0 0 15px;
+}
+
+div.article h1.title, div.blog h1.title, div.blog h2.title-top, #xmap h1, div.search h1, h1#categories-list, h1.category-list, h1.componentheading, h1.contact, h2.contact, h2.contentheading, div.login h1, div.com-user h1, div.profile h1, div.logout h1, div.reset h1, div.remind h1, h2.category-list-title{
+	font-size: 32px;
+	color: #222;
+	margin: 0;
+	padding: 15px 0 15px 15px;
+	background: transparent;
+}
+
+div.article h1.title+h2, h1.componentheading+h2{
+	color: #222;
+	background: none;
+	border-bottom: 0;
+}
+
+div.article h1.title+h2 a{
+	color: #222;
+}
+
+h1#archive-title{
+	font-size: 28px;
+	color: #222;
+	margin: 0;
+	padding: 8px 0 8px 15px;
+}
+
+div.article h1.title a, h1.componentheading a{
+	color: #222;
+	text-decoration: none;
+}
+
+.cols-4 h2.title{
+	font-size: 24px !important;
+}
+
+#articlecontent .contentheading, #articlecontent .componentheading, #articlecontent h1{
+	padding: 8px 0 8px 12px;
+}
+
+div.img-fulltext{
+	margin: 15px 0 0 0;
+}
+
+/* ++++++++++++++  image float style ++++++++++++++ */
+
+.img-fulltext.left {
+    float:left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.img-intro.left {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.img-fulltext.right {
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.img-intro.right {
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* ++++++++++++++ end  image float style ++++++++++++++ */
+
+
+ div.description, div.category-desc, .logout-description {
+	margin: 0;
+	padding: 0 15px 18px 15px;
+	overflow: hidden;
+	color: #333;
+	border-bottom: 1px solid #222;
+}
+
+div.categories-list div.description, div.com-newsfeed div.description{
+	border-left: 0;
+	border-right: 0;
+}
+
+ div.description img.left {
+	margin-right: 15px;
+	float: left;
+}
+
+ div.description img.right {
+	margin-left: 15px;
+	float: right;
+}
+
+ div.filter {
+	margin: 10px 0;
+	padding: 0 0 0 10px;
+}
+
+form.josForm{
+	padding: 0 15px 15px 15px;
+}
+
+
+thead tr td{
+	font-size: 16px;
+	color: #333;
+	font-weight: normal !important;
+}
+
+ th {
+	padding: 5px 5px 5px 15px;
+	border: 1px solid #222;
+	font-size: 16px;
+	color: #333;
+}
+
+ th a, th a:link, th a:visited{
+ 	color: #333; text-decoration: none;
+ }
+ 
+  th a:hover{
+ 	color: #eed219; text-decoration: underline;
+ }
+
+ tr.even td, tr td, tr.cat-list-row0 td {
+	padding: 5px 15px;
+	border: 1px solid #222;
+}
+
+ tr.odd td, tr.cat-list-row1 td {
+	padding: 5px 15px;
+	border: 1px solid #222;
+}
+
+table.contenttoc tr td{
+	border-bottom: none;
+	font-size: 11px;
+}
+ 
+ span.number {
+	color: #908f90;
+	font-style: italic;
+}
+
+/* floats */
+ .float-left { float: left; overflow: hidden; }
+ .float-right { float: right; overflow: hidden; }
+
+ .width25 { width: 24.999%; }
+ .width33 { width: 33.333%; }
+ .width50 { width: 49.999%; }
+ .width100 { width: 100%; }
+
+/*
+ * com_content
+ * blog layout (frontpage, category, section)
+ * sub selectors: blog
+ */
+ 
+ div.blog div.description{  
+	margin: 0;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	color: #333;
+   background-color: white;
+	border: 1px solid #4b4b4b;
+}
+
+div.categories-list div.category-desc {  
+	margin: 0;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-left: 0;
+	border-right: 0;
+	color: #333;
+   background-color: white;
+	border-bottom: 1px solid #222;
+}
+
+div.categories-list ul li div.category-desc{
+	background-color: transparent;
+}
+
+ div.leadingarticles,  div.teaserarticles {
+	overflow: hidden;
+}
+
+ div.blog div.category-desc {  
+   border-bottom: 1px solid #222;
+	border-left: 0;
+	border-right: 0;
+	margin: 0 0 10px 0;
+}
+
+div.cat-children ul li span.item-title a{
+   text-decoration: none;
+	color: #222;
+}
+
+div.cat-children ul li span.item-title a:hover{
+	color: #eed219;
+}
+
+ div.item {
+	overflow: hidden;
+}
+
+div.item a, .article a{
+	text-decoration: underline;
+}
+
+div.item a:hover, .article a:hover{	
+   text-decoration: none;
+	color: #eed219;
+}
+
+div.leadingarticles div.item{
+	margin: 0;
+}
+
+ div.item-bg {
+	padding: 14px 15px;
+	overflow: hidden;
+}
+
+div.leadingarticles div.item-bg{
+	padding: 14px 10px;
+	border: 0;
+}
+
+ div.multicolumns div.item {
+	margin: 0px 0px 15px 0px;
+}
+
+ div.multicolumns div.item p {
+	margin: 0;
+	padding: 0;
+}
+
+ div.multicolumns div.item p.articleinfo {
+	margin: 0 0 7px 0;
+	padding: 0;
+}
+
+div.item p.readmore {
+	margin: 0;
+	padding: 0;
+}
+
+ div.multicolumns div.first div.item {
+	margin-left: 0px;
+}
+
+ div.multicolumns div.last div.item {
+	margin-right: 0px;
+}
+
+ div.morearticles {
+	margin: 10px 0;
+	overflow: hidden;
+	clear: both;
+	float: left;
+	width: 100%;
+}
+
+ div.morearticles h3{
+	border-bottom: 1px solid #222;
+   font-size: 20px;
+	color: #fff;
+	padding: 0 0 9px 15px;
+	line-height: normal;
+ }
+ 
+ div.morearticles ul{
+ 	list-style: none;
+	margin: 10px 0 0 15px;
+ }
+ 
+ #sidebar-left ul, #sidebar-right ul{
+ 	list-style: none;
+	margin: 0;
+	padding: 0;
+ }
+ 
+.article ul li, div.morearticles ul li{
+
+ }
+ 
+#sidebar-left ul li, #sidebar-right ul li,
+#sidebar-left ul li.last+li, #sidebar-right ul li.last+li{
+ 	border-bottom: 1px solid #222;
+ }
+
+ #sidebar-left ul li.last, #sidebar-right ul li.last,
+  #sidebar-left ul li:last-child, #sidebar-right ul li:last-child,
+  #sidebar-left ul li li, #sidebar-right ul li li{
+ 	border-bottom: none;
+ }
+ 
+#sidebar-left ul li a, #sidebar-right ul li a{
+ 	color: #333;
+	text-decoration: none;
+-webkit-transition-property:color, background; 
+-webkit-transition-duration: 0.2s, 0.2s; 
+-webkit-transition-timing-function: linear, ease-in;
+ }
+ 
+ #sidebar-left ul ul, #sidebar-right ul ul{
+	margin: 5px 0 10px 0;
+ }
+ 
+ #sidebar-left ul.menu ul ul, #sidebar-right ul.menu ul ul{
+	margin: 5px 0 10px 10px;
+ }
+ 
+  #sidebar-left ul.menu ul, #sidebar-right ul.menu ul{
+	margin: 5px 0 10px 0;
+ }
+ 
+  #sidebar-left ul li li a,  #sidebar-right ul li li a{
+   background: url(../images/menu-lr-sub.png) left 8px no-repeat;
+	padding: 1px 0 1px 13px;
+  }
+
+
+#sidebar-left ul.menu li.active.parent.level1 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li.active.parent.level4 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li.active.parent.level4 ul.level4 li.active.parent.level5 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li.active.parent.level4 ul.level4 li.active.parent.level5 ul.level5 li.active.parent.level6 a,
+#sidebar-left ul.menu li#current.active.level1 a,
+#sidebar-left ul.menu li#current.active.level2 a,
+
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li#current.active.level2 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li#current.active.level3 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li#current.active.level4 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li.active.parent.level4 ul.level4 li#current.active.level5 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li.active.parent.level4 ul.level4 li.active.parent.level5 ul.level5 li#current.active.level6 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li.active.parent.level4 ul.level4 li.active.parent.level5 ul.level5 li.active.parent.level6 ul.level6 li#current.active.level7 a
+
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li#current.level2 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li#current.active.parent.level2 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li#current.active.parent.level3 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li#current.active.parent.level4 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li.active.parent.level4 ul.level4 li#current.active.parent.level5 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li.active.parent.level4 ul.level4 li.active.parent.level5 ul.level5 li#current.active.parent.level6 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li.active.parent.level4 ul.level4 li.active.parent.level5 ul.level5 li.active.parent.level6 ul.level6 li#current.active.parent.level7 a,
+#sidebar-left ul.menu li.active.parent.level2 a,
+#sidebar-left ul.menu li.active.parent.level2 ul.level2 li#current.active.level3 a{
+ 	font-weight: bold;
+	color: #222;
+}
+
+#sidebar-left ul.menu li.level1 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li.level2 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.level3 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li.level4 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li.active.parent.level4 ul.level4 li.level5 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li.active.parent.level4 ul.level4 li.active.parent.level5 ul.level5 li.level6 a,
+#sidebar-left ul.menu li#current.active.level1 ul.level1 li.level2 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li#current.active.parent.level2 ul.level2 li.level3 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li#current.active.parent.level3 ul.level3 li.level4 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li#current.active.parent.level4 ul.level4 li.level5 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li#current.active.parent.level4 ul.level4 li#current.active.parent.level5 ul.level5 li.level6 a,
+#sidebar-left ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li#current.active.parent.level4 ul.level4 li#current.active.parent.level5 ul.level5 li#current.active.parent.level6 ul.level6 li.level7 a,
+#sidebar-left ul.menu li#current.active.parent.level2 ul.level2 li.level3 a,
+#sidebar-left ul.menu li.active.parent.level2 ul.level2 li.level3 a{
+	font-weight: normal;
+}
+
+#sidebar-right ul.menu li.active.parent.level1 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li.active.parent.level4 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li.active.parent.level4 ul.level4 li.active.parent.level5 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li.active.parent.level4 ul.level4 li.active.parent.level5 ul.level5 li.active.parent.level6 a,
+#sidebar-right ul.menu li#current.active.level1 a,
+#sidebar-right ul.menu li#current.active.level2 a,
+
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li#current.active.level2 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li#current.active.level3 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li#current.active.level4 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li.active.parent.level4 ul.level4 li#current.active.level5 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li.active.parent.level4 ul.level4 li.active.parent.level5 ul.level5 li#current.active.level6 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li.active.parent.level4 ul.level4 li.active.parent.level5 ul.level5 li.active.parent.level6 ul.level6 li#current.active.level7 a
+
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li#current.level2 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li#current.active.parent.level2 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li#current.active.parent.level3 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li#current.active.parent.level4 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li.active.parent.level4 ul.level4 li#current.active.parent.level5 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li.active.parent.level4 ul.level4 li.active.parent.level5 ul.level5 li#current.active.parent.level6 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li.active.parent.level4 ul.level4 li.active.parent.level5 ul.level5 li.active.parent.level6 ul.level6 li#current.active.parent.level7 a,
+#sidebar-right ul.menu li.active.parent.level2 a,
+#sidebar-right ul.menu li.active.parent.level2 ul.level2 li#current.active.level3 a{
+	font-weight: bold;
+}
+
+#sidebar-right ul.menu li.level1 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li.level2 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.level3 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li.level4 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li.active.parent.level4 ul.level4 li.level5 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li.active.parent.level4 ul.level4 li.active.parent.level5 ul.level5 li.level6 a,
+#sidebar-right ul.menu li#current.active.level1 ul.level1 li.level2 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li#current.active.parent.level2 ul.level2 li.level3 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li#current.active.parent.level3 ul.level3 li.level4 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li#current.active.parent.level4 ul.level4 li.level5 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li#current.active.parent.level4 ul.level4 li#current.active.parent.level5 ul.level5 li.level6 a,
+#sidebar-right ul.menu li.active.parent.level1 ul.level1 li.active.parent.level2 ul.level2 li.active.parent.level3 ul.level3 li#current.active.parent.level4 ul.level4 li#current.active.parent.level5 ul.level5 li#current.active.parent.level6 ul.level6 li.level7 a,
+#sidebar-right ul.menu li#current.active.parent.level2 ul.level2 li.level3 a,
+#sidebar-right ul.menu li.active.parent.level2 ul.level2 li.level3 a{
+	font-weight: normal;
+}
+ 
+#sidebar-left ul.menu li a:hover,
+#sidebar-right ul.menu li a:hover{
+ 	font-weight: normal;
+	text-decoration: none;
+	color: #c8b10f !important;
+ }
+ 
+ 
+#sidebar-left ul.menu li.parent,
+#sidebar-right ul.menu li.parent{
+   padding-top: 5px;
+ }
+ 
+ div.pagination {
+	text-align: center;
+	margin:0;
+	padding: 0 0 25px 0;
+	overflow: hidden;
+	clear: both;
+	font-size: 16px;
+	font-weight: normal !important;
+}
+
+div.pagination p.results{
+	color: #A0A0A0;
+	font-size: 16px;
+}
+
+ul.pagination{
+	list-style: none;
+	color: #A0A0A0;
+	margin: 20px 0 0 0;
+	font-size: 16px;
+}
+
+ul.pagination li{
+	display: inline;
+	padding: 0;
+	margin: 0 4px;
+}
+
+ul.pagination li span{
+  margin: 0 2px;
+  padding: 5px 7px;
+  background: #E3E2E2;
+  border: none;
+  text-shadow: none;
+  color: #222;
+  line-height: 32px;
+}
+
+ul.pagination li a{
+  margin: 0 2px;
+  padding: 5px 7px;
+  background: #eed219;
+  border: none;
+  text-shadow: none;
+  color: #222;
+  line-height: 32px;
+}
+
+ul.pagination li a:hover{
+	color: #eed219;
+	background-color: #222;
+	text-decoration: none;
+}
+
+ div.pagination p.results {
+ margin: 0;
+}
+
+/*
+ * com_content
+ * list layout (frontpage, category, section)
+ * sub selectors: sectionlist, categorylist
+ */
+
+/*
+ * com_content
+ * article layout
+ * sub seletors: article
+ */
+
+ #main ul{
+   list-style: none;
+ }
+ 
+ .article ul, div.description ul, .category-desc ul{
+ 	margin: 5px 0 15px 3px;
+	list-style: none;
+ }
+ 
+ul#archive-items li ul{
+ 	margin: 5px 0 0 20px;
+	padding: 0;
+	list-style: none;
+ }
+ 
+  .article ol{
+ 	margin: 5px 0 15px 0;
+ }
+ 
+  div.morearticles ul li, div.description ul li{
+	background: url(../images/arrowtrans.png) left 5px no-repeat;
+	padding: 0 0 0 14px;
+	text-decoration: none;
+ }
+ 
+div.blogintrotext ul li{
+	background: url(../images/arrowtrans.png) left 8px no-repeat;
+	padding: 0 0 0 14px;
+	text-decoration: none;
+ }
+ 
+   div.morearticles ul li a:hover, .category-desc ul li a:hover{
+	color: #eed219;
+  }
+ 
+  #sidebar-left ul li a, #sidebar-right ul li a{
+	padding: 2px 0;
+	text-decoration: none;
+	display: block;
+ }
+ 
+   #sidebar-left ul li a:hover, #sidebar-right ul li a:hover{
+	color: #eed219;
+	background-color: #222;
+  }
+ 
+   .article ul li, div.description ul li, .category-desc ul li, ul#archive-items li ul li{
+	background: url(../images/arrowtrans.png) left 8px no-repeat;
+	padding: 0 0 0 14px;
+	text-decoration: none;
+ }
+ 
+ div.pagenavcounter{
+ 	margin: 10px 0 0 0;
+	font-size: 16px;
+	color: #333;
+ }
+ 
+div.pagenavbar{
+	font-size: 16px;
+	color: #333;
+}
+
+div.pagenavbar a{
+	color: #698147;
+}
+
+div.pagenavbar a:hover{
+	color: #fff;
+	background-color: transparent;
+}
+
+.article, div.categories-list, div.category-list, div.com-newsfeed {
+ 	margin: 0;
+	overflow: hidden;
+	clear: both;
+	color: #333;
+ }
+ 
+ .article{
+ 	margin-bottom: 20px;
+ }
+ 
+div.categories-list {
+
+ }
+ 
+div#articlecontent{
+	padding: 0 15px;
+	overflow: hidden;
+}
+
+ div.headline {
+	overflow: hidden;
+}
+
+ h2.title{
+	font-size: 28px;
+	color: #222;
+	width: 100%;
+	float: left;
+	line-height: normal;
+}
+
+ div.items-row h2 a, div.items h2 a, div.item h2 a, div.items-leading h2 a{
+ 	text-decoration: none;
+	color: #222;
+ }
+ 
+  div.items-row h2 a:hover, div.items-leading h2 a:hover, div.items h2 a:hover, div.item h2 a:hover, div.items-leading h2 a:hover{
+	color: #eed219;
+	text-decoration: none;
+	background-color: transparent;
+	 	        /*** Transition Selectors - What properties to animate and how long ***/
+    -webkit-transition-property: -webkit-box-shadow, background;
+    -webkit-transition-duration: 1.5s;
+ }
+
+div.article h2 a, h2.title a{
+ 	text-decoration: none;
+	color: #222;
+ }
+ 
+article h2 a:hover, h2.title a:hover{
+	color: #222;
+	text-decoration: none;
+	background-color: transparent;
+ }
+ 
+
+ div.items-row h2 {
+	font-size: 22px;
+	color: #222;
+	width: 100%;
+	float: left;
+}
+
+.article h2{
+	color: #222;
+	font-size: 22px;
+	margin: 12px 0 5px 0;
+}
+
+.article h3, .blog div.items-row h3, #contentfull h3, #contentl h3, #contentr h3{
+	color: #222;
+	font-size: 18px;
+	margin: 10px 0 4px 0;
+}
+
+.article h4{
+	color: #222;
+	font-size: 14px;
+	margin: 8px 0 3px 0;
+}
+
+.article h5{
+	color: #222;
+	font-size: 13px;
+	margin: 8px 0 3px 0;
+}
+
+h1, h2, h3, h4{ line-height: normal;}
+
+
+hr{
+   color: black;
+   border-top: 1px solid #222;
+   border-bottom:none;
+   border-left:none;
+   border-right:none;
+	height: 1px; 
+	margin: 10px 0 20px 0;
+}
+
+
+ span.icon {
+	display: block;
+	margin-top: 10px;
+	float: right;
+}
+
+ div.multicolumns span.icon {
+	margin-top: 5px;
+}
+
+ span.edit {
+	margin-left: 10px;
+	float: left;
+}
+
+ span.pdf {
+	margin-right: 5px;
+}
+
+ span.print {
+	margin-right: 5px;
+}
+
+ span.email {
+}
+
+ span.printscreen {
+}
+
+ p.iteminfo {
+	margin: 0px 0px 15px 0px;
+}
+
+.article  p.articleinfo{
+ margin: 10px 15px 5px 15px;
+ font-size: 9px;
+ color: #698147;
+ line-height: normal;
+ overflow: hidden;
+}
+
+ p.articleinfo {
+ margin: 10px 0 5px 0;
+ font-size: 9px;
+ color: #698147;
+ line-height: normal;
+ overflow: hidden;
+}
+
+ p.articleinfo span.modified,
+ p.articleinfo span.author,
+ p.articleinfo span.created,
+ p.articleinfo span.url {
+	font-size: 95%;
+}
+
+ p.articleinfo span.author {
+ color: #4b4b4b;
+}
+
+ p.articleinfo span.created,  p.articleinfo span.section,  p.articleinfo span.category {
+	width: auto; float: left;
+ color: #698147;
+	margin: 0 4px 0 0;
+}
+
+p.articleinfo span.section a,  p.articleinfo span.category a{
+ color: #698147;
+	text-decoration: none;
+}
+
+p.articleinfo span.section a:hover,  p.articleinfo span.category a:hover{
+   text-decoration: underline;
+}
+
+/*
+ * com_content
+ * editing an article
+ * sub seletors: edit-article
+ */
+
+ div.edit {background-color: #fff; overflow: hidden; border: 1px solid #222;}
+ div.edit h1 {font-size: 24px; color: #222; margin: 0; padding: 8px 0 8px 12px;}
+ 
+div.edit form#adminForm{
+	padding: 10px;
+}
+
+ div.edit fieldset {
+	margin-bottom: 15px; border: 1px solid #222;
+	padding: 10px;
+	background-color: #f8f8f8;
+}
+
+div.profile legend, div.profile-edit legend{
+	font-size: 20px; margin: 0 0 5px 0 !important; float: left; width: 100%;
+}
+
+div.edit fieldset legend{
+	font-size: 20px; margin: 0 0 5px 0 !important; float: left; width: 100%;
+}
+
+
+div.edit fieldset div {
+    margin: 0 0 5px 0;
+}
+
+ div.edit label {
+	display: block;
+	width: 150px;
+	float: left;
+}
+
+ div.edit div.save {
+	margin: 0px;
+	float: right;
+}
+
+ div.edit div#editor-xtd-buttons {
+	margin-bottom: 0px;
+	overflow: hidden;
+}
+
+ div.edit div#editor-xtd-buttons div {
+	margin: 0px;
+}
+
+ div.edit div#editor-xtd-buttons div.button2-left {
+	margin-right: 5px;
+}
+
+ div.edit div#editor-xtd-buttons a:link,
+ div.edit div#editor-xtd-buttons a:visited,
+ div.edit div#editor-xtd-buttons a:hover {
+	color: #fff;
+}
+
+/*
+ * com_weblinks
+ * sub seletors: weblinks
+ */
+
+ div.weblinks fieldset {
+}
+
+ div.weblinks fieldset div {
+	overflow: hidden;
+}
+
+ div.weblinks label.label-left {
+	display: block;
+	width: 150px;
+	float: left;
+}
+
+div.com-weblink a{
+	color: #eed219;
+}
+
+div.com-weblink a:hover{
+	text-decoration: underline;
+}
+
+/*
+ * com_search
+ * sub seletors: search
+ */
+
+ div.search p.info {
+	margin: 0px;
+	color: #A0A0A0;
+	font-size: 9px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+
+ div.search span.highlight {
+	background: #e7e7e7;
+	padding: 1px 2px;
+	color: #222;
+}
+
+/*mod_search*/
+
+form.searchtop{
+	width: 245px;
+	height: auto;
+	float: right;
+	margin: 85px 7px 0 0;
+}
+
+#top input#mod_search_searchword{
+	background-color: #e7e7e7;
+	width: 142px;
+	height: 23px;
+	padding: 0px 5px 0px 10px;
+	float: left;
+	display: inline;
+	font-size: 12px;
+	color: #353535;
+}
+
+#top input#mod_search_searchword:hover, #top input#mod_search_searchword:focus{
+   -webkit-box-shadow: 0px 0px 100px 0px #e7e7e7;
+   -moz-box-shadow: 0px 0px 100px 0px #e7e7e7;
+    box-shadow: 0px 0px 100px 0px #e7e7e7; 
+}
+
+input#mod_search_searchword{
+	border: 1px solid #222;
+	width: 157px;
+	height: 23px;
+	padding: 0px 5px 0px 10px;
+	float: left;
+	display: inline;
+	font-size: 12px;
+	color: #fff;
+}
+
+input.button, button.button, button{
+	background-color: #eed219;
+	height: 26px;
+	padding: 0 14px;
+	color: #222;
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: 0;
+}
+
+input.button:hover, button.button:hover, button:hover{
+ 	color: #eed219;
+	background-color: #222;
+	border: 0;
+}
+
+div#sidebar-right form.searchtop,
+div#sidebar-left form.searchtop{
+	width: 238px;
+	height: auto;
+	margin: 10px 0 0 0;
+	float: left;
+}
+
+div#sidebar-right input#mod_search_searchword,
+div#sidebar-left input#mod_search_searchword{
+   border: 1px solid #222;
+	width: 120px;
+	height: 24px;
+	padding: 0px 5px 0px 10px;
+	margin-right: 5px; 
+	float: left;
+	display: inline;
+	font-size: 12px;
+	color: #4b4b4b;
+}
+
+div#sidebar-right input#mod_search_searchword:hover,
+div#sidebar-right input#mod_search_searchword:focus,
+div#sidebar-left input#mod_search_searchword:hover,
+div#sidebar-left input#mod_search_searchword:focus{
+	border: 1px solid #eed219;
+}
+
+
+/*
+ * com_poll
+ * sub seletors: poll
+ */
+
+ div.poll fieldset {
+	margin: 15px 0px 10px 0px;
+}
+
+/*
+ * com_contact
+ * sub seletors: contact
+ */
+
+ h1.name{
+ 	font-size: 20px;
+ }
+
+ div.contact div.contact-image{
+	float: right;
+	margin: 0;
+}
+
+ div.contact table {
+	margin-bottom: 10px;
+}
+
+ div.contact label.label-top {
+	display: block;
+}
+
+div.contact fieldset{
+	padding: 10px;
+}
+
+form#emailForm div{
+	margin: 0 0 15px 0;
+	overflow: hidden;
+	clear: both;
+}
+
+form#emailForm legend{
+	font-size: 120%;
+	
+	margin: 0 0 0 4px;
+}
+
+form#emailForm input.inputbox{
+	width: 400px;
+	float: right;
+}
+
+form#emailForm textarea{
+	width: 400px;
+	float: right;
+	height: 150px;
+}
+
+form#emailForm{
+	width: 540px;
+	margin: 20px 0 0 14px;
+}
+
+div#contentlr form#emailForm input.inputbox{
+	width: 300px;
+	float: right;
+}
+
+div#contentlr form#emailForm textarea{
+	width: 418px;
+	float: right;
+	height: 150px;
+}
+
+div#contentlr form#emailForm{
+	width: 425px;
+	margin: 20px 0 0 14px;
+}
+
+/* Form validation */
+.invalid { border-color: #eed219; }
+label.invalid { color: #eed219; }
+
+/*
+ * com_user
+ * sub seletors: user
+ */
+ 
+div.user, div.contact, div.sectionlist, div.weblinks, div.newsfeeds  {
+border: 1px solid #222;background-color: #fff;padding: 0 0 20px 0;
+}
+ 
+div#reminduser{
+	padding: 0 0 20px 0;border-left: 1px solid #222; border-right: 1px solid #222;; border-bottom: 1px solid #222;background-color: #fff;
+}
+
+ div.user label.label-left,
+ div.user span.label-left  {
+	display: block;
+	width: 130px;
+	float: left;
+}
+
+div.description div.bannerheader{
+	width: 70%;
+	float: left;
+}
+
+form#com-form-login, div.login form{
+	width: 400px;
+	margin: 0 auto;
+}
+
+form#com-form-login fieldset, div.login form fieldset{
+	margin: 20px 0 10px 0;
+}
+
+form#com-form-login div, div.login form fieldset div{
+	overflow: hidden;
+	margin: 0 0 10px 0;
+}
+
+form#com-form-login input.button{
+	margin: 0 0 0 20px;
+}
+
+form#josForm p{
+	margin: 0 0 0 12px;
+}
+
+form#josForm button{
+	margin: 10px 0 0 140px;
+}
+
+
+div#logout{
+	text-align: center;
+}
+
+/*
+ * mod_newsflash
+ */
+
+div.module-newsflash {
+	overflow: hidden;
+}
+
+div.module-newsflash div.item {
+	padding-bottom: 15px;
+	overflow: hidden;
+}
+
+div.module-newsflash div.last {
+	padding-bottom: 0px;
+}
+
+/*
+ * Joomla! system tooltips
+ */
+ 
+.tip-wrap {
+	float: left;
+	background: #eed219;
+	padding: 15px;
+	max-width: 200px;
+	color: #222;
+}
+
+.tip-title {
+	padding: 0;
+	margin: 0;
+	font-size: 120%;
+	text-transform: uppercase;
+	margin-top: -15px;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	text-align: left;
+}
+
+.tip-text {
+	font-size: 100%;
+	margin: 0;
+	text-align: left;
+}
+
+p.readmore a, a.readmore, div.item a.readmore{
+ 	color: #222;
+ 	background-color: #eed219;
+	padding: 8px 12px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	display: inline-block;
+	float: right;
+	font-weight: 700;
+ }
+ 
+p.readmore a:hover, a.readmore:hover, div.item a.readmore:hover{
+ 	color: #eed219;
+ 	background-color: #222;
+ 	        /*** Transition Selectors - What properties to animate and how long ***/
+    -webkit-transition-property: -webkit-box-shadow, background;
+    -webkit-transition-duration: 1.5s;
+ }
+ 
+ #gotop{
+   width: auto;
+	height: auto;
+	font-size: 12px;
+	text-align: center;
+	font-weight: 700;
+	margin: 0 auto;
+	margin-top: 24px;
+ 	background-color: #eed219;
+ 	border-bottom: 8px solid #222;
+ }
+ 
+  #gotop a{
+  	text-decoration: none;
+ 	color: #222;
+	margin: 0;
+	padding: 14px 10px 10px 10px;
+	display: inline-block;
+  }
+ 
+  #gotop a:hover{
+	 	color: #eed219;
+ 	background-color: #222;
+ 	        /*** Transition Selectors - What properties to animate and how long ***/
+    -webkit-transition-property: -webkit-box-shadow, background;
+    -webkit-transition-duration: 1.5s;
+  }
+  
+/*Modules*/
+
+#sidebar-left .moduletable, #sidebar-left .moduletable_text, #sidebar-left .moduletable_menu,
+#sidebar-right .moduletable, #sidebar-right .moduletable_text, #sidebar-right .moduletable_menu{
+	padding: 15px;
+	color: #333;
+	border-top: 8px solid #eed219;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGElEQVQImWO4ffv2/6dPn6JgBnQBKggCAM8tW+HsLxqLAAAAAElFTkSuQmCC) repeat;
+	overflow: hidden;
+	-moz-box-shadow:    inset 0 0 60px #ccc,
+   -webkit-box-shadow: inset 0 0 60px #ccc,
+   box-shadow:         inset 0 0 60px #ccc,
+}
+
+.moduletable, .moduletable_text, .moduletable_menu{
+ margin: 0 0 25px 0;
+}
+
+.moduletable h3, .moduletable_text h3, .moduletable_menu h3{
+	font-size: 24px;
+	color: #222;
+	margin: 0 0 10px 0;
+}
+
+.modulecontent{
+
+}
+
+/*com_search*/
+
+div#archive, #searchForm{
+	padding: 15px;
+	margin-bottom: 35px;
+	color: #333;
+	border-top: 8px solid #eed219;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGElEQVQImWO4ffv2/6dPn6JgBnQBKggCAM8tW+HsLxqLAAAAAElFTkSuQmCC) repeat;
+	overflow: hidden;
+	-moz-box-shadow:    inset 0 0 60px #ccc,
+   -webkit-box-shadow: inset 0 0 60px #ccc,
+   box-shadow:         inset 0 0 60px #ccc,
+}
+
+#searchForm legend{
+	font-size: 20px;
+	color: #222;
+	margin: 0 0 8px 0;
+}
+
+#searchForm div{
+	margin: 10px 0;
+	float: left;
+	width: 100%;
+}
+
+#searchForm input, .filter input, .modulecontent form.form-login fieldset input, form.josForm input, form#josForm input, form#emailForm input.inputbox, input, select{
+	border: 1px solid #222;
+	padding: 2px 5px;
+	height: 20px;
+	color: #222;
+    
+       /*** Adding CSS3 ***/
+ 
+    /*** Transition Selectors - What properties to animate and how long ***/
+    -webkit-transition-property: -webkit-box-shadow, background;
+    -webkit-transition-duration: 0.25s;
+ 
+    /*** Adding a small shadow ***/
+    -moz-box-shadow: 0px 0px 2px #ccc;
+    -webkit-box-shadow: 0px 0px 2px #ccc;
+}
+
+textarea{
+	border: 1px solid #222;
+	padding: 2px 5px;
+	color: #222;
+}
+
+select{
+	cursor: pointer;
+	border: 1px solid #222;
+	padding: 2px 5px;
+	height: auto;
+	line-height: 20px;
+	color: #222;
+}
+
+input:hover, select:hover, textarea:hover, form#emailForm input.inputbox:hover, input.inputbox:hover, .modulecontent form.form-login fieldset input:hover,
+input:focus, select:focus, textarea:focus, form#emailForm input.inputbox:focus, input.inputbox:focus, .modulecontent form.form-login fieldset input:focus{
+	border: 1px solid #eed219;
+}
+
+input, select, textarea{
+	font-size: 12px;
+	color: #222;
+}
+
+div.search ol{
+	margin: 10px 0 0 0;
+	list-style: none;
+}
+
+div.search ol li{
+	border-bottom: 1px solid #222;
+	margin: 0 0 5px 0;
+	padding: 10px;
+}
+
+div.search ol li a, .sectionlist ul li a, .weblinks ul li a, .newsfeeds ul li a{
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+div.search ol li a:hover, .sectionlist ul li a:hover, .weblinks ul li a:hover, .newsfeeds ul li a:hover {
+   text-decoration: underline;
+	color: #698147;
+}
+
+.sectionlist ul, form#poll, .weblinks ul, .newsfeeds ul{
+	margin: 20px 0 0 0;
+	padding: 0 10px;
+}
+
+.sectionlist ul li, .weblinks ul li, .newsfeeds ul li{
+	margin: 0 0 12px 0;
+}
+
+div.categorylist{
+	border: 1px solid #e0e0e0;
+	background-color: #fff;
+}
+
+.joomlatable{
+	padding: 10px;
+	margin: 15px 0 0 0;
+	border: 1px solid #e0e0e0;
+	background-color: #f1f1f1;
+	width: 100%;
+	float: left;
+}
+
+table.joomlatable a{
+	color: black;
+	text-decoration: none;
+}
+
+table.joomlatable a:hover{
+	text-decoration: underline;
+}
+
+table.pollstableborder{
+	padding: 5px;
+	width: 100%;
+}
+
+table.pollstableborder tr td{
+  padding: 1px;
+  vertical-align: middle;
+}
+
+table.pollstableborder tr:hover{
+	background-color: #ded0c5;
+}
+
+.modulecontent form.form-login p{
+	margin: 0;
+}
+
+.modulecontent form.form-login fieldset div{
+	margin: 0 0 4px 0;
+	height: 24px;
+}
+
+ form#josForm div{
+ 	margin: 10px 0 0 10px;
+ }
+ 
+ #josForm legend{
+ 	width: 100%;
+	margin: 0 0 20px 0;
+ }
+ 
+ input.inputbox.invalid, form#josForm input.inputbox.invalid, form#emailForm input.inputbox.invalid, form.josForm input.invalid{
+	border: 1px solid #eed219;
+ }
+
+.modulecontent form.form-login fieldset input, input#modlgn_username, input#modlgn_passwd{
+	float: right;
+	margin: 0;
+	width: 140px;
+}
+
+.josForm legend{
+	margin: 0 0 10px 0;
+	
+}
+
+input#name, input#username, input#email, input#password, input#password2, input#passwd{
+	width: 250px;
+}
+
+p#lfirst{
+	margin: 10px 0 0 0;
+}
+
+
+body.contentpane{
+ color: #fff;
+ background-color: #fbfbfb;
+ padding: 0; margin: 15px;
+ text-align: left;
+ font: normal 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+ line-height: 1.7em;
+}
+
+
+body.contentpane input{
+   border: 1px solid #222;color: #333;
+	background-color: #f7f7f7;
+   padding: 2px;
+}
+
+body.contentpane input:hover, body.contentpane input:focus{
+	border: 2px solid #fff;
+	background-color: #f4f4f4;
+   padding: 1px;
+}
+
+body.contentpane a{
+	color: #fff;
+	text-decoration: none;
+}
+
+body.contentpane a:hover{
+	text-decoration: underline;
+	color: #698147;
+}
+
+body.contentpane #page{
+	padding: 25px;
+}
+
+body.contentpane #page ul{
+	margin: 10px 0 15px 25px;
+}
+
+/*pagebreak*/
+
+table.contenttoc{
+	float: right;
+	margin: 0 0 5px 10px;
+	border: 1px solid #222;
+}
+
+table.contenttoc th{
+	background-color: #eaf2e4;
+	font-size: 16px;
+	color: #fff;
+}
+
+table.contenttoc tr td{
+	padding: 0 4px;
+}
+
+a.toclink, a.toclink:hover{
+	text-decoration: none;
+}
+
+a.toclink.active{
+	text-decoration: underline;
+}
+
+th.pagenav_prev, th.pagenav_next{
+	background-color: transparent;
+	border: 0;
+}
+
+table.pagenav{
+	font-size: 10px;
+	font-weight: normal;
+   color: #686B6B;
+	width: 200px;
+	margin: 0 auto;
+}
+
+ul.pagenav{
+	margin: 10px 0 0 0;
+	float: right;
+	font-size: 11px;
+	width: 100%;
+	text-align: right;
+}
+
+ul.pagenav li{
+	margin: 0;
+	display: inline;
+	background: none;
+}
+
+.article .pagenav a{
+	color: #333;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.article .pagenav a:hover{
+	color: #fff;
+}
+
+blockquote{margin:1em 0 1.5em 0;padding:.6em 1em .6em .6em;color:#222;  font-size: 20px; line-height: 150%;
+background-color: #eed219; padding: 5px;;
+}
+blockquote p{padding:8px;margin:2px;}
+blockquote blockquote{margin:1em 0 1em;}
+
+#xmap{
+	padding: 0;
+	overflow: hidden;
+}
+
+.contentpaneopen{
+	margin: 15px 0 0 0;
+	padding: 0 0 15px 0;
+}
+
+h2.menutitle{
+	color: #222;
+	font-size: 20px;
+	margin: 10px 0 4px 15px;
+}
+
+#xmap ul.level_0{
+   list-style: none;
+	margin: 10px 0 25px 15px;
+}
+
+#xmap ul.level_1, #xmap ul.level_2, #xmap ul.level_3, #xmap ul.level_4, #xmap ul.level_5{
+	margin: 10px 0 25px 10px;
+}
+
+#xmap ul.level_0 li a, #xmap ul.level_1 li a, #xmap ul.level_2 li a, #xmap ul.level_3 li a, #xmap ul.level_4 li a, #xmap ul.level_5 li a{
+	background: url(../images/arrowtrans.png) left 5px no-repeat;
+	padding: 0 0 0 10px;
+}
+
+#xmap a{
+	color: #222;
+	text-decoration: none;
+}
+
+#xmap a:hover{
+	color: #eed219;
+}
+
+/* System Messages */
+#system-message    { margin: 30px 0 10px 0; padding: 0; 
+
+	background-color: #eed219;
+	overflow: hidden;
+  }
+#system-message dt { font-weight: 700; }
+#system-message dd { margin: 0; font-weight: 700; font-size: 24px; line-height: normal; }
+#system-message dd ul { color: #222; margin: 0; list-style: none; padding: 10px 15px; font-size: 24px;}
+
+/* System Standard Messages */
+#system-message dt.message { display: none; }
+#system-message dd.message {  }
+
+/* System Error Messages */
+#system-message dt.error { display: none; }
+#system-message dd.error ul { color: #222; font-size: 24px; font-weight: 700}
+
+/* System Notice Messages */
+#system-message dt.notice { display: none; }
+#system-message dd.notice ul { font-size: 24px; font-weight: 700;}
+
+/* Debug */
+#system-debug     { color: black; background-color: #fff; padding: 10px; margin: 10px; }
+#system-debug div { font-size: 11px;}
+
+/*bannergroup*/
+
+div.bannerheader{
+	font-size: 16px;
+	margin: 0 0 5px 0;
+	color: #222;
+}
+
+div.banneritem_text{
+   padding: 5px;
+	border-bottom: 1px solid #222;
+}
+
+div.banneritem_text a{
+	font-size: 16px;
+}
+
+div.banneritem_text a:hover{
+	color: #eed219;
+	text-decoration: underline;
+}
+
+div.bannerfooter_text{
+	font-size: 11px;
+}
+
+ /*archive*/
+
+ul#archive-list{
+	margin: 40px 0 0 0;
+}
+
+ul#archive-list li{
+	margin: 0 0 15px 0;
+	padding: 0 0 15px 0;
+}
+
+ul#archive-list h2.title{
+   margin: 0 0 5px 0;
+}
+
+ul#archive-list p.articleinfo {
+ overflow: visible;
+}
+
+ul#archive-list div.intro{
+   margin: 10px 0 0 0;
+}
+
+
+
+@charset "utf-8";
+/* CSS Document for Joomla styles 1.6.x / 1.7.x */
+
+/*	================================================================================== 
+	AUTHORS
+	The default Joomla CSS template was originally developed by Barrie North. 
+	This document adjusted for Joomla 1.6 by C.R. van Oudheusden, Joomla-CSS.
+	For more information go to www.joom-css.nl.
+
+	DISCLAIMER
+	While Joomla-CSS has taken the greatest care in preparing this document. No
+	liability can be accepted by Joomla-CSS for any errors or omissions in the published
+	information. Joomla-CSS like wise accepts no liability for loss arising from or related
+	to the use of information presented in this document or website.
+
+	COPYRIGHT
+	You are free to copy and use this document or alter it in any way.
+	================================================================================ */
+
+/* ====================================================================================
+	RESET STYLES
+	Browsers do have their owd default styles and therefore present styles differently. 
+	This section removes the default styles of browsers as far as possible.
+
+	Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+	Code licensed under the BSD License:
+	http://developer.yahoo.net/yui/license.txt
+	version: 2.8.0r4
+	================================================================================ */
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+fieldset,img {
+	border:0;
+}
+
+address,caption,cite,code,dfn,em,th,var,optgroup {
+	font-style:inherit;
+	font-weight:inherit;
+}
+
+strong {
+	font-style:inherit;
+	font-weight:bold;
+}
+
+em {
+	font-style:inherit;
+	font-style:italic;
+}
+
+del,ins {
+	text-decoration:none;
+}
+
+caption,th {
+	text-align:left;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 700;
+}
+
+q:before,q:after {
+	content:'';
+}
+
+abbr,acronym {
+	border:0;
+	font-variant:normal;
+}
+
+sup {
+	vertical-align:baseline;
+}
+
+sub {
+	vertical-align:baseline;
+}
+
+legend {
+	color:#222;
+}
+
+input,button,textarea,select,optgroup,option {
+	font-family:inherit;
+	font-size:inherit;
+	font-style:inherit;
+	font-weight:inherit;
+}
+
+
+/* ====================================================================================
+   Default Font Styles
+   Browsers displays the same fonts differently. This section will force browsers to
+   display the fonts in he same way as far as possible.
+
+   Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+   Code licensed under the BSD License:
+   http://developer.yahoo.net/yui/license.txt
+   version: 2.8.0r4
+	================================================================================ */
+
+
+table{
+	font-size:inherit;
+}
+
+pre,code,kbd,samp,tt{
+	font-family: monospace, "Courier New", Courier;
+	line-height:100%;
+}
+
+
+/* ======================
+   General Content Styles
+========================= */
+
+
+ol, ul {}
+
+ul {
+   padding: 0;
+   list-style: disc;
+}
+
+ul li ul {
+   list-style: circle;
+}
+
+ol {
+   padding: 0 0 0 20px;
+   list-style: decimal;
+}
+
+ol li ol {
+   list-style: lower-alpha;
+}
+
+a {
+   outline: 0 none;
+}
+
+a:hover {
+   outline: 0 none;
+}
+
+input.inputbox {}
+select.inputbox {}
+
+button, input.button, button.button {
+font-weight: 700;
+}
+
+/* ===============
+   Template styles
+================== */
+  /* Template html structure
+  styles here */
+
+
+/* =====================
+   Joomla Content Styles
+======================== */
+
+/* --------------------------
+   Print, Email, Editor button
+--------------------------- */
+
+ul.actions{
+	border-top: 8px solid #eed219;
+	margin: 0 0 6px 0;
+	overflow: hidden;
+	padding: 10px 15px 2px 0;
+	float: right;
+	width: 100%;
+}
+
+div.blog ul.actions, div.blog-featured ul.actions{
+	border-top: 0;
+	margin: 10px 0 0 0;
+	padding: 0;
+	float: right;
+	width: auto;
+	height: auto;
+	display: inline;
+}
+
+ul.actions li, .article ul.actions li { float: right; display: inline; background: none; padding: 0 0 0 5px;}
+ul.actions li a {}
+ul.actions li a img {}
+
+/* Print button */
+ul.actions li.print-icon {}
+ul.actions li.print-icon a {}
+ul.actions li.print-icon a:hover {}
+ul.actions li.print-icon a img {}
+ul.actions li.print-icon a:hover img {}
+
+/* Email button */
+ul.actions li.email-icon {}
+ul.actions li.email-ico a {}
+ul.actions li.email-ico a
+ul.actions li.email-ico a img {}
+
+/* Editor button */
+ul.actions li.edit-icon {}
+ul.actions li.edit-icon span.hasTip {}
+ul.actions li.edit-icon span.hasTip a {}
+ul.actions li.edit-icon span.hasTip a img {}
+
+/* -------------------------------------------------------------------------
+   Print popup screen
+   There is no Joomla file in templates/system/css/template.css present.
+   In sourcecode Joomla refers to this document.
+   To apply the styles of your website to the printpage do the following: 
+
+   Create a new css file "template.css" or download it form joomla-css.
+   Save this document in the system/css folder.
+   !! Be carefull not to overwrite your template.css in your template folder.
+   Add the following line to the top of this document.
+
+   @import url("../../yourtemplatefolder/css/template.css");
+
+   Change "yourtemplatefolder" in the templatefolder name of your website.
+---------------------------------------------------------------------------- */
+body.contentpane {}
+
+
+/* -------------------
+   E-mail Popup Screen
+---------------------- */
+
+div#mailto-window {}
+div#mailto-window h2 {}
+
+div#mailto-window div.mailto-close {}
+div#mailto-window div.mailto-close a {}
+div#mailto-window div.mailto-close a span {}
+
+div#mailto-window form#mailtoForm {}
+
+div#mailto-window form#mailtoForm div.formelm {}
+div#mailto-window form#mailtoForm div.formelm label {}
+div#mailto-window form#mailtoForm div.formelm input#mailto_field.inputbox {}
+div#mailto-window form#mailtoForm div.formelm input#sender_field.inputbox {}
+div#mailto-window form#mailtoForm div.formelm input#from_field.inputbox {}
+div#mailto-window form#mailtoForm div.formelm input#subject_field.inputbox {}
+
+div#mailto-window form#mailtoForm {}
+div#mailto-window form#mailtoForm p {}
+div#mailto-window form#mailtoForm button.button {}
+
+
+/* ---------------------
+   Tooltip Editor Button
+---------------------- */
+.tip {}
+.tip-title {}
+
+
+/* --------------
+   Content rating
+---------------- */
+span.content_rating {}
+span.content_rating img {}
+
+/* --------------------
+   Content rating Form
+--------------------- */
+form span.content_vote {}
+form span.content_vote input {}
+form span.content_vote input.button {}
+
+
+/* -------------------
+   Article Information
+-------------------- */
+dl.article-info {padding: 0 15px 10px 15px; font-size: 9px; color: #7e7e7e; line-height: normal; float: left; width: 100%; text-transform: uppercase;}
+
+div.blog dl.article-info, div.blog-featured dl.article-info { padding: 10px 10px 7px 0; font-size: 9px; color: #7e7e7e; line-height: normal; float: left; width: auto; }
+
+dl.article-info dt.article-info-term {}
+
+dl.article-info	dd {display: inline; margin: 0; padding: 0 10px 0 0;}
+div.item dl.article-info dd a, .article dl.article-info dd a { text-decoration: none;}
+div.item dl.article-info dd a:hover, .article dl.article-info dd a:hover {color: #eed219;}
+
+
+div.article dl.article-info {padding: 10px 15px; font-size: 9px; color: #7e7e7e; line-height: normal; float: left; width: 100%; text-transform: uppercase;}
+
+div.blogintrotext{ overflow: hidden; clear: both; }
+
+/* Specific */
+dl.article-info	dd.parent-category-name a {color: #7e7e7e;}
+dl.article-info	dd.category-name a { text-decoration: none; color: #7e7e7e;}
+dl.article-info	dd.category-name a:hover {color: #eed219;}
+dl.article-info	dd.create {}
+dl.article-info	dd.modified {}
+dl.article-info	dd.published {}
+dl.article-info	dd.createdby a {}
+dl.article-info dd.hits {}
+
+
+/* -------------
+   Read more ...
+--------------- */
+p.readmore {}
+p.readmore a {}
+
+
+/* -----------------
+   Article seperator
+-------------------- */
+div.item-separator {}
+
+
+/* -------------
+   Row seperator
+---------------- */
+span.row-separator {}
+
+
+/* ----------
+   More items 
+------------- */
+div.items-more {margin: 20px 0 15px 0; padding: 0 0 15px 0; border-bottom: 8px solid #eed219;}
+div.items-more h3 {border-bottom: 1px solid #222;font-size: 20px;color: #222;padding: 0 0 9px 15px;line-height: normal;}
+div.items-more ol {list-style: none; margin: 10px 0 0 0; padding: 0 0 0 15px;}
+div.items-more ol li {margin: 0 0 1px 0;}
+div.items-more ol li a {color: #222;text-decoration: none;background: url(../images/arrowtrans.png) left 5px no-repeat;padding: 0 0 0 10px;text-decoration: none;}
+div.items-more ol li a:hover {color: #eed219;}
+
+
+/* ------------------
+   Pagination General
+--------------------- */
+div.pagination {color: #A0A0A0;}
+div.pagination p.counter {color: #A0A0A0;}
+div.pagination ul {}
+div.pagination ul li {display: inline; margin: 0 5px; background: none;}
+
+div.pagination ul li.pagination-start span.pagenav {}
+div.pagination ul li.pagination-prev span.pagenav {}
+div.pagination ul li span.pagenav, div.pagination ul li span {}
+div.pagination ul li a.pagenav, div.article div#articlecontent div.pagination ul li a, div.article div#articlecontent div.pagination ul li a:link, div.article div#articlecontent div.pagination ul li a:visited {color: #A0A0A0; text-decoration: none;}
+div.pagination ul li a.pagenav:hover, div.article div#articlecontent div.pagination ul li a:hover {color: #eed219; text-decoration: none;}
+div.pagination ul li.pagination-next a.pagenav {}
+div.pagination ul li.pagination-end a.pagenav {}
+
+
+/* -------------------------
+   Pagination Single article
+---------------------------- */
+div.item-page div.pagination {}
+div.item-page div.pagination ul.pagenav {}
+div.item-page div.pagination ul.pagenav li {}
+div.item-page div.pagination ul.pagenav li a {} 
+
+div.item-page div.pagination ul.pagenav li.pagenav-prev {}
+div.item-page div.pagination ul.pagenav li.pagenav-prev a {}
+div.item-page div.pagination ul.pagenav li.pagenav-next {}
+div.item-page div.pagination ul.pagenav li.pagenav-next a {}
+
+
+/* -----------
+   Pagebreak
+-------------- */
+/* Article index */  
+div#article-index {width: 200px; float: right; padding: 5px; margin: 0 0 5px 5px;}
+div#article-index ul {margin: 10px;}
+div#article-index ul li {}
+div#article-index ul li a {}
+div#article-index ul li a.toclink {}
+div.pagenavcounter {}
+
+/* Article index Pagination Pagebreak */
+div.item-page div.pagination ul {}
+div.item-page div.pagination ul li {}
+div.item-page div.pagination ul li a {} 
+
+
+/* --------------------------------------------
+   Category blog (incl. frontpage blog featured
+---------------------------------------------- */
+/* blog featured */
+div#blog-featured-all {
+	overflow: hidden;
+}
+
+div.blog-featured {
+	overflow: hidden;
+}
+
+div#blog-featured-all div.blog-featured {
+	overflow: hidden;
+	border: none;
+}
+
+div.blog-featured h1 {font-size: 24px;}
+
+/* Blog category */
+div.blog {
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+div.blog h1 {}
+
+/* Subheading & description blog category */
+span.subheading-category {}
+div.category-desc p {}
+div.category-desc div.clr {}
+
+/* ------------------------------
+   Blog Category & Blog Featured 
+------------------------------ */
+
+/* ---------------
+   Leading article
+------------------ */
+div.items-leading {	padding: 15px 0 0 0; overflow: hidden; border-bottom: 8px solid #eed219; margin: 0 15px;}
+div.items-leading div.leading-0,
+div.items-leading div.leading-1 {} /* etc. */
+
+/* Titel / Title */
+div.items-leading div.leading-0 h2 {color:#222;}
+div.items-leading div.leading-0 h2 a {color: #222; text-decoration: none;}
+div.items-leading div.leading-0 h2 a:hover {color: #eed219;}
+
+
+/* ----------------------------------
+   Styles for 1, 2 or 3 columns a row
+------------------------------------- */
+/* 1 column first row, second row, third row etc. */
+div.items-row.cols-1 { margin-bottom: 15px !important; margin-top: 20px !important;border-bottom: 8px solid #eed219; padding: 0; margin-left: 15px !important; margin-right: 15px !important;}
+div.items-row.cols-1.row-0 {}
+div.items-row.cols-1.row-1 {}
+div.items-row.cols-1.row-2 {} /* etc. */
+
+div.items-row.cols-1.row-0 div.item.column-1 {}
+div.items-row.cols-1.row-1 div.item.column-1 {}
+div.items-row.cols-1.row-2 div.item.column-1 {} /* etc. */
+
+/* 2 columns first row, second row, third row etc. */
+div.items-row.cols-2.row-0 {padding: 0 0 30px 0; border-bottom: 8px solid #eed219;}
+div.items-row.cols-2.row-1 {padding: 0 0 30px 0; border-bottom: 8px solid #eed219;}
+div.items-row.cols-2.row-2 {padding: 0 0 30px 0; border-bottom: 8px solid #eed219;} /* etc. */
+
+div.items-row.cols-2.row-0 div.item.column-1 {}
+div.items-row.cols-2.row-0 div.item.column-2 {}
+
+div.items-row.cols-2.row-1 div.item.column-1 {}
+div.items-row.cols-2.row-1 div.item.column-2 {}
+
+div.items-row.cols-2.row-2 div.item.column-1 {}
+div.items-row.cols-2.row-2 div.item.column-2 {} /* etc. */
+
+/* 3 columns first row, second row, third row etc. */
+div.items-row.cols-3, div.items-row.cols-4, div.items-row.cols-5, div.items-row.cols-6 {margin: 0 0;}
+div.items-row.cols-3.row-0 {overflow: hidden; clear: both; float: left; padding: 0 0 35px 0; border-bottom: 8px solid #eed219;}
+div.items-row.cols-3.row-1 {overflow: hidden; clear: both; float: left; padding: 0 0 35px 0; border-bottom: 8px solid #eed219;}
+div.items-row.cols-3.row-2 {overflow: hidden; clear: both; float: left; padding: 0 0 35px 0; border-bottom: 8px solid #eed219;} /* etc. */
+
+div.items-row.cols-3.row-0 div.item {}
+
+div.items-row.cols-3.row-0 div.item.column-1 {}
+div.items-row.cols-3.row-0 div.item.column-2 {}
+div.items-row.cols-3.row-0 div.item.column-3 {}
+
+div.items-row.cols-3.row-1 div.item.column-1 {}
+div.items-row.cols-3.row-1 div.item.column-2 {}
+div.items-row.cols-3.row-1 div.item.column-3 {}
+
+div.items-row.cols-3.row-2 div.item.column-1 {}
+div.items-row.cols-3.row-2 div.item.column-2 {}
+div.items-row.cols-3.row-2 div.item.column-3 {} /* etc. */
+
+
+/* blog */
+
+.cols-1 {
+	display: block;
+	float: none !important;
+	margin: 0 !important;
+}
+
+.cols-2 .column-1 {
+	width: 46%;
+	float: left;
+}
+
+.cols-2 .column-2 {
+	width: 46%;
+	float: right;
+	margin: 0;
+}
+
+.cols-3 .column-1 {
+	float: left;
+	width: 30.229%;
+	padding: 0px 15px;
+	margin-right: 0%;
+
+}
+.cols-3 .column-2 {
+	float: left;
+	width: 30.229%;
+	margin-left: 0;
+	padding: 0 15px;
+}
+.cols-3 .column-3 {
+	float: right;
+	width: 30.229%;
+	padding: 0px 15px;
+}
+
+.cols-4 .column-1 {
+	float: left;
+	width: 21.92%;
+	padding: 0px 15px;
+	margin-right: 0%;
+
+}
+.cols-4 .column-2 {
+	float: left;
+	width: 21.92%;
+	margin-left: 0;
+	padding: 0 15px;
+}
+.cols-4 .column-3 {
+	float: left;
+	width: 21.92%;
+	padding: 0px 15px;
+}
+
+.cols-4 .column-4 {
+	float: right;
+	width: 21.92%;
+	padding: 0px 15px;
+}
+
+.cols-5 .column-1 {
+	float: left;
+	width: 16.91%;
+	padding: 0px 15px;
+	margin-right: 0%;
+
+}
+.cols-5 .column-2 {
+	float: left;
+	width: 16.91%;
+	margin-left: 0;
+	padding: 0 15px;
+}
+.cols-5 .column-3 {
+	float: left;
+	width: 16.91%;
+	padding: 0px 15px;
+}
+
+.cols-5 .column-4 {
+	float: left;
+	width: 16.91%;
+	padding: 0px 15px;
+}
+
+.cols-5 .column-5 {
+	float: right;
+	width: 16.91%;
+	padding: 0px 15px;
+}
+
+.items-row {
+	overflow: hidden;
+	margin-bottom: 15px !important;
+	margin-top: 20px !important;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.column-1,
+.column-2,
+.column-3 {
+	padding: 10px 0 0 0;
+}
+
+.column-2 {
+	width: 55%;
+	margin-left: 40%;
+}
+
+.column-3 {
+	width: 30%;
+}
+
+.blog-more {
+	padding: 10px 5px;
+}
+
+#contentl .cols-2 .column-1,
+#contentl .cols-2 .column-2,
+#contentr .cols-2 .column-1,
+#contentr .cols-2 .column-2{
+	width: 47.4%;
+}
+
+#contentl .cols-3 .column-1,
+#contentl .cols-3 .column-2,
+#contentl .cols-3 .column-3,
+#contentr .cols-3 .column-1,
+#contentr .cols-3 .column-2,
+#contentr .cols-3 .column-3{
+	width: 29.1%;
+}
+
+#contentl .cols-4 .column-1,
+#contentl .cols-4 .column-2,
+#contentl .cols-4 .column-3,
+#contentl .cols-4 .column-4,
+#contentr .cols-4 .column-1,
+#contentr .cols-4 .column-2,
+#contentr .cols-4 .column-3,
+#contentr .cols-4 .column-4{
+	width: 20.89%;
+}
+
+#contentl .cols-5 .column-1,
+#contentl .cols-5 .column-2,
+#contentl .cols-5 .column-3,
+#contentl .cols-5 .column-4,
+#contentl .cols-5 .column-5,
+#contentr .cols-5 .column-1,
+#contentr .cols-5 .column-2,
+#contentr .cols-5 .column-3,
+#contentr .cols-5 .column-4,
+#contentr .cols-5 .column-5{
+	width: 15.84%;
+}
+
+#contentlr .cols-2 .column-1,
+#contentlr .cols-2 .column-2{
+	width: 46.5%;
+}
+
+#contentlr .cols-3 .column-1,
+#contentlr .cols-3 .column-2,
+#contentlr .cols-3 .column-3{
+	width: 26.6%;
+}
+
+#contentlr .cols-4 .column-1,
+#contentlr .cols-4 .column-2,
+#contentlr .cols-4 .column-3,
+#contentlr .cols-4 .column-4{
+	width: 18.44%;
+}
+
+/* --------------
+   Single article 
+----------------- */
+div.item-page {}
+div.item-page h1 {}
+div.item-page h2 {}
+
+
+/* ---------
+   Archive 
+------------ */
+div#archive-all{
+	overflow: hidden;
+}
+div.archive {overflow: hidden; padding: 0 0 10px 0;}
+div.archive dl.article-info { padding: 9px 10px 10px 0; font-size: 9px; color: #A0A0A0; line-height: normal; float: left; width: 100%; }
+
+form#jForm {}
+fieldset.filters {margin: 0 0 10px 0; padding: 10px 15px;}
+fieldset.filters legend.hidelabeltxt {float: left; padding: 2px 4px 0 0;}
+fieldset.filters div.filter-search label.filter-search-lbl {}
+fieldset.filters div.filter-search {}
+fieldset.filters div.filter-search input#filter-search {}
+fieldset.filters div.filter-search input.inputbox {}
+fieldset.filters div.filter-search select.inputbox {}
+fieldset.filters div.filter-search select#month {}
+fieldset.filters div.filter-search select#month option {}
+fieldset.filters div.filter-search select#year {}
+fieldset.filters div.filter-search select#year option {}
+fieldset.filters div.filter-search select#limit {}
+fieldset.filters div.filter-search select#limit option {}
+fieldset.filters div.filter-search button.button {}
+
+ul#archive-items {padding: 0 15px; margin: 22px 0 0 0;}
+ul#archive-items li {}
+
+ul#archive-items li.row0 {}
+ul#archive-items li.row0 div.intro {}
+ul#archive-items li.row1 {}
+ul#archive-items li.row1 div.intro {}
+
+ul#archive-items li h2.title a{
+ 	text-decoration: none;
+	color: #222;
+ }
+ 
+ul#archive-items li h2.title a:hover{
+	color: #eed219;
+	text-decoration: none;
+	background-color: transparent;
+ }
+ 
+
+
+/* -------------------
+   List all categories
+---------------------- */
+div.categories-list {padding: 0 0 15px 0;}
+div.categories-list h1 {}
+
+/* First level of categories */
+
+/* First item */
+div.categories-list ul, div.cat-children ul {padding: 0;}
+div.categories-list ul li.first {}
+div.categories-list ul li.first span.item-title {}
+div.categories-list ul li.first span.item-title a {}
+div.categories-list ul li.first div.category-desc {}
+div.categories-list ul li.first div.category-desc p {}
+div.categories-list ul li.first dl {}
+div.categories-list ul li.first dl dt {}
+div.categories-list ul li.first dl dd {}
+
+/* Middle items */
+div.categories-list ul {}
+div.categories-list ul li {padding: 20px 0 0 0;}
+div.categories-list ul li span.item-title {font-size: 16px; padding: 0 15px;}
+div.categories-list ul li span.item-title a {}
+div.categories-list ul li div.category-desc {}
+div.categories-list ul li div.category-desc p {}
+div.categories-list ul li dl {}
+div.categories-list ul li dl dt {}
+div.categories-list ul li dl dd {}
+
+/* Last item */
+div.categories-list ul {}
+div.categories-list ul li.last {}
+div.categories-list ul li.last span.item-title {}
+div.categories-list ul li.last span.item-title a {}
+div.categories-list ul li.last div.category-desc, div.cat-children ul li.last div.category-desc {border-left: 0; border-right: 0;}
+div.categories-list ul li.last div.category-desc p {}
+div.categories-list ul li.last dl {}
+div.categories-list ul li.last dl dt {}
+div.categories-list ul li.last dl dd {}
+
+div.cat-children ul li div.category-desc{
+   border-bottom: 1px solid #222;
+	border-top: 1px solid #222;
+	margin-top: 10px;
+}
+
+div.cat-children ul li.last div.category-desc{
+   border-bottom: none;
+	border-top: 1px solid #222;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+
+/* First Sublevel of categories */
+div.categories-list ul li.first ul {}
+
+/* First main item / Group subitems */ 
+div.categories-list ul li.first ul li.first {} /* etc. */
+div.categories-list ul li.first ul li {} /* etc. */
+div.categories-list ul li.first ul li.last {} /* etc. */
+
+/* Middle main items / Group subitems */ 
+div.categories-list ul li ul li.first {} /* etc. */
+div.categories-list ul li ul li {} /* etc. */
+div.categories-list ul li ul li.last {} /* etc. */
+
+/* Last main item / Group subitems */ 
+div.categories-list ul li.last ul li.first {} /* etc. */
+div.categories-list ul li.last ul li {} /* etc. */
+div.categories-list ul li.last ul li.last {} /* etc. */
+
+
+/* -----------------
+   List one category
+-------------------- */
+div.category-list {padding: 0 0 15px 0;}
+div.category-list h1 {}
+div.category-list h2 span.subheading-category {}
+
+div.category-list div.category-desc {
+border-left: 0;
+border-right: 0;
+}
+div.category-list div.category-desc p {}
+div.category-list div.category-desc div.clr {}
+
+.contentdescription.clearafter p{
+	margin: 10px;
+}
+
+div.category-list div.cat-items {}
+div.category-list div.cat-items p {}
+
+div.category-list div.cat-items div.display-limit {margin: 10px 15px;}
+
+div.category-list div.cat-children {}
+div.category-list div.cat-children h3 {font-size: 20px; padding: 20px 10px 0 15px;}
+div.cat-children h3 {font-size: 20px; padding: 8px 10px 0 15px;}
+
+div.category-list div.cat-children ul {padding: 0;}
+
+/* First item */
+div.category-list div.cat-children ul li.first {}
+div.category-list div.cat-children ul li.first span.item-title {}
+div.category-list div.cat-children ul li.first span.item-title a {}
+div.category-list div.cat-children ul li.first div.category-desc {}
+div.category-list div.cat-children ul li.first div.category-desc p {}
+div.category-list div.cat-children ul li.first dl {}
+div.category-list div.cat-children ul li.first dl dt {}
+div.category-list div.cat-children ul li.first dl dd {}
+
+/* Middle items */
+div.category-list div.cat-children ul li {}
+div.category-list div.cat-children ul li span.item-title, div.cat-children ul li span.item-title  {font-size: 20px; padding: 20px 10px 0 15px; display: inline-block;}
+div.category-list div.cat-children ul li span.item-title a {color: #222; text-decoration: none; font-size: 20px;}
+div.category-list div.cat-children ul li span.item-title a:hover {color: #eed219;}
+div.category-list div.cat-children ul li div.category-desc {}
+div.category-list div.cat-children ul li div.category-desc p {}
+div.category-list div.cat-children ul li dl {}
+div.category-list div.cat-children ul li dl dt {}
+div.category-list div.cat-children ul li dl dd {}
+
+/* Last item */
+div.category-list div.cat-children ul li.last {}
+div.category-list div.cat-children ul li.last span.item-title {}
+div.category-list div.cat-children ul li.last span.item-title a {}
+div.category-list div.cat-children ul li.last div.category-desc {border: 0;}
+div.category-list div.cat-children ul li.last div.category-desc p {}
+div.category-list div.cat-children ul li.last dl {}
+div.category-list div.cat-children ul li.last dl dt {}
+div.category-list div.cat-children ul li.last dl dd {}
+
+/* ---------------------------
+   List all contact categories
+------------------------------ */ 
+div.categories-list {}
+div.categories-list h1 {}
+div.categories-list div.category-desc.base-desc {}
+
+div.categories-list ul {}
+
+/* First item */
+div.categories-list ul li.first {}
+div.categories-list ul li.first span.item-title {}
+div.categories-list ul li.first span.item-title a {}
+div.categories-list ul li.first div.category-desc {}
+div.categories-list ul li.first div.category-desc p {}
+div.categories-list ul li.first dl {}
+div.categories-list ul li.first dl dt {}
+div.categories-list ul li.first dl dd {}
+
+/* Middle items */
+div.categories-list ul li {}
+div.categories-list ul li span.item-title {}
+div.categories-list ul li span.item-title a {}
+div.categories-list ul li div.category-desc {}
+div.categories-list ul li div.category-desc p {}
+div.categories-list ul li dl {margin: 0 15px; color: #A0A0A0; font-size: 11px;}
+div.categories-list ul li dl dt {display: inline;}
+div.categories-list ul li dl dd {display: inline;}
+
+/* Last item */
+div.categories-list ul li.last {}
+div.categories-list ul li.last span.item-title {}
+div.categories-list ul li.last span.item-title a {}
+div.categories-list ul li.last div.category-desc {}
+div.categories-list ul li.last div.category-desc p {}
+div.categories-list ul li.last dl {}
+div.categories-list ul li.last dl dt {}
+div.categories-list ul li.last dl dd {}
+
+/* -------------------------
+   List one contact category
+---------------------------- */
+div.contact-category, div.standard-contact {	overflow: hidden; }
+div.contact-category h1, div.contact-category h2 {	font-size: 24px; color: #222; margin: 0; padding: 15px 0 8px 15px;}
+div.contact-category h1+h2{
+	color: #222;
+	background-color: transparent;
+}
+
+div.contact-category div.category-desc {border-right: 0; border-left: 0;}
+div.contact-category div.category-desc p {}
+div.contact-category div.category-desc div.clr {}
+
+div.contact-category form#adminForm {}
+div.contact-category form#adminForm table.category {}
+
+/* Table head */
+div.contact-category form#adminForm table.category thead {}
+div.contact-category form#adminForm table.category thead tr {}
+div.contact-category form#adminForm table.category thead tr th {}
+div.contact-category form#adminForm table.category thead tr th a {}
+
+div.contact-category form#adminForm table.category thead tr th.item-title {}
+div.contact-category form#adminForm table.category thead tr th.item-position {}
+div.contact-category form#adminForm table.category thead tr th.item-phone {}
+div.contact-category form#adminForm table.category thead tr th.item-suburb {}
+div.contact-category form#adminForm table.category thead tr th.item-state {}
+
+/* Table Body */
+div.contact-category form#adminForm table.category tbody {}
+div.contact-category form#adminForm table.category tbody tr.cat-list-row0 {}
+div.contact-category form#adminForm table.category tbody tr.cat-list-row1 {}
+
+div.contact-category form#adminForm table.category tbody tr td.item-title {}
+div.contact-category form#adminForm table.category tbody tr td.item-position {}
+div.contact-category form#adminForm table.category tbody tr td.item-phone {}
+div.contact-category form#adminForm table.category tbody tr td.item-suburb {}
+div.contact-category form#adminForm table.category tbody tr td.item-state {}
+
+/* ---------------------
+   Contact + Contactform
+------------------------ */
+div.contact {overflow: hidden; clear: both;}
+div.contact h1 {}
+div.contact h2 {}
+div.contact h2 span.contact-name {}
+div.contact h3 {font-size: 16px;}
+div.contact h3 span.contact-category {}
+div.contact h3 span.contact-category a {}
+
+/* Select form */
+div.contact	form#selectForm {}
+div.contact	form#selectForm select#id {}
+div.contact	form#selectForm select#id option {}
+
+/* Data contactperson / adressblock */
+div.contact p.contact-position {}
+div.contact div.contact-address {}
+div.contact div.contact-address span.jicons-icons {}
+div.contact div.contact-address span.jicons-icons img {}
+div.contact div.contact-address address {}
+div.contact div.contact-address address span.contact-street {}
+div.contact div.contact-address address span.contact-suburb {}
+div.contact div.contact-address address span.contact-state {}
+div.contact div.contact-address address span.contact-postcode {}
+div.contact div.contact-address address span.contact-country {}
+
+/* Contact info block */
+div.contact div.contact-contactinfo {}
+div.contact div.contact-contactinfo p {}
+div.contact div.contact-contactinfo p span.jicons-icons {}
+div.contact div.contact-contactinfo p span.jicons-icons img {}
+div.contact div.contact-contactinfo p span.contact-emailto {}
+div.contact div.contact-contactinfo p span.contact-telephone {}
+div.contact div.contact-contactinfo p span.contact-fax {}
+div.contact div.contact-contactinfo p span.contact-mobile {}
+div.contact div.contact-contactinfo p span.contact-webpage {}
+div.contact div.contact-contactinfo p span.contact-webpage a {}
+
+/* Contact Form */
+div.contact  div.contact-form {}
+
+/* fieldset contact form has no cosing tag in Joomla 1.6.4 */
+div.contact  div.contact-form fieldset {}
+div.contact  div.contact-form fieldset legend {}
+div.contact  div.contact-form fieldset dl {}
+
+/* labels */
+div.contact  div.contact-form fieldset dl dt {}
+div.contact  div.contact-form fieldset dl dt label {}
+
+div.contact  div.contact-form fieldset dl dt label.hasTip {}
+div.contact  div.contact-form fieldset dl dt label.required {}
+
+div.contact  div.contact-form fieldset dl dt label#jform_contact_name-lbl {}
+div.contact  div.contact-form fieldset dl dt label#jform_contact_email-lbl {}
+div.contact  div.contact-form fieldset dl dt label#jform_contact_emailmsg-lbl {}
+div.contact  div.contact-form fieldset dl dt label#jform_contact_message-lbl {}
+div.contact  div.contact-form fieldset dl dt label#jform_contact_email_copy-lbl {}
+
+/* Input fields / textarea */
+div.contact  div.contact-form fieldset dl dd {}
+
+div.contact  div.contact-form fieldset dl dd input {}
+div.contact  div.contact-form fieldset dl dd input.required {}
+div.contact  div.contact-form fieldset dl dd input#jform_contact_name,
+div.standard-contact div.contact-form fieldset dl dd input#jform_contact_name {width: 330px;}
+div.contact  div.contact-form fieldset dl dd input#jform_contact_email,
+div.standard-contact  div.contact-form fieldset dl dd input#jform_contact_email {width: 330px;}
+div.contact  div.contact-form fieldset dl dd input#jform_contact_emailmsg,
+div.standard-contact  div.contact-form fieldset dl dd input#jform_contact_emailmsg {width: 330px;}
+
+div.contact  div.contact-form fieldset dl dd textarea,
+div.standard-contact div.contact-form fieldset dl dd textarea {width: 330px;}
+div.contact  div.contact-form fieldset dl dd textarea.required {}
+div.contact  div.contact-form fieldset dl dd textarea#jform_contact_message {}
+
+/* Inputfield checkbox contact mail copy */
+div.contact  div.contact-form fieldset dl dd input#jform_contact_email_copy {}
+
+/* Button */
+div.contact  div.contact-form fieldset dl dd button {}
+div.contact  div.contact-form fieldset dl dd button.button {}
+div.contact  div.contact-form fieldset dl dd button.validate {}
+
+/* Contact links and misc info */
+div.contact div.contact-links {}
+div.contact div.contact-links ul {}
+div.contact div.contact-links ul li {}
+div.contact div.contact-links ul li a {}
+
+div.contact div.contact-articles {}
+div.contact div.contact-articles ol {}
+div.contact div.contact-articles ul li {}
+div.contact div.contact-articles ol li a {}
+
+div.contact div.contact-miscinfo {}
+div.contact div.contact-miscinfo div.jicons-icons {}
+div.contact div.contact-miscinfo div.jicons-icons img {}
+div.contact div.contact-miscinfo div.jicons-icons div.contact-misc {}
+div.contact div.contact-miscinfo div.jicons-icons div.contact-misc  p {}
+
+/*Contact slider*/
+
+div#contact-slider{float: left; width: 100%; margin: 10px 0 0 0; padding: 0 15px;}
+div#contact-slider div.panel{margin: 0 0 10px 0;}
+div#contact-slider div.panel h3 a{ text-decoration: none; color: #222;}
+div#contact-slider div.panel h3 a:hover{color: #eed219;}
+.pane-slider.content{
+	width: 97%;
+}
+
+div.contact-form fieldset{
+	margin: 15px 0;
+}
+
+/* -------------
+   User profile
+---------------- */
+
+/* Login screen user */
+div.login {overflow: hidden;  clear: both; color: #333;}
+div.login-description
+div.login form {}>
+div.login form fieldset {}
+div.login form fieldset div.login-fields {}
+div.login form fieldset div.login-fields label#username-lbl.required {display: block; width: 130px; float: left;}
+div.login form fieldset div.login-fields label#username-lbl.required span.star {}
+div.login form fieldset div.login-fields input#username.validate-username.required {width: 250px;}
+div.login form fieldset div.login-fields label#password-lbl.required {display: block; width: 130px; float: left;}
+div.login form fieldset div.login-fields label#password-lbl.required span.star {}
+div.login form fieldset div.login-fields input#password.validate-password.required {width: 250px;}
+div.login form fieldset button.button {margin: 0 0 0 130px;}
+div.login ul{margin: 15px 0;}
+
+/* Show User profile after logged in */
+div.profile, div.logout {overflow: hidden;  clear: both; color: #333;}
+div.logout form{
+	padding: 5px 15px 15px 15px;
+}
+div.profile fieldset#users-profile-core {padding: 0 15px;}
+div.profile fieldset#users-profile-core legend {}
+div.profile fieldset#users-profile-core dl {}
+div.profile fieldset#users-profile-core dl dt {}
+div.profile fieldset#users-profile-core dl dd {}
+
+div.profile fieldset{margin: 0 0 15px 0;}
+
+div.profile fieldset#users-profile-custom {padding: 15px 15px 0 15px;}
+div.profile fieldset#users-profile-custom legend {}
+div.profile fieldset#users-profile-custom dl {}
+div.profile fieldset#users-profile-custom dl dt {}
+div.profile fieldset#users-profile-custom dl dd {}
+
+div.profile-link{
+	padding: 0 10px 20px 15px;
+}
+div.profile a {}
+
+div.formRow-lable{
+	width: auto;
+	margin: 0 5px 0 0;
+}
+
+/* Change User profile */
+div.profile-edit {overflow: hidden;
+overflow: hidden;  clear: both; color: #333;
+}
+div.profile-edit fieldset {margin: 0 0 15px 0;}
+div.profile-edit form#member-profile.form-validate {padding: 0 15px 20px 15px;}
+div.profile-edit form#member-profile fieldset {}
+div.profile-edit form#member-profile fieldset legend {}
+div.profile-edit form#member-profile fieldset dl {}
+div.profile-edit form#member-profile fieldset dl dt {}
+div.profile-edit form#member-profile fieldset dl dd {}
+
+div.profile-edit form#member-profile fieldset dl dt label#jform_name-lbl.hasTip.required {}
+div.profile-edit form#member-profile fieldset dl dt label#jform_name-lbl.hasTip.required span.star
+div.profile-edit form#member-profile fieldset dl dd input#jform_name.required {}
+
+div.profile-edit form#member-profile fieldset dl dt label#jform_password1-lbl.hasTip {}
+div.profile-edit form#member-profile fieldset dl dt label#jform_password1-lbl.hasTip span.star {}
+div.profile-edit form#member-profile fieldset dl dd input#jform_password1.validate-password {}
+
+
+div.profile-edit form#member-profile fieldset dl dt label#jform_password2-lbl,hasTip {}
+div.profile-edit form#member-profile fieldset dl dt label#jform_password2-lbl,hasTip span.star {}
+div.profile-edit form#member-profile fieldset dl dd input#jform_password2.validate-password {}
+
+div.profile-edit form#member-profile fieldset dl dt label#jform_email1-lbl.hasTip.required {}
+div.profile-edit form#member-profile fieldset dl dt label#jform_email1-lbl.hasTip.required span.star {}
+div.profile-edit form#member-profile fieldset dl dd input#jform_email1.validate-email.required {}
+
+div.profile-edit form#member-profile fieldset dl dt label#jform_email2-lbl.hasTip.required {}
+div.profile-edit form#member-profile fieldset dl dt label#jform_email2-lbl.hasTip.required span.star {}
+div.profile-edit form#member-profile fieldset dl dd input#jform_email2.validate-email.required {}
+
+
+div.profile-edit form#member-profile fieldset dl dt label#jform_params_editor-lbl.hasTip {}
+div.profile-edit form#member-profile fieldset dl dt label#jform_params_editor-lbl.hasTip span.optional {}
+div.profile-edit form#member-profile fieldset dl dd select#jform_params_editor {}
+div.profile-edit form#member-profile fieldset dl dd select#jform_params_editor option {}
+
+div.profile-edit form#member-profile fieldset dl dt label#jform_params_timezone-lbl.hasTip {}
+div.profile-edit form#member-profile fieldset dl dt label#jform_params_timezone-lbl.hasTip span.optional {}
+div.profile-edit form#member-profile fieldset dl dd select#jform_params_timezone {}
+div.profile-edit form#member-profile fieldset dl dd select#jform_params_timezone option {}
+
+div.profile-edit form#member-profile fieldset dl dt label#jform_params_language-lbl.hasTip {}
+div.profile-edit form#member-profile fieldset dl dt label#jform_params_language-lbl.hasTip span.optional {}
+div.profile-edit form#member-profile fieldset dl dd select#jform_params_language {}
+div.profile-edit form#member-profile fieldset dl dd select#jform_params_language option {}
+
+div.profile-edit form#member-profile fieldset dl dt label#form_params_admin_style-lbl.hasTip {}
+div.profile-edit form#member-profile fieldset dl dt label#form_params_admin_style-lbl.hasTip span.optional {}
+div.profile-edit form#member-profile fieldset dl dd select#form_params_admin_style {}
+div.profile-edit form#member-profile fieldset dl dd select#form_params_admin_style option {}
+
+div.profile-edit form#member-profile fieldset dl dt label#jform_params_admin_language-lbl.hasTip {}
+div.profile-edit form#member-profile fieldset dl dt label#jform_params_admin_language-lbl.hasTip span.optional {}
+div.profile-edit form#member-profile fieldset dl dd select#jform_params_admin_language {}
+div.profile-edit form#member-profile fieldset dl dd select#jform_params_admin_language option {}
+
+div.profile-edit form#member-profile fieldset dl dt label#jform_params_helpsite-lbl.hasTip {}
+div.profile-edit form#member-profile fieldset dl dt label#jform_params_helpsite-lbl.hasTip span.optional {}
+div.profile-edit form#member-profile fieldset dl dd select#jform_params_helpsite {}
+div.profile-edit form#member-profile fieldset dl dd select#jform_params_helpsite option {}
+
+
+div.profile-edit form#member-profile div {}
+div.profile-edit form#member-profile div button.validate {}
+div.profile-edit form#member-profile div button.validate span {}
+div.profile-edit form#member-profile div a {}
+
+/* -----------------
+   User registration
+-------------------- */
+div.registration {overflow: hidden;  clear: both; color: #333;}
+div.registration h1{font-size: 24px;}
+div.registration form#member-registration {padding: 0 15px 15px 15px;}
+div.registration form#member-registration fieldset {}
+div.registration form#member-registration fieldset legend {}
+div.registration form#member-registration fieldset dl {}
+div.registration form#member-registration fieldset dl dt span.spacer span.text label#jform_spacer-lbl {}
+div.registration form#member-registration fieldset dl dt label {}
+div.registration form#member-registration fieldset dl dt span {}
+div.registration form#member-registration fieldset dl dt span span {}
+div.registration form#member-registration fieldset dl dt label {}
+div.registration form#member-registration fieldset dl dt label span {}
+div.registration form#member-registration fieldset dl dd {}
+div.registration form#member-registration fieldset dl dd input {}
+div.formRow.clearafter{margin: 10px 0 0 0;}
+div#regbuttons{margin: 10px 0 0 0;}
+
+/* --------------------------
+   User Request New Username
+----------------------------- */
+div.remind {overflow: hidden;  clear: both; color: #333;}
+div.remind form#user-registration.form-validate {}
+div.remind form#user-registration.form-validate p {}
+div.remind form#user-registration.form-validate fieldset {}
+div.remind form#user-registration.form-validate fieldset dl {}
+div.remind form#user-registration.form-validate fieldset dl dt {}
+div.remind form#user-registration.form-validate fieldset dl dt label#jform_email-lbl.hasTip.required {}
+div.remind form#user-registration.form-validate fieldset dl dt label#jform_email-lbl.hasTip.required span.star {}
+div.remind form#user-registration.form-validate fieldset dl dd {}
+div.remind form#user-registration.form-validate fieldset dl dd input#jform_email.validate-email.required {}
+
+div.remind form#user-registration.form-validate div {}
+div.remind form#user-registration.form-validate div button {}
+
+
+/* -------------------------
+   User Request New Password
+---------------------------- */
+div.reset {overflow: hidden;  clear: both; color: #333;}
+div.reset form#user-registration.form-validate {}
+div.reset form#user-registration.form-validate p {}
+div.reset form#user-registration.form-validate fieldset {}
+div.reset form#user-registration.form-validate fieldset dl {}
+div.reset form#user-registration.form-validate fieldset dl dt {}
+div.reset form#user-registration.form-validate fieldset dl dt label#jform_email-lbl.hasTip.required {}
+div.reset form#user-registration.form-validate fieldset dl dt label#jform_email-lbl.hasTip.required span.star
+div.reset form#user-registration.form-validate fieldset dl dt dd {}
+div.reset form#user-registration.form-validate fieldset dl dt dd input#jform_email.validate-username.required {}
+div.reset form#user-registration.form-validate div {}
+div.reset form#user-registration.form-validate div button {}
+
+
+/* ----------------------------
+   List All Newsfeed categories
+------------------------------- */
+div.categories-list {}
+div.categories-list h3 {}
+
+div.categories-list div.category-desc.base-desc {}
+div.categories-list ul {}
+div.categories-list ul li.first {}
+div.categories-list ul li.first span.item-title {}
+div.categories-list ul li.first div.category-desc {}
+div.categories-list ul li.first div.category-desc p {}
+div.categories-list ul li.first dl.newsfeed-count {}
+div.categories-list ul li.first dl.newsfeed-count dt {}
+div.categories-list ul li.first dl.newsfeed-count dd {}
+
+div.categories-list ul li.last {}
+div.categories-list ul li.last span.item-title {}
+div.categories-list ul li.last div.category-desc {}
+div.categories-list ul li.last div.category-desc p {}
+div.categories-list ul li.last dl.newsfeed-count {}
+div.categories-list ul li.last dl.newsfeed-count dt {}
+div.categories-list ul li.last dl.newsfeed-count dd {}
+
+
+/* ----------------------
+   List one feed category
+------------------------- */
+
+div.news-feed ul li{
+	padding: 10px 15px;
+}
+
+div.news-feed ul li a{
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+	margin: 0 0 5px 0;
+}
+
+div.news-feed ul li a:hover{
+	color: #eed219;
+}
+
+div.com-newsfeed div.infofilter{
+	padding: 10px 15px;
+}
+
+div.newsfeed-category {}
+div.newsfeed-category h1 {}
+div.newsfeed-category h2 {}
+
+div.newsfeed-category div.category-desc {}
+div.newsfeed-category div.category-desc p {}
+div.newsfeed-category div.category-desc div.clr {}
+
+
+div.newsfeed-category form#adminForm {}
+div.newsfeed-category form#adminForm fieldset.filters legend.hidelabeltxt {}
+div.newsfeed-category form#adminForm fieldset.filters div.display-limit {}
+div.newsfeed-category form#adminForm fieldset.filters div.display-limit select#limit.inputbox {}
+div.newsfeed-category form#adminForm fieldset.filters div.display-limit select#limit.inputbox option
+
+/* Table */
+div.newsfeed-category form#adminForm table.category {}
+
+/* Table head */
+div.newsfeed-category form#adminForm table.category thead {}
+div.newsfeed-category form#adminForm table.category thead tr {}
+div.newsfeed-category form#adminForm table.category thead tr th.item-title#tableOrdering {}
+div.newsfeed-category form#adminForm table.category thead tr th.item-title#tableOrdering a {}
+div.newsfeed-category form#adminForm table.category thead tr th.item-num-art#tableOrdering2 {}
+div.newsfeed-category form#adminForm table.category thead tr th.item-num-art#tableOrdering2 a {}
+div.newsfeed-category form#adminForm table.category thead tr th.item-link#tableOrdering3 {}
+div.newsfeed-category form#adminForm table.category thead tr th.item-link#tableOrdering3 a {}
+
+/* Table body */
+div.newsfeed-category form#adminForm table.category tbody {}
+div.newsfeed-category form#adminForm table.category tbody tr.cat-list-row0 {}
+div.newsfeed-category form#adminForm table.category tbody tr.cat-list-row1 {} /* etc */
+
+div.newsfeed-category form#adminForm table.category tbody tr.cat-list-row0 td.item-title {}
+div.newsfeed-category form#adminForm table.category tbody tr.cat-list-row0 td.item-title a {}
+div.newsfeed-category form#adminForm table.category tbody tr.cat-list-row0 td.item-num-art {}
+div.newsfeed-category form#adminForm table.category tbody tr.cat-list-row0 td.item-num-art a {}
+div.newsfeed-category form#adminForm table.category tbody tr.cat-list-row0 td.item-link {}
+div.newsfeed-category form#adminForm table.category tbody tr.cat-list-row0 td.item-link a {}
+
+
+/* --------------------
+   Disolay one newsfeed
+----------------------- */
+div.newsfeed.redirect-ltr {}
+div.newsfeed.redirect-ltr h1.redirect-ltr {}
+div.newsfeed.redirect-ltr h2.redirect-ltr {}
+div.newsfeed.redirect-ltr h2.redirect-ltr a {}
+
+div.newsfeed.redirect-ltr div.feed-description {} 
+
+/* items */
+div.newsfeed.redirect-ltr ol {}
+div.newsfeed.redirect-ltr ol li {}
+div.newsfeed.redirect-ltr ol li a {}
+div.newsfeed.redirect-ltr ol li div.feed-item-description {}
+div.newsfeed.redirect-ltr ol li div.feed-item-description img {}
+
+
+/* ----------------------
+   All weblink categories
+------------------------- */
+div.categories-list {}
+div.categories-list h1 {}
+
+div.categories-list div.category-desc.base-desc {}
+
+div.categories-list ul {}
+
+/* First item */
+div.categories-list ul li.first {}
+div.categories-list ul li.first span.item-title {}
+div.categories-list ul li.first span.item-title a {}
+div.categories-list ul li.first span.item-title a:hover {}
+div.categories-list ul li.first div.category-desc {}
+div.categories-list ul li.first div.category-desc p {}
+div.categories-list ul li.first dl.weblink-count {}
+div.categories-list ul li.first dl.weblink-count dt {}
+div.categories-list ul li.first dl.weblink-count dd {}
+	
+/* Middle items */
+div.categories-list ul li {}
+div.categories-list ul li span.item-title {color: #222; font-size: 20px; font-weight: 700;}
+div.categories-list ul li span.item-title a {color: #222; text-decoration: none;}
+div.categories-list ul li span.item-title a:hover {color: #eed219;}
+div.categories-list ul li div.category-desc {margin: 0; padding: 0 15px; border: 0;}
+div.categories-list ul li div.category-desc p {}
+div.categories-list ul li dl.weblink-count {}
+div.categories-list ul li dl.weblink-count dt {}
+div.categories-list ul li dl.weblink-count dd {}
+
+
+/* Last item */
+div.categories-list ul li.last {}
+div.categories-list ul li.last span.item-title {}
+div.categories-list ul li.last span.item-title a {}
+div.categories-list ul li.last div.category-desc {}
+div.categories-list ul li.last div.category-desc p {}
+div.categories-list ul li.last dl.weblink-count {}
+div.categories-list ul li.last dl.weblink-count dt {}
+div.categories-list ul li.last dl.weblink-count dd {}
+
+
+/* ------------
+   weblink page
+--------------- */
+div.weblink-category {background-color: #fff; border-left: 1px solid #D5D5D4; border-top: 1px solid #D5D5D4; border-right: 1px solid #D5D5D4;}
+div.weblink-category h1 {font-size: 24px; color: #555; margin: 0; padding: 8px 0 8px 10px;}
+div.weblink-category h2 {font-size: 20px; color: #555; margin: 0; padding: 8px 0 8px 10px;}
+
+div.weblink-category div.category-desc {}
+div.weblink-category div.category-desc p {}
+div.weblink-category div.category-desc div.clr {}
+
+div.weblink-category form#adminForm {}
+div.weblink-category form#adminForm fieldset.filters {}
+div.weblink-category form#adminForm fieldset.filters legend.hidelabeltxt {}
+div.weblink-category form#adminForm fieldset.filters div.display-limit {}
+div.weblink-category form#adminForm fieldset.filters div.display-limit select#limit.inputbox {}
+div.weblink-category form#adminForm fieldset.filters div.display-limit select#limit.inputbox option {}
+
+/* Table */
+div.weblink-category form#adminForm table.category {}
+
+/* Table head */
+div.weblink-category form#adminForm table.category thead {}
+div.weblink-category form#adminForm table.category thead tr {}
+div.weblink-category form#adminForm table.category thead tr th.title
+div.weblink-category form#adminForm table.category thead tr th.title a {}
+
+/* Table body */
+div.weblink-category form#adminForm table.category tbody {}
+
+div.weblink-category form#adminForm table.category tbody tr.cat-list-row0 {}
+div.weblink-category form#adminForm table.category tbody tr.cat-list-row1 {}
+div.weblink-category form#adminForm table.category tbody tr td.title {}
+div.weblink-category form#adminForm table.category tbody tr td.title p {}
+div.weblink-category form#adminForm table.category tbody tr td.title p img {}
+div.weblink-category form#adminForm table.category tbody tr td.title p a {}
+div.weblink-category form#adminForm table.category tbody tr td.hits {}
+
+
+/* -------
+   Wrapper
+---------- */
+div.contentpane {}
+div.contentpane h2 {}
+div.contentpane iframe {}
+
+
+/* ====================
+   Components & Modules
+===================== */
+
+/* ---------------------------------------------------------
+   Breadcrumbs moduleclass suffix = _breadcrumbs
+---------------------------------------------------------  */
+div.moduletable_breadcrumbs {}
+div.moduletable_breadcrumbs div.breadcrumbs_breadcrumbs {}
+div.moduletable_breadcrumbs div.breadcrumbs_breadcrumbs  a.pathway {}
+div.moduletable_breadcrumbs div.breadcrumbs_breadcrumbs img {}
+div.moduletable_breadcrumbs div.breadcrumbs_breadcrumbs span {}
+
+
+/* ----------------------------------------------------
+   Language / language module class suffix = _language
+----------------------------------------------------- */
+div.moduletable_language {}
+div.moduletable_language div.mod-languages_language {}
+div.moduletable_language div.mod-languages_language ul {}
+div.moduletable_language div.mod-languages_language ul li {}
+div.moduletable_language div.mod-languages_language ul li a img {}
+div.moduletable_language div.mod-languages_language ul li a:hover img {}
+
+
+/* ------------------------------------------
+   Search module moduleclass suffix = _search
+--------------------------------------------- */
+div.moduletable_search {}
+div.moduletable_search form {}
+div.moduletable_search form div.search_search {}
+div.moduletable_search form div.search_search label {}
+div.moduletable_search form div.search_search input#mod-search-searchword.inputbox_search {}
+div.moduletable_search form div.search_search input.button_search {}
+
+
+/* --------------------
+   Seaarch results page
+----------------------- */
+/* Search cntainer */
+div.search {}
+div.search h1 {}
+
+/* --------
+   Form
+----------- */
+div.search form#searchForm {overflow: hidden;}
+
+div.search form#searchForm fieldset.word {}
+div.search form#searchForm fieldset.word label {}
+div.search form#searchForm fieldset.word input#search-searchword {}
+div.search form#searchForm fieldset.word button.button {}
+
+div.search form#searchForm div.searchintro {}
+div.search form#searchForm div.searchintro p {}
+
+div.search form#searchForm fieldset.phrases {margin: 10px 0;}
+div.search form#searchForm fieldset.phrases legend {}
+div.search form#searchForm fieldset.phrases div.phrases-box {margin: 6px 0 10px 0; float: left; width: 100%;}
+div.search form#searchForm fieldset.phrases div.phrases-box input#searchphraseall {height: auto;}
+div.search form#searchForm fieldset.phrases div.phrases-box label#searchphraseall-lbl {}
+div.search form#searchForm fieldset.phrases div.phrases-box input#searchphraseany {height: auto;}
+div.search form#searchForm fieldset.phrases div.phrases-box label#searchphraseany-lbl {}
+div.search form#searchForm fieldset.phrases div.phrases-box input#searchphraseexact {height: auto;}
+div.search form#searchForm fieldset.phrases div.phrases-box label#searchphraseexact-lbl {}
+
+div.search form#searchForm fieldset.phrases div.ordering-box {}
+div.search form#searchForm fieldset.phrases div.ordering-box label.ordering {}
+div.search form#searchForm fieldset.phrases div.ordering-box select#ordering {}
+div.search form#searchForm fieldset.phrases div.ordering-box select#ordering option {}
+
+div.search form#searchForm fieldset.only {margin: 10px 0 0 0; float: left; width: 100%;}
+div.search form#searchForm fieldset.only legend {width: 100%; float: left;}
+div.search form#searchForm fieldset.only label{}	
+div.search form#searchForm fieldset.only input#area-categories {height: auto; padding: 0;}
+div.search form#searchForm fieldset.only input#area-contacts {height: auto; padding: 0;}
+div.search form#searchForm fieldset.only input#area-content {height: auto; padding: 0;}
+div.search form#searchForm fieldset.only input#area-newsfeeds{height: auto; padding: 0;}
+div.search form#searchForm fieldset.only input#area-weblinks {height: auto; padding: 0;}
+
+div.search form#searchForm div.form-limit {}
+div.search form#searchForm div.form-limit label {}
+div.search form#searchForm div.form-limit select#limit {}
+div.search form#searchForm div.form-limit select#limit option {}
+
+div.search form#searchForm p.counter {margin: 20px 0 0 0;}
+
+div.search dl.search-results {margin: 10px 0 0 0; padding: 0 10px;}
+div.search dl.search-results dt.result-title {font-size: 20px; margin: 15px 0 4px 0;}
+div.search dl.search-results dt.result-title a {color: #222; text-decoration: none; font-weight: normal;}
+div.search dl.search-results dt.result-title a:hover {color: #eed219;}
+div.search dl.search-results dd.result-category {margin: 0px;color: #A0A0A0;font-size: 10px;font-family: Arial, Helvetica, sans-serif;}
+div.search dl.search-results dd.result-category span.small { text-transform: uppercase;}
+div.search dl.search-results dd.result-text {}
+div.search dl.search-results dd.result-text span.highlight {}
+div.search dl.search-results dd.result-created {border-bottom: 1px solid #222;margin: 0 0 5px 0;padding: 0 0 15px 0;color: #A0A0A0;font-size: 10px;font-family: Arial, Helvetica, sans-serif; text-transform: uppercase;}
+
+
+/* --------------
+   Who is on-line
+----------------- */
+div.moduletable_whoisonline {}
+div.moduletable_whoisonline h3 {}
+div.moduletable_whoisonline p {}
+div.moduletable_whoisonline ul {}
+div.moduletable_whoisonline ul li {}
+div.moduletable_whoisonline ul li a {}
+
+/* ----------------------------------------------
+   Feed Syndicate moduleclass suffix = _syndicate
+----------------------------------------------- */
+div.moduletable_syndicate {}
+div.moduletable_syndicate h3 {}
+div.moduletable_syndicate a.syndicate-module_syndicate {}
+div.moduletable_syndicate a:hover.syndicate-module_syndicate {}
+div.moduletable_syndicate a.syndicate-module_syndicate img {}
+div.moduletable_syndicate a.syndicate-module_syndicate span {}
+
+
+/* --------------------------------------------------------------
+   Main menu * moduleclass suffix = _mainmenu, Menu tag ID = nav
+----------------------------------------------------------------- */
+div.moduletable_mainmenu {}
+div.moduletable_mainmenu h3 {}
+div.moduletable_mainmenu ul#nav {}
+div.moduletable_mainmenu ul#nav li {}
+div.moduletable_mainmenu ul#nav li a {}
+div.moduletable_mainmenu ul#nav li a:hover,
+div.moduletable_mainmenu ul#nav li.active a {}
+
+
+/* ----------------------------------------------
+   Log-in/-uit Module moduleclass suffix = _login
+----------------------------------------------- */
+div.moduletable_login {}
+div.moduletable_login h3 {}
+div.moduletable_login form#login-form {}
+
+/* Pre- en post tekst */
+div.moduletable_login form#login-form div.pretext {}
+div.moduletable_login form#login-form div.posttext {}
+
+/* Fieldset */
+div.moduletable_login form#login-form fieldset.userdata {}
+
+/* Paragraaf instellingen label en inputvelden */
+
+/* paragraaf */
+p#form-login-username, 
+p#form-login-password, 
+p#form-login-remember {}
+
+/* labels */
+p#form-login-username label, 
+p#form-login-password label, 
+p#form-login-remember label {}
+
+/* input velden */
+input#modlgn-username {}
+input#modlgn-passwd {}
+input#modlgn-passwd {}
+
+/* List items login formulier */
+div.moduletable_login form#login-form ul {}
+div.moduletable_login form#login-form ul li {}
+div.moduletable_login form#login-form ul li a {}
+
+/* Login button */
+div.moduletable_login form#login-form fieldset.userdata input.button {}
+
+/* ---------------
+   Log-uit button
+--------------- */
+div.moduletable_login form#login-form {}
+div.moduletable_login form#login-form div.login-greeting {}
+div.moduletable_login form#login-form div.logout-button {}
+div.moduletable_login form#login-form div.logout-button input.button {}
+
+
+/* -------------------------------------------------------
+   Laatste Nieuws Moddule moduleclass suffix = _latestnews
+-------------------------------------------------------- */
+div.moduletable_latestnews {}
+div.moduletable_latestnews h3 {}
+div.moduletable_latestnews ul.latestnews_latestnews {}
+div.moduletable_latestnews ul.latestnews_latestnews li {}
+div.moduletable_latestnews ul.latestnews_latestnews li a {}
+
+
+/* ---------------------------------------------------
+   Meest gelezenModdule moduleclass suffix = _mostread
+---------------------------------------------------- */
+div.moduletable_mostread {}
+div.moduletable_mostread h3 {}
+div.moduletable_mostread ul.mostread_mostread {}
+div.moduletable_mostread ul.mostread_mostread li {}
+div.moduletable_mostread ul.mostread_mostread li a {}
+
+
+/* ------------------------------------------
+   Feed Module moduleclass suffix = _feed
+------------------------------------------- */
+div.moduletable_feed {}
+div.moduletable_feed h3 {}
+div.moduletable_feed div.feed_feed {}
+div.moduletable_feed div.feed_feed ul.newsfeed_feed {}
+div.moduletable_feed div.feed_feed ul.newsfeed_feed li.newsfeed-item {}
+div.moduletable_feed div.feed_feed ul.newsfeed_feed li.newsfeed-item h4.feed-link {}
+div.moduletable_feed div.feed_feed ul.newsfeed_feed li.newsfeed-item h4.feed-link a {}
+
+
+/* --------------------------------------------
+   Banner module - moduleclass suffix = _banner
+-------------------------------------------- */
+div.moduletable_banner {}
+
+/* Titel */
+div.moduletable_banner h3 {}
+
+/* Banner inhoud */
+div.moduletable_banner div.bannergroup_banner div.banneritem {}
+div.moduletable_banner div.bannergroup_banner div.banneritem a {}
+div.moduletable_banner div.bannergroup_banner div.banneritem a img {}
+div.moduletable_banner div.bannergroup_banner div.banneritem div.clr {}
+
+ 
+/* Header en Footer */
+div.moduletable_banner div.bannergroup_banner,
+div.moduletable_banner div.bannergroup_banner div.bannerfooter {}
+
+
+/* ----------------------------------------------------------
+   Module Archived articles moduleclass suffix = _archivelist
+---------------------------------------------------------- */
+div.moduletable_archivelist {}
+div.moduletable_archivelist h3 {}
+div.moduletable_archivelist ul.archive-module_archivelist {}
+div.moduletable_archivelist ul.archive-module_archivelist li {}
+div.moduletable_archivelist ul.archive-module_archivelist li a {}
+
+
+/* ----------
+   Statistics
+----------- */
+div.moduletable_statistics {}
+div.moduletable_statistics h3 {}
+div.moduletable_statistics dl {}
+div.moduletable_statistics dl dt {}
+div.moduletable_statistics dl dd {}
+
+/*table.category*/
+
+table.category, table.infotable, div.news-feed{
+	width: 100%;
+}
+
+div#bottom_wrapper div.sigplus-gallery ul>li>img:hover, div#bottom_wrapper div.sigplus-gallery ul>li>a>img:hover,
+div#main div.sigplus-gallery ul>li>img:hover, div#main div.sigplus-gallery ul>li>a>img:hover{
+	border: 3px solid #eed219 !important; padding: 0px !important;
+}

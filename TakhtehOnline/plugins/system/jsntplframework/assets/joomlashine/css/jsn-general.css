@@ -1,0 +1,36 @@
+/**
+ * @version    $Id$
+ * @package    JSN_Framework
+ * @author     JoomlaShine Team <support@joomlashine.com>
+ * @copyright  Copyright (C) 2012 JoomlaShine.com. All Rights Reserved.
+ * @license    GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Websites: http://www.joomlashine.com
+ * Technical Support:  Feedback - http://www.joomlashine.com/contact-us/get-support.html
+ */
+
+ /* =============== GENERAL HTML =============== */
+html {
+	overflow: auto !important;
+}
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+body.tmpl-isis.jsn-adminbar-pinned {
+	margin-top: 30px;
+}
+html body.contentpane {
+	height: auto;
+	font-size: 75%;
+}
+iframe{
+    border: 0px;
+}
+/* =============== DEFAULT HTML - TEXT STYLES =============== */
+.jsn-master {
+	font-size: 12px;
+	line-height: 1.5em;
+	font-family: Arial, Helvetica, sans-serif;
+}

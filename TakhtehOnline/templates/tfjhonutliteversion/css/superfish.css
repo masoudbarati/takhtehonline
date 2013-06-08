@@ -1,0 +1,241 @@
+/*******************************************************************************************/
+/*
+/*	    TFJ HONUT FREE LITE VERSION Joomla! 2.5 Template - May 2013
+/*      Package tpl-tfj-honut-free-lite-j25.zip
+/*	    Version 1.0
+/*
+/*	    This template/design is released under the Creative Commons Attribution 3.0 license.
+/*
+/*      This means that it can be used for private and commercial purposes, edited freely 
+/*	    or redistributed as long as you keep the link back to template sponsors.
+/*
+/*      You CAN NOT remove (or unreadable) these links without our permission. 
+/*	    When you don't want to have link back on the template footer,
+/*	    you have to pay 9 euro via PayPal: contact@templatesforjoomla.eu 
+/*
+/*      BUY LICENSE PREMIUM VERSION!
+/*      Only in Premium Version Full Quickstart Instalation Package and footer link remove option.
+/*      What is quickstart package? - "Quickstart Package" is a TFJ HONUT PRO Template + Joomla 2.5 + all content, all modules, all components and settings used in demo site.
+/*
+/*      How to install Quickstart package?
+/*      Quickstart Package install exactly the same as a normal Joomla! installation package. (To get know more about technical requirements to run Joomla! please visit: Joomla technical requirements).
+/*
+/*      Quickstart Package Extra Extensions (Components, Modules, Plugin) Included:
+/*      Automatic Slideshow Module on frontpage. Nivo Slider is a lightweight Joomla jQuery slideshow module for creating good-looking image sliders. It simply converts an element that wraps images into a slider.
+/*      Gallery plugin & module - Sigplus Gallery (Sigplus Image Gallery Plus is a straightforward way to add image or photo galleries to a Joomla article with a simple syntax. It takes a matter of minutes to set up a gallery but those who are looking for a powerful gallery solution will not be disappointed either: sigplus is suitable for both beginner and advanced users.
+/*      Xmap - the best sitemap component.
+/*      JCE editor - the bes WYSiWYG editor.
+/*      Extra SEO SEF plugin automatically generates description meta tags by pulling text from the content to help with SEO. It also gives you the ability to set different title configurations.
+/*      Extra Cache plugin.
+/*      Multilevel drop-down menu.
+/*      Social Media Icons Module.
+/*      Footer links remove options.
+/*      Support.
+/*      And more...
+/*      
+/*      More information on http://templatesforjoomle.eu
+/*
+/*******************************************************************************************/
+
+#topmenu .menu, #topmenu .menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+#topmenu .menu {
+	line-height:	1.0;
+}
+#topmenu .menu ul {
+	position:		absolute;
+	top:			-999em;
+	width:			200px;
+}
+#topmenu .menu ul li {
+	width:			100%;
+	text-align: left;
+}
+#topmenu .menu li:hover {
+	visibility:		inherit;
+}
+#topmenu .menu li {
+	position:		relative;
+	margin: 0 1px 0 0;
+	display: inline-block;
+}
+#topmenu .menu a {
+	display:		block;
+	position:		relative;
+}
+#topmenu .menu li:hover ul,
+#topmenu .menu li.sfHover ul {
+	left:			0;
+	top:			44px;
+	z-index:		99;
+	padding: 0 0 0 0;
+	margin: 0;
+	background-color: #222;
+}
+
+#topmenu .menu.sf-js-enabled li:hover ul,
+#topmenu .menu.sf-js-enabled li.sfHover ul{
+	background-color: none;
+}
+
+#topmenu .menu li:hover li ul,
+#topmenu .menu li.sfHover li ul {
+	top:			-999em;
+}
+#topmenu .menu li li:hover ul,
+#topmenu .menu li li.sfHover ul {
+	left:			14.2em;
+	top:			0;
+	border: 2px solid #fff;
+}
+#topmenu .menu li li:hover li ul,
+#topmenu .menu li li.sfHover li ul {
+	top:			-999em;
+}
+#topmenu .menu li li li:hover ul,
+#topmenu .menu li li li.sfHover ul {
+	left:			14.2em;
+	top:			0;
+}
+
+#topmenu .menu li:hover ul li a,
+#topmenu .menu li.sfHover ul li a,
+#topmenu .menu li li a:hover{
+	padding: 		7px 14px 7px 14px;
+	font-size: 14px;
+	background: transparent;
+	text-shadow: none;
+}
+
+#topmenu .menu {
+	width: auto;
+	margin: 0 auto;
+}
+#topmenu .menu a {
+   font: 500 16px 'Exo', sans-serif;
+	padding: 12px 14px 12px 14px;
+	text-decoration:none;
+	line-height: normal;
+	text-transform: uppercase;
+    text-shadow: 0 1px #000;
+    font-weight: 700;
+}
+#topmenu .menu a, #topmenu .menu a:visited  {
+	color:			#222;
+}
+#topmenu .menu li li a, #topmenu .menu li.parent li a {
+	text-decoration:none;
+	color: #fff;
+	font-weight: 300;
+	text-transform: none;
+}
+
+#topmenu .menu li.last{
+	background: none;
+}
+
+#topmenu .menu li.first.level2, #topmenu .menu li.first.level3{
+   margin-top: 5px;
+}
+
+#topmenu .menu li.last.level2, #topmenu .menu li.last.level3{
+	margin-bottom: 5px;
+}
+
+#topmenu .menu li li {
+	background: transparent;
+}
+#topmenu .menu li li li {
+	background: none;
+}
+#topmenu .menu li:hover, #topmenu .menu li.sfHover,
+#topmenu .menu a:focus, #topmenu .menu a:hover, #topmenu .menu a:active {
+	background-color: #222;
+	outline:		0;
+    
+        /*** Transition Selectors - What properties to animate and how long ***/
+    -webkit-transition-property: -webkit-box-shadow, background;
+    -webkit-transition-duration: 1.5s;
+	
+}
+#topmenu .menu li.active a, #topmenu .menu li.sfHover a, #topmenu .menu li a:hover {
+	background-color:#222;
+	color: white;
+}
+
+
+#topmenu .menu li.level1 li.level2 li.level3 a{
+	outline:		0;
+	background-color: none;
+	color: #fff;
+	text-shadow: none;
+}
+
+#topmenu .menu li.level1 li.level2 li.level3 a:hover{
+	outline:		0;
+	background-color: none;
+	color: #eed219;
+}
+
+#topmenu .menu li li:hover, #topmenu .menu li li.sfHover, #topmenu .menu li li.sfHover a,
+#topmenu .menu li li a:focus, #topmenu .menu li li a:hover, #topmenu .menu li li a:active {
+	outline:		0;
+	background: none;
+	color: #eed219;
+}
+
+#topmenu .menu li li.active a, #topmenu .menu li.level1 li.level2 li.level3.active a {
+   color: #eed219;
+}
+
+
+/*** arrows **/
+#topmenu .menu a.sf-with-ul {
+	padding-right: 	2.25em;
+	min-width:		1px;
+}
+.sf-sub-indicator {
+	position:		absolute;
+	display:		block;
+	right:			.75em;
+	top:			1.05em;
+	width:			10px;
+	height:			10px;
+	text-indent: 	-999em;
+	overflow:		hidden;
+	background:		url('../images/arrows-ffffff.png') no-repeat -10px -100px;
+}
+a > .sf-sub-indicator {
+	top:			0.9em;
+	background-position: 0 -100px;
+}
+/
+a:focus > .sf-sub-indicator,
+a:hover > .sf-sub-indicator,
+a:active > .sf-sub-indicator,
+li:hover > a > .sf-sub-indicator,
+li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px -100px;
+}
+
+#topmenu .menu ul .sf-sub-indicator { background-position:  -10px 0; }
+#topmenu .menu ul a > .sf-sub-indicator { background-position:  0 0; }
+
+#topmenu .menu ul a:focus > .sf-sub-indicator,
+#topmenu .menu ul a:hover > .sf-sub-indicator,
+#topmenu .menu ul a:active > .sf-sub-indicator,
+#topmenu .menu ul li:hover > a > .sf-sub-indicator,
+#topmenu .menu ul li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px 0; 
+}
+
+.sf-shadow ul {
+	background:	url('../images/shadow.png') no-repeat bottom right;
+	padding: 0 8px 9px 0;
+}
+.sf-shadow ul.sf-shadow-off {
+	background: transparent;
+}

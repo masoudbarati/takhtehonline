@@ -1,0 +1,183 @@
+/*******************************************************************************************/
+/*
+/*	    TFJ HONUT FREE LITE VERSION Joomla! 2.5 Template - May 2013
+/*      Package tpl-tfj-honut-free-lite-j25.zip
+/*	    Version 1.0
+/*
+/*	    This template/design is released under the Creative Commons Attribution 3.0 license.
+/*
+/*      This means that it can be used for private and commercial purposes, edited freely 
+/*	    or redistributed as long as you keep the link back to template sponsors.
+/*
+/*      You CAN NOT remove (or unreadable) these links without our permission. 
+/*	    When you don't want to have link back on the template footer,
+/*	    you have to pay 9 euro via PayPal: contact@templatesforjoomla.eu 
+/*
+/*      BUY LICENSE PREMIUM VERSION!
+/*      Only in Premium Version Full Quickstart Instalation Package and footer link remove option.
+/*      What is quickstart package? - "Quickstart Package" is a TFJ HONUT PRO Template + Joomla 2.5 + all content, all modules, all components and settings used in demo site.
+/*
+/*      How to install Quickstart package?
+/*      Quickstart Package install exactly the same as a normal Joomla! installation package. (To get know more about technical requirements to run Joomla! please visit: Joomla technical requirements).
+/*
+/*      Quickstart Package Extra Extensions (Components, Modules, Plugin) Included:
+/*      Automatic Slideshow Module on frontpage. Nivo Slider is a lightweight Joomla jQuery slideshow module for creating good-looking image sliders. It simply converts an element that wraps images into a slider.
+/*      Gallery plugin & module - Sigplus Gallery (Sigplus Image Gallery Plus is a straightforward way to add image or photo galleries to a Joomla article with a simple syntax. It takes a matter of minutes to set up a gallery but those who are looking for a powerful gallery solution will not be disappointed either: sigplus is suitable for both beginner and advanced users.
+/*      Xmap - the best sitemap component.
+/*      JCE editor - the bes WYSiWYG editor.
+/*      Extra SEO SEF plugin automatically generates description meta tags by pulling text from the content to help with SEO. It also gives you the ability to set different title configurations.
+/*      Extra Cache plugin.
+/*      Multilevel drop-down menu.
+/*      Social Media Icons Module.
+/*      Footer links remove options.
+/*      Support.
+/*      And more...
+/*      
+/*      More information on http://templatesforjoomle.eu
+/*
+/*******************************************************************************************/
+
+body {
+background-color:#fff;
+ padding: 0; margin: 0;
+ text-align: center;
+ font: 400 13px 'Exo', Arial, Helvetica, sans-serif;
+ font-size: 13px;
+ line-height: 1.7em;
+ color: #333;
+}
+
+h1 { font-family: 'Exo', sans-serif; font-size: 80px; line-height: 150%; font-weight: 700; }
+
+#box {
+width:600px;
+margin: 10px auto 50px auto;
+padding: 16px;
+}
+
+#slide_wrapper{
+	border-top: 8px solid #eed219;
+	border-bottom: 8px solid #eed219;
+	background-color: #222;
+	width: 100%;
+	height: auto;
+	line-height: 140%;
+	margin: 0;
+	padding: 30px 0;
+	text-align:center;
+   color:#eed219;
+   font-size: 40px;
+   text-align: center;
+   font-family: 'Exo', sans-serif;
+}
+
+
+#box div>p { 
+	font-size: 20px;
+	margin: 0;
+	padding: 10px;
+	color: #fff;
+   background-color: #000;
+	border: 2px solid #eed219;
+	text-align: center;
+	font-family: 'Exo', sans-serif;
+}
+
+#box>div>p br {
+display: none;
+}
+
+.outline {
+padding-top: 20px;
+margin-top: 4px;
+}
+
+fieldset {
+border:none;
+padding:10px 63px 0 63px;
+margin:0 auto;
+width: 452px;
+}
+
+p.username, p.password, p.remember { 
+float: left; 
+margin: 10px 0 0;
+}
+
+p.password { 
+margin-left: 20px; 
+}
+
+p.username input, p.password input { 
+width: 156px; 
+}
+
+p.remember, #form-login ul { 
+clear: both; 
+}
+
+p.username input, p.password input {
+	border: 3px solid #222;
+	padding: 2px 5px;
+	height: 20px;
+	color: #000;
+    
+       /*** Adding CSS3 ***/
+ 
+    /*** Transition Selectors - What properties to animate and how long ***/
+    -webkit-transition-property: -webkit-box-shadow, background;
+    -webkit-transition-duration: 0.25s;
+ 
+    /*** Adding a small shadow ***/
+    -moz-box-shadow: 0px 0px 2px #ccc;
+    -webkit-box-shadow: 0px 0px 2px #ccc;
+}
+
+div.buttons { 
+margin: 29px 0 20px; 
+cursor: pointer;
+}
+
+input[type=submit] {
+	background-color: #eed219;
+	height: 30px;
+	padding: 0 14px;
+	color: #000;
+	cursor: pointer;
+	font-size: 14px;
+	text-transform: uppercase;
+	border: 0;
+	margin: 3px 0 0 0;
+	font-family: 'Exo', sans-serif;
+}
+
+input[type=submit]:hover{
+	background-color: #222;
+	color: #eed219;
+}
+
+/* System Messages */
+#system-message    { margin: 30px 0 10px 0; padding: 0; 
+
+	background-color: #eed219;
+	overflow: hidden;
+  }
+#system-message dt { font-weight: 700; }
+#system-message dd { margin: 0; font-weight: 700; font-size: 24px; line-height: normal; }
+#system-message dd ul { color: #222; margin: 0; list-style: none; padding: 10px 15px; font-size: 24px;}
+
+/* System Standard Messages */
+#system-message dt.message { display: none; }
+#system-message dd.message {  }
+
+/* System Error Messages */
+#system-message dt.error { display: none; }
+#system-message dd.error ul { color: #222; font-size: 24px; font-weight: 700}
+
+/* System Notice Messages */
+#system-message dt.notice { display: none; }
+#system-message dd.notice ul { font-size: 24px; font-weight: 700;}
+
+/* Debug */
+#system-debug     { color: black; background-color: #fff; padding: 10px; margin: 10px; }
+#system-debug div { font-size: 11px;}
