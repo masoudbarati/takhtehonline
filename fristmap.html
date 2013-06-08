@@ -2,21 +2,140 @@
 	<head>
 		<title>Drag and Drop</title>
 		<script>
+			function getI(n){
+				if (n<6){
+					return 25;
+				}
+				switch(n){
+					case 6:
+						return 21;
+						break;
+					case 7:
+						return 18;
+						break;
+					case 8: 
+						return 16;
+						break;
+					case 9:
+						return 15;
+						break;
+					case 10:
+						return 13;
+						break;
+					case 11:
+						return 12;
+						break;
+				}
+			}
+			/////////////
+			var available_moves = new Array();
+			var dice1,dice2,dice3,dice4;
+			/////////////
+			function setDices(){
+				dice1 = Math.floor((Math.random()*6)+1);
+				dice2 = Math.floor((Math.random()*6)+1);
+				if (dice1 == dice2){
+					dice3 = dice1;
+					dice4 = dice1;
+				}
+				else{
+					dice3 = 0;
+					dice4 = 0;
+				}
+				var d1 = new Image();
+				d1.src = (dice1.toString()+".png");
+				d1.style.position = "absolute";
+				d1.style.left = "550px";
+				d1.style.top = "250px";
+				d1.style.height = "50px";
+				d1.style.width = "50px";
+				d1.id = "d1";
+				document.body.appendChild(d1);
+				var d2 = new Image();
+				d2.src = (dice2.toString()+".png");
+				d2.style.position = "absolute";
+				d2.style.left = "650px";
+				d2.style.top = "250px";
+				d2.style.height = "50px";
+				d2.style.width = "50px";
+				d2.id = "d2";
+				document.body.appendChild(d2);
+				if (dice3 != 0){
+					var d3 = new Image();
+					d3.src = (dice3.toString()+".png");
+					d3.style.position = "absolute";
+					d3.style.left = "550px";
+					d3.style.top = "350px";
+					d3.style.height = "50px";
+					d3.style.width = "50px";
+					d3.id = "d3";
+					document.body.appendChild(d3);
+					var d4 = new Image();
+					d4.src = (dice4.toString()+".png");
+					d4.style.position = "absolute";
+					d4.style.left = "650px";
+					d4.style.top = "350px";
+					d4.style.height = "50px";
+					d4.style.width = "50px";
+					d4.id = "d4";
+					document.body.appendChild(d4);
+				}
+			}
 			function drag(e){
+				e.target//parent div ,avalalbe move,dice
 				e.dataTransfer.setData("abc",e.target.id);
 			}
 			function allowDrop(e){
-				document.getElementById("aa").innerHTML = e.target.id.slice(0,3);
 				if (e.target.id.slice(0,3) == "div"){
-				e.preventDefault();
+					var imgs = e.target.getElementsByTagName("img");
+					var data_id = e.dataTransfer.getData("abc");
+					if (imgs.length < 2 || imgs[0].id[0] == data_id[0]){
+						e.preventDefault();
+					}
 				}
 			}
 			function drop(e){
 				e.preventDefault();
 				var data_id = e.dataTransfer.getData("abc");
-				var target_id = e.target.id;
-				//document.getElementById("aa").innerHTML =document.getElementById(data_id).style.left;
+				var div_num = e.target.id.slice(3);
+				if (e.target.id == "bgoal" || e.target.id == "wgoal"){
+					document.getElementById(data_id).draggable = false;
+					document.getElementById(data_id).style.position ="static";
+				}
+				if (e.target.getElementsByTagName("img").length == 1 && data_id[0] != e.target.getElementsByTagName("img")[0].id[0]){
+					if (e.target.getElementsByTagName("img")[0].id[0] == 'b'){
+						var child = e.target.getElementsByTagName("img")[0];
+						child.position = "static";
+						document.getElementById("blackdiv").appendChild(child);
+						
+					}
+					else{
+						var child = e.target.getElementsByTagName("img")[0];
+						child.position = "static";
+						document.getElementById("whitediv").appendChild(child);
+					}
+				}
 				e.target.appendChild(document.getElementById(data_id));
+				for (y=1;y<13;y++){
+					var id = "div"+y;
+					//document.getElementById("aa").innerHTML += id;
+					var imgs = document.getElementById(id).getElementsByTagName("img");
+					var i=getI(imgs.length),counter=0;		
+					for (x=0;x<imgs.length;x++){
+						imgs[x].style.top = i*counter;
+						counter++;
+					}
+				}
+				for (y=13;y<25;y++){
+					var id = "div"+y;
+					//document.getElementById("aa").innerHTML += id;
+					var imgs = document.getElementById(id).getElementsByTagName("img");
+					var i=getI(imgs.length),counter=0;		
+					for (x=0;x<imgs.length;x++){
+						imgs[x].style.top = 125 - i*counter;
+						counter++;
+					}
+				}
 			}
 			function finalAllowDrop(e){
 				e.preventDefault();
@@ -29,7 +148,7 @@
 		</script>
 	</head>
 	<body>
-		<p id="aa">fwefwqf</p>
+		<p id="aa"></p>
 		<div id="div1" ondragover="allowDrop(event)" ondrop="drop(event)" style="border:1px solid #123456;width:30px;height:150px;position:absolute;left:420px;top:80px;text-align:center" >
 			<img id="w1" src="white.png" draggable="true" ondragstart="drag(event)" style="width:25px;height:25px;position:absolute;left:3px;top:0px">
 			<img id="w2" src="white.png" draggable="true" ondragstart="drag(event)" style="width:25px;height:25px;position:absolute;left:3px;top:25px">
@@ -97,8 +216,10 @@
 		<div id="blackdiv" style="border:1px solid #123456;width:40px;height:160px;position:absolute;left:230px;top:80px;text-align:center"></div>
 		<div id="whitediv" style="border:1px solid #123456;width:40px;height:160px;position:absolute;left:230px;top:240px;text-align:center"></div>
 		<!----------------------------->
-		<div id="bgoal" ondragover="finalAllowDrop(event)" ondrop="finalDrop(event)" style="border:1px solid #123456;width:50px;height:150px;position:absolute;left:450px;top:80px"></div>
-		<div id="wgoal" ondragover="finalAllowDrop(event)" ondrop="finalDrop(event)" style="border:1px solid #123456;width:50px;height:150px;position:absolute;left:450px;top:250px"></div>
+		<div id="bgoal" ondragover="finalAllowDrop(event)" ondrop="drop(event)" style="border:1px solid #123456;width:50px;height:150px;position:absolute;left:450px;top:80px"></div>
+		<div id="wgoal" ondragover="finalAllowDrop(event)" ondrop="drop(event)" style="border:1px solid #123456;width:50px;height:150px;position:absolute;left:450px;top:250px"></div>
+		<!----------------------------->
+		<button onclick="setDices()" style="position:absolute;left:600px;top:100px;text-align:center;height:50px;width:50px">Dice</button>
 		<script>
 			
 		</script>
